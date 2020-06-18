@@ -1,0 +1,126 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2020-06-18
+### Added 'Tecniche di progettazione e design'
+    - Principi design: da file .psd al front end
+    - Style guide
+    - Jakob Nielsen, unico punto di riferimento per certificare varie caratteristiche del sito. Sei principi UX
+    - AFFORDANCE: invito senza alcun tipo di istruzione (esempio bottone call-to-action) con significato (esempio "Clicca qui") e azione;
+    vincoli: spazi nei quali tutto avviene (esempio box)
+    - FEEDBACK: l'utente deve avere la percezione di aver fatto qualcosa e averne il FEEDBACK
+    - SIGNIFICATO
+    - MAPPING
+    - MODELLO CONCETTUALE
+    - VINCOLI 
+    - Consistenza è la coerenza con la quale viene presentata un'interfaccia, in sostanza far capire all'utente come muoversi
+    - Semplicità per arrivare a tutti, per esempio ridurre l'aspetto tecnico a livelli minimi
+    - Tool di prototipazione: Photoshop, Sketch (wireframe)
+    - Journey map: l'abitudine dell'utente su un certo sito
+    - Gamification: far sì che il processo di attività all'interno di un sito sia divertente e catturare l'attenzione
+    - Constraints: 'constringo' l'utente a fare le azioni che voglio
+    - Way out: "via di fuga" per l'utente dalle constricts 
+    - Il bug è sempre dietro l'angolo: risolvere assolutamente gli errori rossi della Console
+    - UX: l'approccio di lavoro verso un'App è diverso da un Sito Responsive
+    - Non cambiare troppo
+    - Scopo della landing page: veicolare il messaggio in modo chiaro
+    - index.html è il file di partenza di un web server nomesito.it
+    - Folder dist (distributiion), folder src (source)
+    - Pacchetti npm
+    - il partial di qualcosa ha sempre un _ (underscore) davanti
+
+## [1.0.0] - 2020-06-17
+### Added 'GIT'
+    - Typescript è un'evoluzione di Javascript
+    - OT: Unix sistema operativo
+    - GIT su Windows, c'è il terminale BASH
+    - Branch iniziale di repository verrà rinominato da 'master' a 'main'
+    - Approfondire GIT FLOW
+
+## [1.0.0] - 2020-06-16
+### Added 'Tecniche di progettazione e design'
+    - Trasmettere sicurezza al cliente e smarcarsi dai dubbi
+    - Diverse tipologie di siti: diversa area merceologica. Sito verticale è un sito che si occupa di un argomento specifico;
+    orizzontale: tutto e senza specificità
+    - Prima di affrontare un progetto, studiare e documentarsi sul cliente
+    - E-commerce, blog (SEO), portfolio (verticalizzare vita professionale), landing page (con call-to-action), directory (esempio: siteswebdirectory.com)
+    - Ricorsione (informatica): costrutto dove la funzione richiama se stessa
+    - Link inbound (mio sito linkato da altri siti per rank Google)
+    - Google è un crawler, spider (ha spazzato via siti di tipo directory)
+    - Inspector o Ispeziona
+    - DOM, nodi, attributi, tag (HTML)
+    - Tag per SEO: title, meta description, h1
+    - Tag semantici: article, header, span, p, footer
+    - Tag itemgroup per accessibilità
+    - Anteprime social: meta property
+    - Console, parametro offuscato (nascosto), sezione Network (Preview): chiamate in background del sito
+    - Network -> Headers: Status code HTTP, parametri Query String    
+    - Postman (tool per API)
+    - User-agent: Identificativo browser
+    - Google Cloud Platform (Analytics, Search Console)
+    - Tools: Gtmetrix.com (non fidarsi al 100%), PageSpeedInsights di Google, SheerSEO (simile ed alternativo ad Analytics)
+    - Dev, Test, Produzione (codice minimizzato)
+    - Il browser renderizza prima di tutto il testo
+    - Elaborazione dei siti dipende dal processore
+
+## [1.0.0] - 2020-06-15
+### Added 'GIT'
+    - Serve tutti i giorni
+    - Simile a un file system
+    - Stackoverflow social network per programmatori per risolvere problemi di programmazione (con sistema di voto per domande e risposta)
+    - Open source: software che si può vedere pubblicamente, che si può testare e si può modificare per apportare migliorie
+    - Ridondanza: più copie abbiamo, minore è la possibilità che abbiamo di perdere i dati
+    - Funzione HASH (crittografia): a qualsiasi input viene generato un output particolare (esempio trasformare una stringa o un file di 1 GB)
+    - Ad una password viene associata la propria HASH (per esempio SHA-1 = 40 caratteri)
+    - Git flow: modello su come nominare e gestire i flussi di lavoro
+    - Principio: avere un grosso problema e scomporlo in quanti più piccoli problemi possibili
+    - Differenze tra repository locale e remoto
+    - 'origin' si riferisce al repository remoto
+    - Graph commit (esempio docente): pallino nero = commit, linee colorate = flussi di lavoro (branch)
+
+## [1.0.0] - 2020-06-09
+### Added 'Tecniche di progettazione e design'
+    - Committare
+    - Atteggiamento con cliente e raccolta informazioni
+    - Strumenti per mappa concettuale (main topic e sub-topic) / Tools online: https://app.diagrams.net/ https://miro.com/
+    - Slug: organizzazione url apprezzata da Google
+    - Logiche di progettazione (per esempio posizione di un button per acquistare); ad ogni azione dell'utente corrisponde una reazione del programma
+    - Tenere conto dei costi: budget cliente, quanto chiediamo
+    - Gestione del tempo: differenze tra giornate lavorative e da calendario
+    - Jira (gestione task), Confluence (gestione documenti)
+    - In caso di difficoltà (per esempio ritardi consegna), argomentare e essere oggettivi
+    - Strumenti da lavoro CRM: software composto da attività, milestones, files, diagramma Gantt, note, team, assegnazione task, ticket
+    - ticket differente da task: il ticket riguarda un malfunzionamento; il task riguarda la programmazione di una nuova funzione (attenzione ai furbetti)
+    - Trello per organizzazione lavoro: sistema a bacheca
+    - Slack, software con chat real-time orientato alla condivisione delle informazioni del proprio lavoro. Può essere integrato con Trello e altre applicazioni di comunicazione
+    - Associazione chiave-valore tramite array
+    - JSON standard per rappresentare i dati
+
+## [1.0.0] - 2020-06-08
+### Added 'Tecniche di progettazione e design'
+    - Chiarezza, trasparenza, evitare fraintendimenti (farsi scrivere tutto quello che serve), via di mezzo tra il professionale e il professionale
+    - Proattività. Si può fare tutto, c'è sempre una soluzione al problema
+    - Dotarsi di tablet o pc portatile per raccogliere appunti, no carta e penna
+    - Proporsi ad una grande azienda: cv bello e chiaro
+    - Curiosità: più tecnologie impariamo, più siamo performanti
+    - Cosa sono DevOps, API, API REST, Sass, Less, JSON
+    - Front end si occupa di ciò che gli arriva dal grafico (per esempio in HTML): precisione al 100% e pazienza
+    - Lavoro tridimensionale: considerare tutti i dispositivi (Responsive)
+    - JQuery è una libreria JS superata (a detta del founder), ma usata dal 90% dei siti globali quindi va studiato
+    - Assimilare bene JS puro, è importante lato programmazione
+    - Pattern MVC (Model-View-Controller)
+    - (Full stack developer) Js (e librerie js), Nodejs e MongoDB connubio che garantisce un ottimo futuro professionale
+    - Lavoro e tempo dedicati dietro alla funzione di un click, da far presente al cliente
+    - Prendersi il giusto tempo per analizzare i vari fattori con il cliente, dimostrarsi meno banali possibili, fregarsene dei clienti onniscienti
+    - Datevi un obiettivo, focus su cosa volete diventare
+    - HTML e CSS si renderizzano lato client (in questo caso browser)
+    - Semplicità: per esempio codice leggero (ottimizzazione)
+    - Collaborare con aziende: aziende medio-grandi sono strutturate in maniera lineare e fai riferimento spesso al team leader
+    - task (compito), qualcosa che vi viene assegnato e ci lavorate per un determinato tempo
+    - Metodologia "agile" per controllare lo status del progetto, non per momitorare il comportamento delle persone,
+    ma per tenere sotto controllo le difficoltà
+    - Sprint sono degli intervalli di tempo (10 gg - 2 settimane) in cui si lavora su un determinato task, le attività vengono a 
+    loro volta suddivise in sotto-task
