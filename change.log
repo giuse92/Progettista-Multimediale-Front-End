@@ -8,14 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added 'Tecniche di progettazione e design'
     - Principi design: da file .psd al front end
     - Style guide
-    - Jakob Nielsen, unico punto di riferimento per certificare varie caratteristiche del sito. Sei principi UX
-    - AFFORDANCE: invito senza alcun tipo di istruzione (esempio bottone call-to-action) con significato (esempio "Clicca qui") e azione;
-    vincoli: spazi nei quali tutto avviene (esempio box)
+    - Jakob Nielsen era anni fa unico punto di riferimento per certificare varie caratteristiche del sito.
+    //
+    - Sei principi UX di Norman e Nielsen:
+    - AFFORDANCE: L’affordance è la relazione fra l’oggetto, per come appare, e come esso possa essere utilizzato
     - FEEDBACK: l'utente deve avere la percezione di aver fatto qualcosa e averne il FEEDBACK
-    - SIGNIFICATO
-    - MAPPING
-    - MODELLO CONCETTUALE
-    - VINCOLI 
+    - SIGNIFICANTE: I significanti segnalano, negli oggetti, quali azioni sono possibili e come eseguirle
+    - MAPPING: Il principio della mappatura si riferisce alla progettazione di controlli, in modo tale che riflettano il modo in cui si comportano, o i risultati ottenuti usandoli
+    - MODELLO CONCETTUALE: un modello concettuale è la spiegazione, di solito molto semplificata, di come funziona una cosa
+    - VINCOLI:  vanno a definire i paletti e gli obblighi che un designer deve rispettare per guidare l’azione e facilitare l’interpretazione
+    //     
     - Consistenza è la coerenza con la quale viene presentata un'interfaccia, in sostanza far capire all'utente come muoversi
     - Semplicità per arrivare a tutti, per esempio ridurre l'aspetto tecnico a livelli minimi
     - Tool di prototipazione: Photoshop, Sketch (wireframe)
