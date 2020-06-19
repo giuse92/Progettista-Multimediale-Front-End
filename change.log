@@ -5,6 +5,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.0.0] - 2020-06-18
+### Added 'HTML5'
+    - Linguaggio di mark-up, non di programmazione. Struttura la pagina web
+    - <!DOCTYPE html> tag che specifica HTML5 all'interno del browser
+    - Identazione permette di poter leggere la pagina in maniera chiara 
+    - W3C definisce lo standard per il corretto sviluppo dell' HTML w3.org
+    - HTML5 è mobile first, cambiando l'approccio di sviluppo
+    - Accessibilità ARIA, attributi DATA-*, API mobile
+    - IDE, browser, debug, controllo e validazione di markup (validator.w3.org)
+    - Non tutti i browser interpretano i comandi allo stesso modo, testare il proprio lavoro su diversi browser // Risorse (w3counter.com/globalstats.php / w3schools.com/browsers)
+    - Edge diventato simile a Chrome, attenzione a Safari
+    - CDN è un sistema di server distribuiti in tutto il mondo per velocizzare la connessione
+    - Cache client e lato server
+    - Rendering del browser
+    - Un solo H1 per pagina
+
+
+## [1.0.0] - 2020-06-18
 ### Added 'Tecniche di progettazione e design'
     - Principi design: da file .psd al front end
     - Style guide
