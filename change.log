@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2020-06-18
+## [1.0.0] - 2020-06-19
 ### Added 'HTML5'
     - Linguaggio di mark-up, non di programmazione. Struttura la pagina web
     - <!DOCTYPE html> tag che specifica HTML5 all'interno del browser
