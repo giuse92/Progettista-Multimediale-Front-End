@@ -4,6 +4,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-06-22
+### Added 'CSS3'
+    - Test su console: cancellato tag head per vedere struttura html senza css associato
+    - CSS inline: direttamente scritti nell'HTML (SCONSIGLIATO)
+    - CSS rende il sito visivamente accettabile ed è importante per il posizionamento dei blocchi
+    - 1996: css / 1998: css2 (responsive per i palmari industriali) / CSS3: funzionalità suddivise per micro-sezioni
+    - CSS sostanzialmente è utilizzato dappertutto
+    - Nel CSS il browser ignora l'errore e va avanti (tipo "colour" e non "color")
+    - Le regole vanno nelle {}, se non chiudo la } è un errore che non viene 'parsato'
+    - Non dimenticare il ; per dividere le regole
+    - Con tag <style> richiamo di allungare il codice e si verificano effetti indesiderati
+    - Nomenclatura file css: style.css, main.css, desktop.css (regole per dispositivi desktop), mobile.css (oer dispositivi mobile)
+    - Richiamare file css esterno metodo migliore per gestire il css
+    - CTRL + F5 aggiorna pagina e CACHE 
+    - Macrocat. font: Serif 'aggraziato, con grazie' (font più abbelliti) e Sans Serif 'senza grazie' (font più crudi)
+    - Il browser ha un default di proprietà, per esempio ha un default legato a 'sans-serif' | chrome://settings/fonts
+    - Utilizziamo Google Fonts - https://fonts.google.com
+    - Non differenze particolari tra @import e link html per importare, ma <link> carica più veloce perchè simultaneo
+    - La regola scritta dopo vince QUASI sempre, se siamo sullo stesso livello di proprietà (per esempio sovrascrivere un ID con un altro colore)
+    - Carattere fullback 'cursive' del font-family - esempio: ignora il Righteous, carica il corsivo
+    - Selettori: tag div per esempio
+    - Classi: class="classe", in css .classe mi seleziona tutte le classi nel mio HTML. Non univoca, indipendente dal tag
+    - Id: è univoco, uno e un solo ID all'interno del mio elemento HTML
+    - Attributi: per esempio disabled, viene visualizzato in grigino per divieto di un'azione (input:disabled)
+    - Attr. globale: '*' seleziona tutto l'html, da usare RARAMENTE
+    - Nomi ID almeno 2 caratteri, nomi classi non iniziare con cifra o trattino
+    - Cascading: 'a cascata'
+    - Inheritance (eredità): se le regole non si sovrascrivono, l'elemento eredita tutte le regole relativo a se stesso
+    - Specificity: in caso di selettori differenti entra in gioco la specificità:
+        Inline style > #ID > .classi:pseudo-classi[attributi] > <tag>::Pseudo-elementi > * > Default del browser
+    - div.classe seleziona i div che hanno 'classe' come classe. Ulteriore esempio di specificità
+    
+
 ## [1.0.0] - 2020-06-19
 ### Added 'HTML5'
     - Linguaggio di mark-up, non di programmazione. Struttura la pagina web

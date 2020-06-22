@@ -1,0 +1,13 @@
+#titolo-pagina {
+    color: green;
+}
+
+h1 {
+    background: red;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+p.testo {
+    font-size: 50px;
+}
