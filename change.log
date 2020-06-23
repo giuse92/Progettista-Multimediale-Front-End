@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-06-23
+### Added 'Tecniche di progettazione e design'
+    - Vecchiume del codice riguarda la degradabilità del codice stesso
+    - GDPR: legge europea del 25 maggio 2018
+        In generale, tutelarsi bene in materia di privacy. Occhi sempre aperti
+        5 principi:
+        Trasparenza: le condizioni di vendita/privacy sono descritte in maniera comprensibile
+        Minimizzazione dati: i dati sono usati per una certa finalità, dati pertinenti
+        Esattezza dei dati: i nostri dati devono essere sempre esatti. Da aggiornare quando necessario
+        Conservazione: dati conservati per un certo periodo di tempo 
+        Chi chiede dati all'utente deve sempre adeguarsi alla GDPR
+        Diritto di accesso, rettifica, portabilità, recesso
+        Nuova figura professionale DPO: Data Protection Officer
+    - Security
+        Attenzione alla vulnerabilità del front-end e back-end
+        Cross-site scripting: javascript per bucare il sito
+        SQL injection: bucare il database                
+
+
 ## [1.0.0] - 2020-06-22
 ### Added 'CSS3'
     - Test su console: cancellato tag head per vedere struttura html senza css associato
