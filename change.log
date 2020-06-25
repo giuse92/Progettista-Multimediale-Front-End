@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-06-25
+### Added 'GIT'
+    - Crittografia asimmetrica: chiave privata e chiave pubblica funzionano sempre assieme
+    - SSH associata al profilo e alla macchina
+    - Hosting GIT: github, bitbucket, gitlab
+    - Tool README - linguaggio Markdown: https://stackedit.io/
+    - License: MIT vs Apache vs GPL
+        Tool creazione license: https://choosealicense.com/
+    
+
 ## [1.0.0] - 2020-06-23
 ### Added 'Tecniche di progettazione e design'
     - Vecchiume del codice riguarda la degradabilità del codice stesso
