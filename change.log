@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-06-26
+### Added 'Tecniche di progettazione e design'
+    - Vue.js: framework (Angular js, React)
+        Si basa sul pattern MVC
+    - Gruppo Facebook 'Fatti di SEO' per discussioni approfondite sul SEO
+    - 'Screaming Frog', 'SEMRush', 'SeoZoom' SEO Tool
+    - Cache: expiration date, aggiornamento delle risorse in locale del sito frequentato
+    - Unminify css tool       
+
+
 ## [1.0.0] - 2020-06-25
 ### Added 'GIT'
     - Crittografia asimmetrica: chiave privata e chiave pubblica funzionano sempre assieme
@@ -138,7 +148,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Tag semantici: article, header, span, p, footer
     - Tag itemgroup per accessibilità
     - Anteprime social: meta property
-    - Console, parametro offuscato (nascosto), sezione Network (Preview): chiamate in background del sito
+    - Console, parametro offuscato (nascosto con delle lettere), sezione Network (Preview): chiamate in background del sito
     - Network -> Headers: Status code HTTP, parametri Query String    
     - Postman (tool per API)
     - User-agent: Identificativo browser
