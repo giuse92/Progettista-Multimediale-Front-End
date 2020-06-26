@@ -68,7 +68,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Id: è univoco, uno e un solo ID all'interno del mio elemento HTML
     - Attributi: per esempio disabled, viene visualizzato in grigino per divieto di un'azione (input:disabled)
     - Attr. globale: '*' seleziona tutto l'html, da usare RARAMENTE
-    - Nomi ID almeno 2 caratteri, nomi classi non iniziare con cifra o trattino
+    - Nomenclatura:
+        -- FARE 
+            almeno 2 caratteri
+            iniziare con una lettera o un underscore_ o un trattino-
+        -- NON FARE 
+            non iniziare con un numero, due trattini-- o trattino- seguito da numero
+
     - Cascading: 'a cascata'
     - Inheritance (eredità): se le regole non si sovrascrivono, l'elemento eredita tutte le regole relativo a se stesso
     - Specificity: in caso di selettori differenti entra in gioco la specificità:
