@@ -11,3 +11,11 @@ h1 {
 p.testo {
     font-size: 50px;
 }
+
+h1.testo {
+    color: yellow;
+    border: 1px dotted blue;
+    border-radius: 2em;
+    width: fit-content;
+    padding: 5px;
+}
