@@ -4,6 +4,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-06-29
+### Added 'HTML5'
+    - HTML non è case-sensitive, cioè non fa differenza tra minuscolo e maiuscolo, però è raccomandato il minuscolo
+    - Attributi:
+        alt -> SEO e accessibilità
+        title -> SEO
+    - em è un'unità di misura del carattere. 1em = 16px
+    - Non utilizzare <p> per andare a capo (<br> o <hr>), solo per dividere in paragrafi
+    - <pre> rispetta gli "a capo" che ho nel testo del codice
+    - Semantica, in ottica SEO
+        <strong> -> indica maggiore forza e peso del contenuto
+        <em> -> enfatizzazione della parola
+        <small> -> testo piccolo
+        <mark> -> evidenzia
+        <del> -> testo barrato -- <del datetime="anno_mese_giorno"> per aggiungere la data della cancellazione
+        <ins> -> aggiunta
+        <sub> -> pedice
+        <sup> -> apice
+        <blockquote cite="_fonte_esterna_"> -> citazione senza subire penalizzazioni da Google
+        <q> -> per citazione con breve testo
+        <cite> -> citazioni nel contesto artistico
+        <abbr title="_nome_completo_"> -> abbreviazione
+        <address> -> indirizzo
+        <bdo dir="rtl"> -> direzione 'right to left', testo al contrario da dx a sx
+        <code> -> formattato come riga di codice
+    - Buona norma inserire commenti nel testo, per spiegare/ricordarci cosa abbiamo fatto
+
+
 ## [1.0.0] - 2020-06-26
 ### Added 'Tecniche di progettazione e design'
     - Vue.js: framework (Angular js, React)
