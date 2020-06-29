@@ -29,7 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         <address> -> indirizzo
         <bdo dir="rtl"> -> direzione 'right to left', testo al contrario da dx a sx
         <code> -> formattato come riga di codice
-    - Buona norma inserire commenti nel testo, per spiegare/ricordarci cosa abbiamo fatto
+    - Buona norma inserire commenti nel codice html, per spiegare/ricordarci cosa abbiamo fatto
+        <!-- commento -->
 
 
 ## [1.0.0] - 2020-06-26
