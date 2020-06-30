@@ -36,6 +36,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         <thead> 'testa' della tabella
         <tbody> raccoglie il 'corpo' della tabella
         <tfoot> raccoglie la parte finale della tabella
+    - Block-level e inline-level
+        Block-level (elementi che rappresentano un blocco e vanno a capo):
+            -- <div>
+            -- <hr>
+            -- <p>
+            -- <h1>-<h6>
+            -- <table>
+            e altri 
+        Inline-level (elementi in linea che non vanno a capo)
+            -- <a>
+            -- <img>
+            -- <small>
+            -- <br>
+            -- <span>
+            e altri
 
 ## [1.0.0] - 2020-06-29
 ### Added 'HTML5'
