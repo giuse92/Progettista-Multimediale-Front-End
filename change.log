@@ -4,6 +4,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-06-30
+### Added 'HTML5'
+    - Link
+        Attributo target:
+            -- _self è di default, apre nello stesso frame  
+            -- _parent apre il link nel parent frame
+            -- _top apre il link nel body completo della finestra
+            -- _blank apre in una nuova scheda
+        Percorsi assoluti: dominio + parte finale dell'url
+        Percorsi relativi: solo parte finale dell'url
+        href="mailto:indirizzo email" nell'href con indirizzo email apre automaticamente il client predefinito di posta elettronica
+        href="tel:numero di telefono" non è un valore ufficiale ma l'html lo legge e capisce che è un numero di telefono
+    - Bookmark del link
+        href="#Chapter3" soprattutto nei siti One-page, 'salti' all'elemento con id="Chapter3"
+    - Tipologie di immagini, ottimizzate per il web
+        APNG
+        GIF 
+        ICO 
+        JPEG
+        PNG 
+        SVG 
+    - Tabelle <table>
+        Elemento riga: <tr>
+        Elemento colonna: <td>
+        Attributo colspan="2", va occupare ad esempio due colonne
+        Attributo rowspan="3", va occupare ad esempio tre righe
+        <caption> testo
+        <colgroup> raggruppa le colonne
+        <col> per applicare lo stile nelle colonne
+        <thead> 'testa' della tabella
+        <tbody> raccoglie il 'corpo' della tabella
+        <tfoot> raccoglie la parte finale della tabella
+
 ## [1.0.0] - 2020-06-29
 ### Added 'HTML5'
     - HTML non è case-sensitive, cioè non fa differenza tra minuscolo e maiuscolo, però è raccomandato il minuscolo
