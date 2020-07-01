@@ -16,6 +16,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Compatibilità del browser: attualmente tutti o quasi i browser sono compatibili con le regole CSS
     - Box model modifica la struttura dei tag html
         Content - Padding - Border - Margin
+        Margin collapse (vince il box con margin maggiore alto/basso) è una convenzione per evitare che blocchi html occupassero troppo spazio
+        Shorthand properties: per esempio margin per scrivere regole su tutti i lati
+            Padding 
+                -- padding: 15px tutti i lati
+                -- padding: 15px 30px sopra/sotto destra/sinistra
+                -- padding: 15px 25px 35px sopra destra/sinistra sotto
+                -- padding: 15px 25px 35px 65px senso orario da TOP
+    - Link utile per valori default del CSS: https://www.w3schools.com/cssref/css_default_values.asp
+    - Width in percentuale rispetto alla larghezza del blocco genitore
+    - Height in percentuale rispetto al blocco che contiene (NON usare l'altezza in percentuale per evitare problemi di gestione)
+    - box-sizing: border-box tiene conto del padding e border, relativo al problema della larghezza: width + padding + border
+    - 
+     
 
 
 ## [1.0.0] - 2020-06-30
