@@ -1,24 +1,25 @@
 body {
-    margin: 0;
-}
-
-header {
-    margin: 0;
-    background-color: red;
-}
-
-#prima-sezione {
-    border: 2px solid black;
-    margin: 15px;
-    padding: 10px;
-}
-
-#seconda-sezione {
-    border: 2px dotted black;
-    margin: 15px;
-    padding: 10px;
+    margin: 0px
 }
 
 h1 {
+    font-family: sans-serif;
     font-family: 'Righteous', cursive;
+    margin: 0px;
+}
+
+header {
+    background: red;
+    margin-top: 0px;
+    padding: 10px;
+}
+
+.my-section {
+    padding: 20px;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+#second-section {
+    border: 3px dashed black;
 }
