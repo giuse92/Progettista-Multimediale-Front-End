@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         div -> block-level usato come contenitori di altri elementi html
         span -> elemento inline usato come contenitore di un testo
     - Classi e ID
+    - Breadcrump: percorso di navigazione e buono in ottica SEO
     
 
 ## [1.0.0] - 2020-07-01
