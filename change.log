@@ -1,8 +1,25 @@
-# Changelog
+d# Changelog
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2020-07-03
+### Added 'CSS3'
+    - Posizionamento
+        display:inline o block o inline-block o none (https://www.w3schools.com/cssref/pr_class_display.asp)
+        Inline -> padding e margin valgono per dx e sx
+        Inline-block -> diversi blocchi sulla stessa linea
+        display:none -> nasconde l'elemento e lo spazio lasciato viene occupato
+        visibility:hidden -> nasconde l'elemento, ma lo spazio lasciato NON viene occupato
+        calc()-> funzione css che effettua calcoli
+        Caso in cui l'html tiene conto dello spazio tra </div> e <nav>
+        vertical-align sui blocchi che vogliamo allineare verticalmente
+    - Leggere da destra verso sinistra le regole
+        h2 ~ div + p
+    - Pseudo-classi -> :hover :active :focus o :funzione() :nth-child [n-esimo figlio di quell'elememento]  https://developer.mozilla.org/it/docs/Web/CSS/Pseudo-classes
+    - Pseudo-elementi -> ::after
+
 
 ## [1.0.0] - 2020-07-02
 ### Added 'HTML5'

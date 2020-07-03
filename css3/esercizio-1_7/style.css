@@ -1,17 +1,52 @@
-body {
-    margin: 0px
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-    font-family: sans-serif;
-    font-family: 'Righteous', cursive;
-    margin: 0px;
+body {
+    margin: 0px
 }
 
 header {
     background: red;
     margin-top: 0px;
     padding: 10px;
+}
+
+header /*.logo*/ > div { 
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    vertical-align: middle;
+}
+
+header /*.logo*/ > div a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover {
+    color: white;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 137px);
+    vertical-align: middle;    
+}
+
+.main-nav__items {
+    text-align: right;
+    width: 100%;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-family: 'Righteous', cursive;
+    margin: 0px;
 }
 
 .my-section {
