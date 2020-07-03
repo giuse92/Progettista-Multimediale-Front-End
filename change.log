@@ -1,4 +1,4 @@
-d# Changelog
+# Changelog
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -18,7 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Leggere da destra verso sinistra le regole
         h2 ~ div + p
     - Pseudo-classi -> :hover :active :focus o :funzione() :nth-child [n-esimo figlio di quell'elememento]  https://developer.mozilla.org/it/docs/Web/CSS/Pseudo-classes
-    - Pseudo-elementi -> ::after
+    - Pseudo-elementi -> ::before ::after ::first-letter 
+        ::after seleziona spazio DOPO un elemento, fa parte solo dell'elemento a cui si riferisce, ciò che aggiungiamo dopo non è presente nel DOM
+        ::before seleziona spazio PRIMA un elemento, fa parte solo dell'elemento a cui si riferisce, ciò che aggiungiamo dopo non è presente nel DOM
 
 
 ## [1.0.0] - 2020-07-02

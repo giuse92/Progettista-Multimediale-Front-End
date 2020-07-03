@@ -25,7 +25,7 @@ header /*.logo*/ > div a {
 }
 
 .main-nav__item a:hover {
-    color: white;
+    color: blue;
 }
 
 .main-nav {
@@ -41,6 +41,31 @@ header /*.logo*/ > div a {
 
 .main-nav__item {
     display: inline-block;
+}
+
+.main-nav__item a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;    
+}
+
+.call_to_action {
+    border-radius: 2em;
+    border: 2px solid blue;
+}
+
+.call_to_action:hover {
+    background-color: blue;
+    border-color: white;
+}
+
+.call_to_action a:hover {
+    color: red;
+}
+
+.hero img {
+    width: 100%;
 }
 
 h1 {
