@@ -21,6 +21,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Pseudo-elementi -> ::before ::after ::first-letter 
         ::after seleziona spazio DOPO un elemento, fa parte solo dell'elemento a cui si riferisce, ciò che aggiungiamo dopo non è presente nel DOM
         ::before seleziona spazio PRIMA un elemento, fa parte solo dell'elemento a cui si riferisce, ciò che aggiungiamo dopo non è presente nel DOM
+    - Altro concetto sulla specificità: peso della regola, ogni selettore ha il proprio peso quantificato in numero
+        Come ragiona il browser 0.0.0.0
+        Se vuoi fregartene della specificità NON FARLO, ma se vuoi usa !important
 
 
 ## [1.0.0] - 2020-07-02

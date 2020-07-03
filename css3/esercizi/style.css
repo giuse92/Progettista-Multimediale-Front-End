@@ -43,6 +43,19 @@ header /*.logo*/ > div a {
     display: inline-block;
 }
 
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item::after {
+    color: white;
+    content: " | ";
+}
+
+.main-nav__item.call_to_action::after {
+    content: none;
+}
+
 .main-nav__item a {
     display: inline-block;
     padding: 10px;
