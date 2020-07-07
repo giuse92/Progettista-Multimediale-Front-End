@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-07-07
+### Added 'HTML5'
+    - <iframe src="" title=""> incapsula l'html di un'altra pagina all'interno della nostra pagina
+    - File paths: percorsi dei files, raccomandato l'uso di url relativi dove possibile
+    - <head> può contenere i seguenti tag:
+        <style>
+        <link>
+        <meta charset="">, <meta name="keywords" content="kw1, kw2, kw3">, <meta name="description" content="...">, <meta name="author" content="John Doe">
+            <meta http-equiv="refresh" content="30">, <meta name="viewport" content="..."
+    - Layout: tag di tipo semantico (utilizzati in Bootstrap)
+        <header>
+        <nav>
+        <section>
+        <article>
+        <aside>
+        <footer>
+        <details>
+        <summary>
+        <figure> e <figcaption>
+
 ## [1.0.0] - 2020-07-03
 ### Added 'CSS3'
     - Posizionamento
@@ -38,7 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         div -> block-level usato come contenitori di altri elementi html
         span -> elemento inline usato come contenitore di un testo
     - Classi e ID
-    - Breadcrump: percorso di navigazione e buono in ottica SEO
+    - Breadcrumb: percorso di navigazione e buono in ottica SEO
     
 
 ## [1.0.0] - 2020-07-01
