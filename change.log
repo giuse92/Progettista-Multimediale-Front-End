@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-07-08
+### Added 'HTML5'
+    - Form <form>
+        input e tipologia input
+        label e attributi
+        input radio collegati dall'attributo name=""
+        Input di tipo submit è il button del form
+        action="/pagina.php" rappresenta l'azione dopo il click del button submit e la pagina che addetta alla gestione dei dati, collegamento tra front-end e back-end
+        target, stessa funzionalità del link
+        method -> GET (che mostra i dati nel link) e POST (utile nella gestione di dati sensibili, i dati sono maggiormente protetti)
+        select -> dropdown list
+        textarea
+        button -> <button type="button" onclick="alert{'Hello World!'}">Click me!</button>
+        fieldset
+        datalist
+        
+
 ## [1.0.0] - 2020-07-07
 ### Added 'HTML5'
     - <iframe src="" title=""> incapsula l'html di un'altra pagina all'interno della nostra pagina
