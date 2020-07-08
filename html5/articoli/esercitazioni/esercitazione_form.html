@@ -2,12 +2,12 @@
 <html lang="it">
 
 <head>
-    <title>Esercitazione iframe</title>
+    <title>Esercitazione form</title>
     <meta charset="UTF-8">
 </head>
 
 <body>
-    <form action="/action-page.php">
+    <form action="/action-page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
         <fieldset>
             <legend>Dati personali:</legend>
             <!-- Nome e cognome (input text) -->
@@ -55,6 +55,11 @@
             <!-- Commento (text area) -->
             <p>Lasciaci il tuo commento</p>
             <textarea name="commento" rows="4">Scrivi qui il tuo commento</textarea><br>
+            <!-- (range) con funzione js in oninput -->
+            0 <input type="range" id="a" name="a" value="50">
+            100 <br> + <input type="number" id="b" name="b" value="50">
+            = <output name="x" for="a b"></output><br><br>
+            <!-- Button submit -->
             <input type="submit" value="Invia">
         </fieldset>
     </form>
