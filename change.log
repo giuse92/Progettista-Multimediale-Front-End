@@ -8,9 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added 'CSS3'
     - Position e top, right, left, bottom
         static: default
-        relative: sposta l'elemento in relazione al posizionamento normale
+        relative: sposta l'elemento in relazione al posizionamento normale, spazio NON occupato
         fixed: sposta l'elemento in relazione al viewport, lo spazio lasciato dall'elemento viene occupato
-        absolute: in relazione al genitore - statico o non statico - posizionato più vicino
+        absolute: in relazione al primo genitore non statico posizionato più vicino
+        sticky: aggiunto recentemente, quindi problemi di compatibilità con alcuni browser,
+            posiziona l'elemento dopo lo scroll in sostanza
+        tool per compatibilità regole: caniuse.com
+        z-index: asse 3D che si allontana dallo schermo e si avvicina a noi 
+            z-index A > z-index B -> z-index A va a coprire z-index B 
+            z-index di default è = 0
+        "margin: 0 auto" centra il mio blocco funziona solo se setto la width
 
 
 ## [1.0.0] - 2020-07-08
