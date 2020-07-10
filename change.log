@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Supporto dei formati video MP4, WebM e OGG 
         <video> con child <source src="">
     - Supporto dei formati audio MP3, WAV e OGG
+    - Geolocation API
 
 ## [1.0.0] - 2020-07-09
 ### Added 'CSS3'
