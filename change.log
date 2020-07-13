@@ -1,8 +1,25 @@
-# Changelog
+b# Changelog
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2020-07-13
+### Added 'JAVASCRIPT'
+    - Si innesta nel browser
+    - <script></script> all'interno del flusso HTML, di solito va inserito appena prima di </body> (parte finale del body)
+    - Monitorare la compatibilità con altri browser 
+    - Polyfill (https://polyfill.io/)
+    - Gestire il codice js in vari file esterni ci permette di gestire al meglio la logica delle pagine
+    - async, defer
+    - Se richiamo più file js esterni, posso farlo e vale la sequenzialità dei richiami, cioè il primo file richiamato viene di solito eseguito prima
+    - Utilizzando l'attributo src non posso inserire codice all'interno dello stesso tag <script>
+    - Commenti: //in una riga --- /* in più righe  */
+    - Mettere sempre il ; (punto e virgola)
+    - Non usare var, ma 'let' e 'const' che sono parole-chiave attuali
+    - = -> operatore di assegnamento
+    - "use scrict" si mette sempre all'inizio
+
 
 ## [1.0.0] - 2020-07-10
 ### Added 'HTML5'
