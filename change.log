@@ -18,7 +18,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Mettere sempre il ; (punto e virgola)
     - Non usare var, ma 'let' e 'const' che sono parole-chiave attuali
     - = -> operatore di assegnamento
-    - "use scrict" si mette sempre all'inizio
+    - "use strict" si mette sempre all'inizio
+    - Variabile "const" rimane constante appunto nel tempo, che non si possono modificare
+    - Sintassi camel-case per le variabili i cui valori non sono conosciuti a priori e calcolati in run-time
+    - Tipi di dati
+        Range di Number -> da -2^52 a 2^53
+    - Concatenazione
+    - Importanza di `` (backtick)
 
 
 ## [1.0.0] - 2020-07-10
