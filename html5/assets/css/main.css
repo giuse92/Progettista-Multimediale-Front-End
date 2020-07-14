@@ -39,10 +39,15 @@ nav .menu .menu__items, nav .menu .logo, .menu__items li {
     left:15px;
 }
 
+.burger_menu {
+    display: none;
+}
+
 .menu__items li {
     list-style: none;
     padding:20px;
 }
+
 
 .menu__items li a {
     color:white;
@@ -104,8 +109,18 @@ aside {
 .tag{
     background-color: grey;
     padding: 10px;
+    margin: 5px;
+    display: inline-block;
 }
 
+.tag a {
+    text-decoration: none;
+    color: white;
+}
+
+.tag:hover {
+    background-color:darkred;
+}
 .blocco_welcome{
     padding: 30px 20%;
 }
