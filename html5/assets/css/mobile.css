@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+    .blocco_news {
+        display: block;
+        width: 100%;
+    }
+
+    aside {
+        display: block;
+        width: 100%;
+    }
+}
