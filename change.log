@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-07-15
+### Added 'JAVASCRIPT'
+    - Su Internet Explorer potrebbe non funzionare la kw variabile "let" (compatibilità con vecchi browser)
+        Transpiler https://babeljs.io/
+        Polyfill
+    - Scopo di una variabile
+       Con var la variabile non è 'localizzata' (può essere usata al di fuori dell'ambiente in cui è stata creata), ma è raccomandato il let per il contrario
+       Con var posso dichiarare più volte la stessa variabile sovrascrivendo i valori, rispetto a let è più permissiva
+    - Hoisting: "portare su" solo le dichiarazioni delle variabili
+        Js ha la visibilità della variabili anche se ancora non sono state dichiarate
+    - Template literals
+        Quando uso "" (doppie virgolette), inserire /n per forza l'accapo
+        Quando uso `` (backtick) l'accapo viene rappresentato automaticamente
+    - Oggetto
+        new Object() è un 'costruttore' quindi inizializzato con il new
+        persona = {} è un 'oggetto letterale' quindi costruito con le graffe
+
 ## [1.0.0] - 2020-07-14
 ### Added 'CSS3'
     - Class nel body per dare regole in specifiche pagine 
