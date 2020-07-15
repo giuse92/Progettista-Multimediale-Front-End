@@ -1,4 +1,4 @@
-b# Changelog
+# Changelog
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -20,6 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Oggetto
         new Object() è un 'costruttore' quindi inizializzato con il new
         persona = {} è un 'oggetto letterale' quindi costruito con le graffe
+        ciclo for di un oggetto - come si scrive:   for ('let' prop 'in' persona) 
+                                                    {console.log(prop); console.log(persona[prop])}
 
 ## [1.0.0] - 2020-07-14
 ### Added 'CSS3'
