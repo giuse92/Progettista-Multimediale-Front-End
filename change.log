@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-07-16
+### Added 'CSS3'
+    - transform: rotateZ (5deg)
+        translate sposta sugli assi
+        overflow:hidden
+        skew 'rendi obliquo'
+        perspective 'prospettiva'
+    - border-radius
+    - float 'galleggiare'
+        L'elemento si stacca dal DOM e si posiziona 'galleggiando' verso dx o vero sx
+    - transition
+    - animation
+    - flexbox: sistema che permette di posizionare gli elementi
+        display:flex sul parent, gli elementi children diventano 'flex items'
+        flex-wrap:wrap rende responsive il flex
+
 ## [1.0.0] - 2020-07-15
 ### Added 'JAVASCRIPT'
     - Su Internet Explorer potrebbe non funzionare la kw variabile "let" (compatibilità con vecchi browser)

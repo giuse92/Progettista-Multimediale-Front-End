@@ -87,6 +87,28 @@ nav .menu .menu__items, nav .menu .logo, .menu__items li {
     width:100%;
 }
 
+.altri-post {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: row-reverse;
+}
+
+.altri-post .item-1 {
+    background-color:red;
+    height: 300px;
+    width:200px;
+}
+.altri-post .item-2 {
+    background-color:blue;
+    height:200px;
+    width:150px;
+}
+.altri-post .item-3 {
+    background-color:green;
+    width:100px;
+    /*align-self: flex-end;*/
+}
+
 aside {
     display:inline-block;
     width:29%;
