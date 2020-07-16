@@ -90,7 +90,9 @@ nav .menu .menu__items, nav .menu .logo, .menu__items li {
 .altri-post {
     display: flex;
     /*flex-wrap: wrap;*/
-    flex-direction: row-reverse;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .altri-post .item-1 {

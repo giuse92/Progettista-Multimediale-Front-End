@@ -19,6 +19,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - flexbox: sistema che permette di posizionare gli elementi
         display:flex sul parent, gli elementi children diventano 'flex items'
         flex-wrap:wrap rende responsive il flex
+        flex-direction
+        align-items
+        justify-content
+        flex-grow
+    - height: 100vh (viewport height)
+        
 
 ## [1.0.0] - 2020-07-15
 ### Added 'JAVASCRIPT'
