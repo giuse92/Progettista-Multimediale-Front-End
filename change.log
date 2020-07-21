@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-07-21
+### Added 'JAVASCRIPT'
+    - Con gli oggetti, la copia avviene per riferimento (rispetto alla stringa che è valore primitivo)
+        Differenza di comportamento è solo tra dati primitivi e oggetti
+
 ## [1.0.0] - 2020-07-16
 ### Added 'CSS3'
     - transform: rotateZ (5deg)
