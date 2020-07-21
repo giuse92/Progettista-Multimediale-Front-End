@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added 'JAVASCRIPT'
     - Con gli oggetti, la copia avviene per riferimento (rispetto alla stringa che è valore primitivo)
         Differenza di comportamento è solo tra dati primitivi e oggetti
+        Object.assign(omonimo, persona) -> omonimo copia effettiva di persona in maniera 'svincolata', non vale la copia per riferimento
+            -- Oggetto interno ad un oggetto copia per riferimenti anche con Object.assign
+        https://lodash.com/docs/4.17.15#cloneDeep
+        Object.keys(nome oggetto) dà un array con l'elenco delle proprietà di un oggetto 
+        Object.values(nome oggetto) dà un array con l'elenco dei valori delle proprietà di un oggetto
+        Object.entries(nome oggetto) dà un array con sottoinsiemi formati da nome proprietà e valore 
 
 ## [1.0.0] - 2020-07-16
 ### Added 'CSS3'
