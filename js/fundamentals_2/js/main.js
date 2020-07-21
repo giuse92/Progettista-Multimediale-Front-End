@@ -101,7 +101,7 @@ let persona={
       cane: "Fido",
       gatto: "Poldo"
     },
-}
+};
 
 let persona2={};
 
@@ -110,7 +110,7 @@ persona2.cognome=persona.cognome;
 persona2.anni=persona.anni;*/
 //persona2.animali=persona.animali;
 
-for (let prop in persona){
+/*for (let prop in persona){
   persona2[prop]=persona[prop];
   if (typeof prop !== Object){
       //persona2[prop]=persona[prop];
@@ -120,24 +120,20 @@ for (let prop in persona){
       }
 
   }
-}
+}*/
 
-/*for(let prop1 in persona)
-{
-  persona2[prop1]=persona[prop1];
-
-  //persona2.animali={};
-  console.log(prop1);
-  console.log(typeof prop1);
-  if (prop1 == "animali")
-  {
-    console.log("inner");
-    for (let prop in persona.animali)
-    {
-      persona2.animali[prop]=persona.animali[prop];
+for (let prop1 in persona) {
+  if (persona[prop1] !== persona["animali"]) {
+    persona2[prop1] = persona[prop1];
+  } else {
+    persona2.animali = {};
+    for (let prop2 in persona.animali) {
+      persona2.animali[prop2] = persona.animali[prop2]
     }
   }
-}*/
+};
+
+console.log(persona2)
 
 //persona.nome="Franco";
 
@@ -146,5 +142,5 @@ for (let prop in persona){
 
 persona.animali.cane="BAU";
 
-console.log(persona.animali);
-console.log(persona2.animali);
+console.log(persona.animali.cane + " è il nome del cane dell'oggetto persona");
+console.log(persona2.animali.cane + " è il nome del cane dell'oggetto persona2");
