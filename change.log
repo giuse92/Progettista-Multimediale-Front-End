@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         lenght è l'indice più alto (ultimo elemento) + 1 (non è propriamente la "lunghezza" dell'array)
         Queue: coda, ho la possibilità di inserire/rimuovere a capo o alla fine
         Stack, immaginatela come una coda verticale e hai un'azione sulla parte finale
+        Ciclo for semplice dell'array
+        Ciclo for of per EMS6 usato con l'array (Single iterator)
+            Symbol.iterator permette all'array l'uso di for of
 
 
 ## [1.0.0] - 2020-07-21
