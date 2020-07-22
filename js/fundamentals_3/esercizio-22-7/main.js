@@ -58,7 +58,7 @@ console.log(studenti)
     //console.log(objStudente);
     for (prop in objStudente) {
         //console.log(objStudente[prop])
-        divStudenti.innerHTML += objStudente[prop] + "<br>";
+        divStudenti.innerHTML += `<strong>${prop}</strong>: ${objStudente[prop]} <br>`;
     };
 };*/
 
@@ -67,6 +67,6 @@ for (objStudente of studenti) {
     console.log(objStudente);
     for (prop in objStudente) {
         //console.log(objStudente[prop])
-        divStudenti.innerHTML += objStudente[prop] + "<br>";
+        divStudenti.innerHTML += `<strong>${prop}</strong>: ${objStudente[prop]} <br>`;
     };
 };
