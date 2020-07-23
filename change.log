@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - delete mantiene il lenght nonostante cancelli l'elemento dall'array
     - splice (che serve a rimuovere degli elementi) può aiutare ad aggiungere elementi in mezzo all'array
     - slice copia una porzione (o tutti gli elementi) dell'array per valore
+    - [Symbol.isContentSpreadable]:true permette la concatenazione estendibile ad un oggetto array-like
+    - Function viene eseguita se e solo se viene richiamata
+        Di per sè non deve avere dipendenze con valori esterni
 
 ## [1.0.0] - 2020-07-22
 ### Added 'JAVASCRIPT'
