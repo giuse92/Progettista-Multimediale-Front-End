@@ -10,6 +10,7 @@ le prorietà (i valori)
 Il tutto dentro un div getElementByid();*/
 
 let divStudenti = document.getElementById('mostraStudenti');
+let divStudentiRitirati = document.getElementById('studentiRitirati');
 let studenti = [
     {
         nMatricola: 1,
@@ -51,6 +52,9 @@ studenti.push({
 });
 
 console.log(studenti)
+let studentiRitirati = studenti.splice(2, 3)
+
+//
 
 //Ciclo for semplice su array
 /*for (let i = 0; i < studenti.length; i++) {
@@ -70,3 +74,9 @@ for (objStudente of studenti) {
         divStudenti.innerHTML += `<strong>${prop}</strong>: ${objStudente[prop]} <br>`;
     };
 };
+
+for (objStudenteRitirato of studentiRitirati) {
+    for (prop2 in objStudenteRitirato) {
+        divStudentiRitirati.innerHTML += `<strong>${prop2}</strong> : ${objStudenteRitirato[prop2]} <br>`;
+    }
+}
