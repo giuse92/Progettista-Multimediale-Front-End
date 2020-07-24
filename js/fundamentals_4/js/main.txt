@@ -1,0 +1,157 @@
+/*//1.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+
+delete linguaggi[2];
+
+console.log(linguaggi[2]);
+console.log(linguaggi.length);
+console.log(linguaggi);*/
+
+
+/*//2.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+
+
+let removedItems=linguaggi.splice(2, 3);
+
+console.log(linguaggi);
+console.log(removedItems);*/
+
+
+/*//3.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+
+let linguaggiTolti=linguaggi.splice(1, 2, "JavaScript", "Php", "Python");
+
+console.log(linguaggi);
+console.log(linguaggiTolti);*/
+
+
+/*//4.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+
+linguaggi.splice(3, 0, "JavaScript", "Python");
+
+console.log(linguaggi);*/
+
+
+/*//5.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+let linguaggiaCopia=linguaggi.slice();
+
+linguaggi.splice(2,0,"JavaScript");
+console.log(linguaggi);
+console.log(linguaggiaCopia);*/
+
+
+/*//6.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+let primi2linguaggi=linguaggi.slice(0, 1);
+
+console.log(linguaggi);
+console.log(primi2linguaggi);*/
+
+
+/*//7.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+let moltiLinguaggi=linguaggi.concat(["JavaScript", "Php", "Python"]);
+//let moltiLinguaggi=linguaggi.concat("JavaScript", "Php", "Python")
+
+console.log(linguaggi);
+console.log(moltiLinguaggi);*/
+
+/*//7a.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+let linguaggiElingue=linguaggi.concat(["JavaScript", "Php", "Python"], ["Inglese", "Francese"]);
+
+console.log(linguaggi);
+console.log(linguaggiElingue);*/
+/*//7a_ADDED.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+let linguaggi2=["JavaScript", "Php", "Python"];
+let lingue=["Inglese", "Francese"];
+let linguaggiElingue=linguaggi.concat(linguaggi2, lingue);
+
+console.log(linguaggi);
+console.log(linguaggiElingue);*/
+
+/*//7a_ADDED_2.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+let moltiLinguaggi=linguaggi.concat([["Javascrypt", "Python", "Fortran"], ["Inglese", "Francese"]]);
+
+console.log(moltiLinguaggi);*/
+
+/*//7b.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+let linguaggiElingue=linguaggi.concat(["JavaScript", "Php", "Python"], "Tedesco", "Spagnolo");
+
+console.log(linguaggi);
+console.log(linguaggiElingue);*/
+
+
+/*//8.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+
+let linguaggio={
+  0: "JavaScript",
+  length: 1
+};
+
+let linguaggiEOggetto=linguaggi.concat(linguaggio);
+console.log(linguaggiEOggetto); //"C", "C++", "Java", "Ruby", "C#", [object Object]*/
+
+
+/*//9.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+
+let linguaggio={
+  0: "JavaScript",
+  1: "Php",
+  [Symbol.isConcatSpreadable]: true,
+  length: 2
+};
+
+/*let linguaggio={
+  cane: "JavaScript",
+  gatto: "Php",
+  [Symbol.isConcatSpreadable]: true,
+  length: 2
+};*/
+
+//let linguaggiEOggetto=linguaggi.concat(linguaggio);
+//console.log(linguaggiEOggetto); //"C", "C++", "Java", "Ruby", "C#", "JavaScript", "Php"
+
+/*//9_ADDED.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+
+let linguaggio={
+  cane: "JavaScript",
+  gatto: "Php",
+};
+
+let a=Object.values(linguaggio);
+console.log(a);
+let linguaggiEOggetto=linguaggi.concat(Object.values(linguaggio));
+console.log(linguaggiEOggetto);*/
+
+
+/*//10.
+let linguaggi=["C", "C++", "Java", "Ruby", "C#"];
+
+linguaggi.forEach(function(item, index, linguaggi){
+  console.log(item);
+});
+
+linguaggi.forEach((item, index, array)=>{
+  console.log(item);
+});
+
+
+//11.
+let numeri=[2, 4, 4, 3, 10];
+
+let doppi=numeri.map(function(item, index, array){
+  return item*2;
+});
+
+console.log(doppi);*/
