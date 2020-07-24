@@ -1,0 +1,13 @@
+nav {
+  background-color: red;
+}
+nav ul {
+  width: 30%;
+  margin: 0 auto;
+}
+nav .menu_item {
+  display: inline-block;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

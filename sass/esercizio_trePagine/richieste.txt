@@ -1,0 +1,9 @@
+1) Un piccolo sito compost da 3 pagine html + index richiamabili con le <a>
+Uso obbligatorio di @mixin parametrizzate. Sperimentazione delle parole @import, @use...
+regole annidate. facoltativo.
+
+2) una pagina html dove fate un primt usando getElemntByid di una serie di nemici
+di un videogioco (con un'Array di oggetti "Nemico"). Fate 10 nemici totali.
+UN secondo stamp fate vedere 5 che partono dell'indice 2.
+Create un secondo Array (Nemici potentissimi) 3.
+output dell'unione delle 2 array.

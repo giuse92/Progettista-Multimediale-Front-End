@@ -1,0 +1,17 @@
+$margin-inline: 5px;
+$bg-red: red;
+$centro: 0 auto;
+
+nav {
+    background-color: $bg-red;
+
+    ul {
+        width: 30%;
+        margin: $centro;
+    }
+
+    .menu_item {
+        display: inline-block;
+        margin: $margin-inline;
+    }
+}
