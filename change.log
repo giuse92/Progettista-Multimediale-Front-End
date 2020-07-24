@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-07-24
+### Added 'SASS'
+    - Link utile path: https://katiek2.github.io/path-doc/
+    - .scss .sass : con sass niente parente nè punti e virgola
+    - 'Prompt comandi' -> cd percorso>sass scss:css
+        per aggiornare -> sass --watch scss:css
+        !global -> direttiva per variabile locale per renderla globale
+        Nested rules
+        _button.scss partial, modulino che può essere importato in altri file sass (@mixin è una sorta di routine)
+        mixin_0.scss -> @import "button" (importo il file _button.scss) -> @include simple-button
+        la &:pseudo-classe si riferisce al parent
+        @use importi i file e puoi usare le pseudo funzioni come metodi
+
+
 ## [1.0.0] - 2020-07-23
 ### Added 'JAVASCRIPT'
     - Generator
