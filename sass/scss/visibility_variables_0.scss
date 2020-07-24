@@ -1,0 +1,15 @@
+$global: 300px;
+
+.first {
+  $a: 10px;
+  border-radius: $a;
+  width: $global;
+}
+
+.second {
+  //border-radius: $a; 
+  width: $global;
+  border-radius: 20px;
+  background-color: red;
+  border: 10px solid black;
+}

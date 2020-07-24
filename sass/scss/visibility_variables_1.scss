@@ -1,0 +1,14 @@
+$global: 350px;
+
+.first {
+  $a: 10px !global;
+  border-radius: $a;
+  width: $global;
+  background-color: aquamarine;
+}
+
+.second {
+  border-radius: $a;
+  width: $global;
+  background-color: red;
+}
