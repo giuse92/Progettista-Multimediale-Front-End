@@ -5,4 +5,9 @@
     color: $content-color;
     background-color: $bg-btn;
     margin-top: 10px;
+    
+    &:hover {
+        color: $bg-btn;
+        background-color: $content-color;
+    }
 }

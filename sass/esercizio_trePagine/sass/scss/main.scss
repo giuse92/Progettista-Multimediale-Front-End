@@ -1,3 +1,6 @@
+//Use del partial _container.scss
+@use 'container';
+//Altre regole
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 $margin-inline: 0 15px;
 $bg-red: rgb(245, 48, 48);
@@ -10,6 +13,8 @@ $centro: 0 auto;
 body {
     margin: 0;
 }
+
+//Stile menu di navigazione
 
 nav {
     background-color: $bg-red;
@@ -33,7 +38,20 @@ nav {
     }
 }
 
-//Importo partial _button.scss
+//Include di _container.scss attraverso use ad inizio codice
+.container-index {
+    @include container.buildContainer(500px, 200px, container.$yellow, container.$translate-hover);
+}
+
+.container-a {
+    @include container.buildContainer(300px, 600px, blue, 15px)
+}
+
+.container-b {
+    @include container.buildContainer(450px, 450px, #ccc, 25px)
+}
+
+//Import and include del partial _button.scss
 @import 'button';
 
 .btn-index {
@@ -45,5 +63,5 @@ nav {
 }
 
 .btn-b {
-    @include btn-test('Comic Sans', rgb(4, 197, 4), rgb(1, 77, 1))
+    @include btn-test('Roboto', rgb(4, 197, 4), rgb(1, 77, 1))
 }

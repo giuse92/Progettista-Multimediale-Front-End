@@ -1,0 +1,12 @@
+$yellow: rgb(212, 212, 14);
+$translate-hover: 5px;
+
+@mixin buildContainer ($test-width, $test-height, $bg-container, $translate-hover){
+    width: $test-width;
+    height: $test-height;
+    background-color: $bg-container;
+
+    &:hover {
+        transform: translateY($translate-hover);
+    }
+}

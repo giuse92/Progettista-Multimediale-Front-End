@@ -26,6 +26,33 @@ nav .menu_item a {
   text-decoration: none;
 }
 
+.container-index {
+  width: 500px;
+  height: 200px;
+  background-color: #d4d40e;
+}
+.container-index:hover {
+  transform: translateY(5px);
+}
+
+.container-a {
+  width: 300px;
+  height: 600px;
+  background-color: blue;
+}
+.container-a:hover {
+  transform: translateY(15px);
+}
+
+.container-b {
+  width: 450px;
+  height: 450px;
+  background-color: #ccc;
+}
+.container-b:hover {
+  transform: translateY(25px);
+}
+
 .btn-index {
   font-family: "Roboto";
   padding: 15px;
@@ -33,6 +60,10 @@ nav .menu_item a {
   color: #000;
   background-color: #ccc;
   margin-top: 10px;
+}
+.btn-index:hover {
+  color: #ccc;
+  background-color: #000;
 }
 
 .btn-a {
@@ -43,14 +74,22 @@ nav .menu_item a {
   background-color: orange;
   margin-top: 10px;
 }
+.btn-a:hover {
+  color: orange;
+  background-color: yellow;
+}
 
 .btn-b {
-  font-family: "Comic Sans";
+  font-family: "Roboto";
   padding: 15px;
   font-size: 25px;
   color: #04c504;
   background-color: #014d01;
   margin-top: 10px;
+}
+.btn-b:hover {
+  color: #014d01;
+  background-color: #04c504;
 }
 
 /*# sourceMappingURL=main.css.map */
