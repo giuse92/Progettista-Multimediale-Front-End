@@ -45,5 +45,5 @@ nav {
 }
 
 .btn-b {
-    @include btn-test('Comic Sans', green, rgb(1, 77, 1))
+    @include btn-test('Comic Sans', rgb(4, 197, 4), rgb(1, 77, 1))
 }
