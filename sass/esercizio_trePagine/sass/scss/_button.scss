@@ -1,0 +1,8 @@
+@mixin btn-test($font-family: 'Times New Roman', $content-color:#000, $bg-btn:#ccc) {
+    font-family: $font-family;
+    padding: 15px;
+    font-size: 25px;
+    color: $content-color;
+    background-color: $bg-btn;
+    margin-top: 10px;
+}
