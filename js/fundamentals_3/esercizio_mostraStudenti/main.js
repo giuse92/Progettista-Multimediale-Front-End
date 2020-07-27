@@ -51,7 +51,23 @@ studenti.push({
     cognome: "Fitzpatrick"
 });
 
+//Funzione parametrizzata per aggiungere all'Array studenti
+function aggObjStudente (getNome, getCognome, getNMatricola) {
+    studenti.push({
+        nMatricola: getNMatricola,
+        nome: getNome,
+        cognome:getCognome
+    });
+};
+
+//Richiamo di tre funzioni per aggiungere tre oggetti nell'array studenti
+aggObjStudente("Angus", "Young", studenti.length + 1);
+aggObjStudente("Jimi", "Hendrix", studenti.length + 1);
+aggObjStudente("Jimmy", "Page", studenti.length + 1);
+
 console.log(studenti)
+
+//'Tagliati' tre oggetti
 let studentiRitirati = studenti.splice(2, 3)
 
 //
