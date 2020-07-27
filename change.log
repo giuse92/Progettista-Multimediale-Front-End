@@ -6,9 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2020-07-27
 ### Added 'JAVASCRIPT'
-    - Dentro le graffe di una funzione posso dichiarare in locale una variabile omonima let (shadowing, vince la variabile locale)
+    - ATTENZIONE: Dentro le graffe di una funzione posso dichiarare in locale una variabile omonima let (shadowing, vince la variabile locale)
     - Parametri della funzione sono delle variabili locali alla funzione (con let)
     - kw 'return'
+    - Parallelismo JS Sass
+        @function
+            @function get-your-min($numbers...) i tre punti creano una lista
+        @debug si vede nella console del prompt comandi
+    - Rest parametri
+    - DOM
+        Qualunque elemento diventa un oggetto
+        Con js andiamo a manipolare oggetti, crearli e modificarli
+        Child Nodes ('nodi dei figli')
+            anche il testo all'interno del figlio rappresenta un nodo 
+
 
 
 ## [1.0.0] - 2020-07-24
@@ -23,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         mixin_0.scss -> @import "button" (importo il file _button.scss) -> @include simple-button
         la &:pseudo-classe si riferisce al parent
         @use importi i file e puoi usare le pseudo funzioni come metodi
+    - Stringhe in sass possono essere scritte anche senza virgolette
 
 
 ## [1.0.0] - 2020-07-23
