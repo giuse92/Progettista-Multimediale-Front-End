@@ -1,0 +1,46 @@
+@function set-em($dim) {
+  $em: 1em;
+	@if $dim == small
+	{
+		$em: 10em;
+	}
+	@else if $dim == medium
+	{
+		$em: 50em;
+	}
+	@else if $dim == big
+	{
+		$em: 100em;
+	}
+	@debug "La dimensione scelta è #{$em}";
+	@return $em;
+}
+
+@function get-your-min($numbers...) {
+  // ottiene il numero di elementi presenti nella lista
+  $length: length($numbers);
+
+  // recupera il primo elemento della lista
+  $min: nth($numbers, 1);
+
+  @for $i from 2 through $length {
+
+    $current-value: nth($numbers, $i);
+
+    @if $current-value < $min {
+      $min: $current-value;
+    }
+
+  }
+  // scrive un messaggio nello standard error
+  // Line 20 - DEBUG: Il valore minimo è 1.5
+  @debug "Il valore minimo è #{$min}";
+
+  @return $min;
+}
+
+p {
+  font-size: set-em(big);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: get-your-min(2.5, 3, 2, 4, 12, 1.5, 8 , 6, 1.8, 1); // 1.5
+}
