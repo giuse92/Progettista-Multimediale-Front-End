@@ -1,0 +1,100 @@
+.button {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+  padding: 8px 12px;
+  border: none;
+  font-size: 16px;
+  font-family: "Roboto", Helvetica, sans-serif;
+  width: 100px;
+  transition: all 0.3s cubic-bezier(0.18, 0.9, 0.18, 1);
+  cursor: pointer;
+  background-color: #00b176;
+  color: rgba(255, 0, 255, 0.87);
+}
+.button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.24);
+  background-color: #009865;
+  color: #ff00ff;
+}
+.button:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+  background-color: #007e54;
+  color: #ff00ff;
+}
+.button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  background-color: #009865;
+  transform: scale(0.96);
+}
+
+.button2 {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+  padding: 8px 12px;
+  border: none;
+  font-size: 10em;
+  font-family: "Roboto", Helvetica, sans-serif;
+  width: 100px;
+  transition: all 0.3s cubic-bezier(0.18, 0.9, 0.18, 1);
+  cursor: pointer;
+  background-color: #FF0000;
+  color: rgba(0, 255, 0, 0.87);
+}
+.button2:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.24);
+  background-color: #e60000;
+  color: #00FF00;
+}
+.button2:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+  background-color: #cc0000;
+  color: #00FF00;
+}
+.button2:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  background-color: #e60000;
+  transform: scale(0.96);
+}
+
+.button3 {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+  padding: 8px 12px;
+  border: none;
+  font-size: 1em;
+  font-family: "Roboto", Helvetica, sans-serif;
+  width: 100px;
+  transition: all 0.3s cubic-bezier(0.18, 0.9, 0.18, 1);
+  cursor: pointer;
+  background-color: #ccc;
+  color: rgba(0, 0, 0, 0.87);
+}
+.button3:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.24);
+  background-color: #bfbfbf;
+  color: #000;
+}
+.button3:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+  background-color: #b3b3b3;
+  color: #000;
+}
+.button3:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  background-color: #bfbfbf;
+  transform: scale(0.96);
+}
+
+/*# sourceMappingURL=mixin_2.css.map */

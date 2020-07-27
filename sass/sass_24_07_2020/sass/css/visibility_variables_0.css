@@ -1,0 +1,13 @@
+.first {
+  border-radius: 10px;
+  width: 300px;
+}
+
+.second {
+  width: 300px;
+  border-radius: 20px;
+  background-color: red;
+  border: 10px solid black;
+}
+
+/*# sourceMappingURL=visibility_variables_0.css.map */

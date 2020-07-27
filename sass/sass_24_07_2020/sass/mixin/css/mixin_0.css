@@ -1,0 +1,34 @@
+.button {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+  padding: 8px 12px;
+  font-size: 12px;
+  font-family: "Roboto", Helvetica, sans-serif;
+  width: 100px;
+  transition: all 0.3s cubic-bezier(0.18, 0.9, 0.18, 1);
+  cursor: pointer;
+  background-color: #f74a34;
+  color: rgba(255, 255, 255, 0.87);
+}
+.button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.24);
+  background-color: #f6341b;
+  color: #fff;
+}
+.button:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+  background-color: #ef2309;
+  color: #fff;
+}
+.button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  background-color: #f6341b;
+  transform: scale(0.96);
+}
+
+/*# sourceMappingURL=mixin_0.css.map */

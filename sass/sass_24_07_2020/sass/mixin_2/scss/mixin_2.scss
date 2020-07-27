@@ -1,0 +1,17 @@
+@import "button";
+
+//.button {
+//  @include simple-button;
+//}
+
+.button {
+  @include simple-button(#00b176, #ff00ff, 16px);
+}
+
+.button2 {
+  @include simple-button(#FF0000, #00FF00, 10em);
+}
+
+.button3 {
+  @include simple-button(#ccc, #000, 1em);
+}

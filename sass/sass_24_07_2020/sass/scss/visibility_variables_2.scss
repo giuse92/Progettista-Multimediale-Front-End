@@ -1,0 +1,33 @@
+$a: 2em;
+$bg: red;
+
+div{
+    $b: 500px;
+    width: $b;
+
+    .first {
+        $b: 200px; //sovrascrive il valore della variabile $b.
+        $c: 250px;
+        $d: 10px !global;
+
+        width: $c; //250px
+        height: $b; //200px
+        background-color: $bg;
+        font-size: $a; //2em
+        border-radius: $d; //10px
+    }
+    
+    .second {
+        $bg: blue;
+        height: $b; //200px
+        background-color: $bg;
+        border-radius: $d; //10px,,  
+    }
+
+    p{
+        color: yellow;
+    }
+
+    //$b assumerà il nuovo valore definito in .first, ovvero 200px
+    height: $b; //200px
+}

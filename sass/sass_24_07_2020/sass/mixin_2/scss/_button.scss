@@ -1,0 +1,35 @@
+@mixin simple-button($background-color: #333, $text-color: #fff, $fontsize: 3em) {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.18);
+  padding: 8px 12px;
+  border: none;
+  font-size: $fontsize;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  width: 100px;
+  transition: all 0.3s cubic-bezier(.18,.9,.18,1);
+  cursor: pointer;
+  background-color: $background-color;
+  color: rgba($text-color, 0.87);
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.24);
+    background-color: darken($background-color, 5%);
+    color: $text-color;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.24);
+    background-color: darken($background-color, 10%);
+    color: $text-color;
+  }
+
+  &:active {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+    background-color: darken($background-color, 5%);
+    transform: scale(.96);
+  }
+}

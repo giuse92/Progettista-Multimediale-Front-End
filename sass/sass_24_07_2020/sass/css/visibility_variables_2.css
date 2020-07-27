@@ -1,0 +1,21 @@
+div {
+  width: 500px;
+  height: 200px;
+}
+div .first {
+  width: 250px;
+  height: 200px;
+  background-color: red;
+  font-size: 2em;
+  border-radius: 10px;
+}
+div .second {
+  height: 200px;
+  background-color: blue;
+  border-radius: 10px;
+}
+div p {
+  color: yellow;
+}
+
+/*# sourceMappingURL=visibility_variables_2.css.map */
