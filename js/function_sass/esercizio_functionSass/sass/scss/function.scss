@@ -6,8 +6,8 @@ body {
     margin: 0;
 }
 
-//Funzione per impostare il padding dell'elemento del menù
-@function set-padding($set-pad) {
+//Funzione padding elemento menù
+@function set-item-padding($set-pad) {
     @if $set-pad == padding-5 {
         @return 5px;
     } 
@@ -25,13 +25,92 @@ body {
     }
 }
 
+//Funzione bg menu con sfumature di verde sperimentando lista $greenShades_list con nth
+@function set-bg-menu($set-bg) {
+    $greenShades_list: #b3ffb3 #80ff80 #4dff4d #1aff1a;
+    @if $set-bg == gr_lighter {
+        @return nth($greenShades_list, 1);
+    } 
+    @else if $set-bg == gr_light {
+        @return nth($greenShades_list, 2);
+    }
+    @else if $set-bg == gr_bold {
+        @return nth($greenShades_list, 3);
+    }
+    @else if $set-bg == gr_bolder {
+        @return nth($greenShades_list, 4);
+    } 
+    @else { //se il parametro inserito è errato
+        @return #ccc;
+    }
+}
+
+//Funzione per giustificare .menu__items
+@function set-jc-menu($set-jc) {
+    @if $set-jc == jc_fs {
+        @return flex-start;
+    } 
+    @else if $set-jc == jc_fe {
+        @return flex-end;
+    }
+    @else if $set-jc == jc_sb {
+        @return space-between;
+    }
+    @else if $set-jc == jc_c {
+        @return center;
+    }
+}
+
+//Funzione per flex-direction
+@function set-fd-menu($set-fd) {
+    @if $set-fd == fd_r {
+        @return row;
+    } 
+    @else if $set-fd == fd_rr {
+        @return row-reverse;
+    }
+    @else if $set-fd == fd_c {
+        @return column;
+    }
+    @else if $set-fd == fd_cr {
+        @return column-reverse;
+    }
+}
+
+//Funzione align-items, utile soprattutto se flex-direction risulta una colonna
+@function set-ai-menu($set-ai) {
+    @if $set-ai == ai_c {
+        @return center;
+    } 
+    @else if $set-ai == ai_fe {
+        @return flex-end;
+    }
+    @else {
+        @return flex-start;
+    }
+}
+
+//Menù stilizzato
 .menu__items {
+    width: 100%;
+    margin: 0 auto;
+    padding: set-item-padding(dfdsafdsfda_parametroACaso); //test funzione se inserisco parametro sbagliato, padding: 8px grazie a @else
+    position: fixed;
     display: flex;
+    background-color: set-bg-menu(gr_lighter);
+    justify-content: set-jc-menu(jc_sb);
+    flex-direction: set-fd-menu(fd_r);
+    //align-items: set-ai-menu(ai_c);
 
     .menu_item {
-    padding: set-padding(padding-15);
-    list-style: none;
-    width: fit-content;
-    border: 1px solid black;
+        padding: set-item-padding(padding-15);
+        list-style-type: none;
+    
+        a {
+            text-decoration: none;
+            color: blue;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
     }
 }
