@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.menu__items {
+  display: flex;
+}
+.menu__items .menu_item {
+  padding: 15px;
+  list-style: none;
+  width: fit-content;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=function.css.map */

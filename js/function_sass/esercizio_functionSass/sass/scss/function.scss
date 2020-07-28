@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+//Funzione per impostare il padding dell'elemento del menù
+@function set-padding($set-pad) {
+    @if $set-pad == padding-5 {
+        @return 5px;
+    } 
+    @else if $set-pad == padding-15 {
+        @return 15px;
+    }
+    @else if $set-pad == padding-25 {
+        @return 25px;
+    }
+    @else if $set-pad == padding-40 {
+        @return 40px;
+    } 
+    @else { //se il parametro inserito è errato
+        @return 8px;
+    }
+}
+
+.menu__items {
+    display: flex;
+
+    .menu_item {
+    padding: set-padding(padding-15);
+    list-style: none;
+    width: fit-content;
+    border: 1px solid black;
+    }
+}
