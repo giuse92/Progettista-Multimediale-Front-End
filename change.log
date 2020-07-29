@@ -13,15 +13,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Nel parsing, JS non considera elementi nè parti testuali prima di head e dopo la chiusura del body
     - Ancestor, parent, child, sibling('fratelli')
     - Traversing
-    - childNodes -> collection è un object array-like
+    - childNodes (indipendente dal tipo) -> collection è un object array-like
         parentNode
         firstChild
         lastChild
-            --> siblings
-                    previousSibling
-                    nextSibling
+        siblings
+            previousSibling                    
+            nextSibling
+    - Ereditarietà (di classi o super-classi)
+        Event target
+        Element
+        HTMLElement
+        .constructor.name -> mi dice da che tipo di classe proviene e il nome della classe da cui è stato costruito l'elemento
+        elemento instanceof EventTarget/Node/Element/HTMLElement/HTMLButtonElement/HTMLBodyElement
+        proprietà __proto__ -> __proto__.__proto__ e così via per ereditarietà
+    - console.dir mi mostra la lista di metodi e prorietà riferita ad un determinato oggetto
+
+
+                    
     - Array.from(document.body.childNodes) 'Array.from(oggetto)' metodo statico per generare l'array dall'object array-like della node-list
         quindi preferire un ciclo for of o ciclo for standard con gli iterabili
+    - .children (oggetti dei nodi dei tag) II livello
+        previousElementSibling 
+        nextElementSibling
+        parentElement
+        firstElementChild
+        lastElementChild
+
 
 
 
