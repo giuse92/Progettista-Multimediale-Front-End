@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-07-29
+### Added 'JAVASCRIPT'
+    - Core, DOM, BOM
+    - Tool DOM Viewer http://software.hixie.ch/utilities/js/live-dom-viewer/
+    - Element: tag nel parsing
+    - Text (conta anche gli spazi, gli accapo etc): parte testuale nel parsing dove in genere finisce il "ramo dell'albero" del DOM
+    - Nel parsing, JS non considera elementi nè parti testuali prima di head e dopo la chiusura del body
+    - Ancestor, parent, child, sibling('fratelli')
+    - Traversing
+    - childNodes -> collection è un object array-like
+        parentNode
+        firstChild
+        lastChild
+            --> siblings
+                    previousSibling
+                    nextSibling
+    - Array.from(document.body.childNodes) 'Array.from(oggetto)' metodo statico per generare l'array dall'object array-like della node-list
+        quindi preferire un ciclo for of o ciclo for standard con gli iterabili
+
+
+
 ## [1.0.0] - 2020-07-27
 ### Added 'JAVASCRIPT'
     - ATTENZIONE: Dentro le graffe di una funzione posso dichiarare in locale una variabile omonima let (shadowing, vince la variabile locale)
@@ -14,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
             @function get-your-min($numbers...) i tre punti creano una lista
         @debug si vede nella console del prompt comandi
     - Rest parametri
-    - DOM
+    - Introduzione DOM
         Qualunque elemento diventa un oggetto
         Con js andiamo a manipolare oggetti, crearli e modificarli
         Child Nodes ('nodi dei figli')
