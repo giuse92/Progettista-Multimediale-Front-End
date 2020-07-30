@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM 2</title>
+    </head>
+    <body>
+        <div>A</div>
+        
+        <ul>
+            <li>1.</li>
+            <li>2.</li>
+            <li>3.</li>
+        </ul>
+
+        <div>Z</div>
+
+        <script>
+            //document.documentElement //<html>.
+            //document.head //<head>.
+            //document.body //<body>.
+            
+            if(document.body.hasChildNodes())
+            {
+                console.log("LENGTH "+document.body.childNodes.length);
+
+                for(let i=0;i<document.body.childNodes.length;i++)
+                {
+                    console.log(document.body.childNodes[i]);
+                }
+
+                console.log("FIRSTCHILD: "+document.body.firstChild);
+                console.log("LASTCHILD: "+document.body.lastChild);
+
+                console.log(document.body.firstChild===document.body.childNodes[0]);
+                console.log(document.body.lastChild===document.body.childNodes[document.body.childNodes.length-1]);
+
+                //mextSibling;
+                //previousSibling;
+                //body -> div A -> ... -> div Z
+                //console.log(document.body.lastChild.previousSibling.previousSibling);
+                //let primoFiglioBody=document.body.firstChild;
+                //console.log(primoFiglioBody.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling);
+            }
+        </script>
+
+        <div>Y</div>
+
+        <script>
+            console.log("LENGTH "+document.body.childNodes.length);
+
+            for(let i=0;i<document.body.childNodes.length;i++)
+            {
+                console.log(document.body.childNodes[i]);
+            }
+        </script>
+    </body>
+</html>

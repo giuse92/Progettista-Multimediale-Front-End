@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM 5</title>
+    </head>
+    <body>
+        <div>A</div>
+
+        <ul>
+            <li>1.</li>
+            <li>2.</li>
+            <li>3.</li>
+        </ul>
+
+        <div>Z</div>
+
+        <script>
+            //console.log(document.body.firstElementChild.nextElementSibling.firstElementChild);
+
+            //console.log(document.body.children[0].nextElementSibling.firstElementChild);
+            //console.log(document.body.children[3].previousElementSibling);
+            //console.log(document.body.children[1].firstElementChild);
+
+            for(let childNode of document.body.children)
+            {
+                console.log(childNode);
+            }
+
+            /*for(let childNode in document.body.children)
+            {
+                console.log(childNode+" "+document.body.children[childNode]);
+            }*/
+
+            /*console.log("FIRSTCHILDELEMENT: "+document.body.firstElementChild);
+            console.log("LASTCHILDELEMENT: "+document.body.lastElementChild);
+            console.log("PREVIOUSELEMENTSIBLING: "+document.body.previousElementSibling);
+            console.log("NEXTELEMENTSIBLING: "+document.body.nextElementSibling);
+            console.log("PARENTELEMENT: "+document.body.parentElement);
+
+            console.log(document.documentElement.parentNode); //document.
+            console.log(document.documentElement.parentElement); //null.*/
+        </script>
+    </body>
+</html>

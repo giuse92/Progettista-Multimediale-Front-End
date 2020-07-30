@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM 4</title>
+    </head><body>
+        <div>A</div>
+
+        <ul>
+            <li>1.</li>
+            <li>2.</li>
+            <li>3.</li>
+        </ul>
+
+        <div>Z</div>
+
+        <script>
+            console.log(document.body.parentNode===document.documentElement);
+        
+            console.log(document.head.nextSibling);
+
+            console.log(document.body.previousSibling);
+
+            console.log(document.body.firstChild.nextSibling.nextSibling.nextSibling); //UL.
+
+            console.log(document.body.lastChild.previousSibling.previousSibling); //DIV Z.
+        </script>
+    </body>
+</html>

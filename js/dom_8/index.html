@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM 8 - Live Collections.</title>
+    </head>
+    <body>
+        <div>AAA AAA AAA.</div>
+
+        <script>
+          let divs=document.getElementsByTagName('div');
+          console.log(divs.length); //1.
+        </script>
+        
+        <div>BBB BBB BBB.</div>
+        
+        <script>
+          console.log(divs.length); //2.
+        </script>
+
+        <div>CCC CCC CCC.</div>
+        
+        <script>
+            console.log(divs.length); //3.
+        </script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+//Object <- EventTarget <- Node <- Text, Element, Comment
+//Element <- HTMLElement, SVGElement, XMLElement, ecc.
+//HTMLElement <- HTMLInputElement, HTMLBodyElement, HTMLButtonElement
+
+/*//1.
+let pulsantone1=document.getElementById("myButton");
+console.log(pulsantone1.constructor.name);
+console.log(document.body.constructor.name);*/
+
+/*//1a.
+alert(document.body.firstElementChild.lastElementChild);
+console.log(document.body.firstElementChild.lastElementChild.toString());*/
+
+/*//1b.
+let pulsantone1=document.getElementById("myButton");
+console.log(pulsantone1 instanceof EventTarget); //true
+console.log(pulsantone1 instanceof Node); //true
+console.log(pulsantone1 instanceof Element); //true
+console.log(pulsantone1 instanceof HTMLElement); //true
+console.log(pulsantone1 instanceof HTMLButtonElement); //true
+console.log(pulsantone1 instanceof HTMLBodyElement); //false*/
+
+/*//1c.
+let pulsantone1=document.getElementById("myButton");
+console.log(pulsantone1);
+console.dir(pulsantone1);*/
+
+
+//2.
+console.log(document.nodeType);
+console.log(document.nodeName);
+
+let pulsantone1=document.getElementById("myButton");
+
+console.log(pulsantone1.nodeType);
+console.log(pulsantone1.nodeName);
+
+let textNd=document.body.lastElementChild.previousSibling;
+
+console.log(textNd);
+console.log(textNd.nodeType);
+console.log(textNd.nodeName);
+
+console.log("nodeName: "+pulsantone1.nodeName);
+console.log("tagName: "+pulsantone1.tagName); //From Element.
+
+console.log("nodeName: "+textNd.nodeName);
+console.log("tagName: "+textNd.tagName);
+
+
+/*//3.
+console.log(document.body.innerHTML);
+document.body.innerHTML="<h1>CAVALLO!</h1>";
+console.log(document.body.innerHTML);*/
+
+
+/*//4.
+let ul_li=document.body.firstElementChild.firstElementChild.firstElementChild; //Prima LI.
+console.log(ul_li.innerHTML);
+console.log(ul_li.outerHTML);
+ul_li.outerHTML="<li style='color:#f00;'><a href='#'>SONO IL SOSTITUTO.</a></li>";
+console.log(ul_li.outerHTML); //The same as before.
+ul_li=document.body.firstElementChild.firstElementChild.firstElementChild;
+console.log(ul_li.outerHTML);*/
+
+
+/*//5.
+let textNd=document.body.lastElementChild.previousSibling;
+console.log(textNd.data);
+console.log(textNd.nodeValue);
+textNd.data="cane e gatto";
+console.log(textNd.data);
+console.log(textNd.nodeValue);*/

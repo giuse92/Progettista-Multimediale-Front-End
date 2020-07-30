@@ -1,0 +1,73 @@
+//1.
+//let coloredDivs=document.querySelectorAll('.divColored');
+//let coloredDivs=document.body.querySelectorAll('.divColored');
+
+/*let coloredDivs=document.querySelectorAll('.divColored p');
+
+for(let coloredDiv of coloredDivs)
+{
+    coloredDiv.style.backgroundColor="red";
+
+    console.log(coloredDiv);
+}*/
+
+/*//1a.
+for(let coloredDiv in coloredDivs)
+{
+    //console.log(coloredDivs[coloredDiv] instanceof HTMLDivElement);
+    
+    if(coloredDivs[coloredDiv] instanceof HTMLDivElement)
+    {
+        console.log(coloredDivs[coloredDiv].innerHTML);
+    }
+
+}*/
+
+
+/*//2.
+let coloredDiv=document.querySelector('.divColored');
+
+console.log(coloredDiv.innerHTML);*/
+
+
+/*//3.
+for(let currentChild of document.body.children)
+{
+    if(currentChild.matches('.divColored'))
+    {
+        console.log(currentChild+" is a colored div.");
+    }
+    else
+    {
+        console.log(currentChild+" is NOT a colored div.");
+    }
+}*/
+
+/*3a. //Customized for IE.
+for(let i=0;i<document.body.children.length;i++)
+{
+    currentChild=document.body.children[i];
+
+    if(currentChild.msMatchesSelector('.divColored'))
+    {
+        console.log(currentChild+" is a colored div.");
+    }
+    else
+    {
+        console.log(currentChild+" is NOT a colored div.");
+    }
+}*/
+
+
+/*//4. NO IE.
+let test=document.querySelector('.test');
+console.log(test.closest('.testClosest'));*/
+
+
+/*//5.
+let divs=document.getElementsByTagName('li');
+console.log(divs);
+
+//5a.
+let coloredDivs=document.getElementsByClassName('divColored');
+console.log(coloredDivs);*/

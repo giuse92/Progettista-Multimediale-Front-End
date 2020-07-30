@@ -1,0 +1,26 @@
+//1.
+let divSelected=document.getElementById('firstDiv');
+
+divSelected.firstElementChild.innerHTML="OOOOOO";
+
+//divSelected.innerHTML="AAA";
+
+
+/*//2.
+//let firstDiv=2; //Nasconde l'elemento.
+firstDiv.innerHTML="BBB"; //Variabile globale.
+
+console.log(firstDiv);
+console.log(firstDiv.parentNode);
+console.log(window.firstDiv);*/
+
+
+/*//3.
+//window["second-div"]="cane"; //Sovrascrivo.
+
+console.log(window["second-div"]);
+
+window["second-div"].innerHTML="CCC";
+
+console.log(window["second-div"]);
+console.log(window["second-div"].parentNode);*/
