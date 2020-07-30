@@ -6,14 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2020-07-30
 ### Added 'JAVASCRIPT'
-    - Proprietà per manipolare i nodi
+    - Proprietà
         innerHTML
         outerHTML, sostituire in toto un nodo
         nodeValue e data sono proprietà che restituiscono il contenuto di un nodo testuale
         textContent, testo completo privato dei tag
         
-
-    
+            
 
 ## [1.0.0] - 2020-07-29
 ### Added 'JAVASCRIPT'
