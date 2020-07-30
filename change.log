@@ -11,8 +11,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         outerHTML, sostituire in toto un nodo
         nodeValue e data sono proprietà che restituiscono il contenuto di un nodo testuale
         textContent, testo completo privato dei tag
-        
-            
+        hidden, true o false a seconda del fatto se l'elemento è nascosto o meno
+        getElementByID
+        proprietà oggetto window create automaticamente dalla mappatura
+        window["stringa"]
+        querySelectorAll('tutti i parametri css') -> restituisce una collection array-like
+        querySelector('tutti i parametri css') -> restituisce il primo elemento di quel determinato selettore
+
+    - Live collection: collection che si estende da sola, di pari passo con il parsing, a prescidere dalla posizione del tag script
+        document.getElementsByTagName
+
+    - Static collection:
+        querySelectorAll('tutti i parametri css') -> restituisce una collection array-like
+        querySelector('tutti i parametri css') -> restituisce il primo elemento di quel determinato selettore
+
+    - Gestione tempo - temporizzatore
+        setInterval(funzione, tempo in ms)
+        clearInterval(variabile) -> elimina il setInterval            
 
 ## [1.0.0] - 2020-07-29
 ### Added 'JAVASCRIPT'
