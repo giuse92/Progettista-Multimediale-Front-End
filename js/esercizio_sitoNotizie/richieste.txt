@@ -1,0 +1,32 @@
+Ciao, ragazzi! ecco a voi...
+L'ESERCIZIO PER LE VACANZE.
+STRUTTURARE UN INTERO SITO WEB CHE SI OCCUPI DI NOTIZIE GIORNALISTICHE.
+L'idea è quella di esercitarsi con le funzionalità JavaScript viste a lezione.
+Per questa ragione, vorrei che faceste un unico file index.html i cui contenuti (articoli, intestazioni, ecc.) siano inseriti e
+aggiornati attraverso costrutti programmativi.
+Mi spiego meglio: dovreste inserire 5 pulsanti (tag BUTTON):
+uno per la sezione "Tutte le notizie",
+uno per la sezione "Cronaca nera",
+uno per "Sport",
+uno per "Notize dall'estero" e uno per "Gossip".
+In realtà, se lo desiderate, potete inserire altri pulsanti per eventuali altre sezioni.
+Gli articoli, per esempio, potrebbero essere modalleti con Object e organizzati in Array.
+Di default, aprendo il sito, si ha visibile la sezione "Tutte le notizie".
+Di seguito, tutte le volte che cliccate un pulsante relativo ad una sottosezione, pensate come filtrare
+gli articoli della sezione "Tutte le notizie" per ottenere solo quelli relativi alla sezione selezionata.
+Ai fini dell'esercitazione, sperimentate tutti i sistemi potenziali di filtro che vi vengono in mente.
+Esempio: tramite eventuali identificatori di tipo di notizie associati agli Object che rappresentano gli articoli?
+Oppure, utilizzando i sistemi di traversing del DOM visti a lezione (pensate a querySelectorAll(), per esempio)?
+Sperimentate pure tutto ciò che ritenete sia valido ai fini del completamento dell'esercizio. Insieme, capiremo poi, quali siano le scelte migliori.
+Sarebbe fantastico se, per una sezione a piacere, gli articoli comparissero in maniera graduale a distanza di un secondo l'uno dall'altro,
+utilizzando le funzionalità di temporizzazione viste a lezioni e la proprietà hidden fornita dalla classe HTMLElement.
+Vi chiederei di utilizzare tutte le funzionalità studiate per l'accesso e la modifica delle componenti testuali/HTML dei nodi di tipo sia Element che Text,
+come, ad esempio, innerHTML, outerHTML, textContent per gli Element e data per i Text.
+Sperimentate il numero più alto possibile di proprietà e metodi dei diversi tipi di nodi, cercando anche nella documentazione ufficiale di memorizzare le classi di appartenenza
+di tali metodi e proprietà così da prendere dimestichezza con i concetti di ereditarietà che vi ho spiegato a lezione (pensate anche ai costrutti Prototype e __proto__, quest'ultimo osservato
+ampliamente nella log della console).
+Gli stili che assocerete al sito, riuscite a modellarli prima in Sass e a produrre i css con i costrutti visti a lezione?
+L'unica cosa che non abbiamo visto ancora a lezione (affronteremo gli eventi tornati a settembre) è come gestire, via codice, il click di un pulsante. Niente paura: ad ogni BUTTON, associate alla sua proprietà onclick una funzione da far eseguire, appunto, in risposta al click su di esso. Esempio:
+<button onclick="getGossip()">GOSSIP</button>. Ovviamente, nel vostro file .js, definirete la funzione "function getGossip()".
+Man mano mi vengono in mente dei dettagli, ve li comunicherò qui. Scrivete pure  le vostre domande e i vostri dubbi!
+Buon lavoro a tutti!

@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle&display=swap");
+* {
+  font-family: "News Cycle", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav .logo {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
