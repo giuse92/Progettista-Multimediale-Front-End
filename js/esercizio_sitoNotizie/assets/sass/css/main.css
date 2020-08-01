@@ -12,8 +12,21 @@ nav .logo {
   font-size: 3em;
 }
 
-p {
-  margin: 0;
+#mostraNews {
+  display: flex;
+}
+#mostraNews .articolo {
+  width: 60%;
+  margin: 0 auto;
+}
+#mostraNews .filtro {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+#mostraNews .filtro .filtra-news {
+  margin-bottom: 5px;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */

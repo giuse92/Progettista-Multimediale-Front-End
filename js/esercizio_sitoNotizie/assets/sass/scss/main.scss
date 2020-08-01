@@ -16,6 +16,22 @@ nav {
     }
 }
 
-p {
-    margin: 0;
+#mostraNews {
+    display: flex;
+
+    .articolo {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .filtro {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+
+        .filtra-news {
+            margin-bottom: 5px;
+            font-size: 25px;
+        }
+    }
 }
