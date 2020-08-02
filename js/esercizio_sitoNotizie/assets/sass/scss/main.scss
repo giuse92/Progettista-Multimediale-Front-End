@@ -18,20 +18,28 @@ nav {
 
 #mostraNews {
     display: flex;
+    width: 1024px;
+    margin: 0 auto;
 
     .articoli {
-        width: 50%;
-        margin: 0 auto;
+        width: 80%;
+        border: 1px solid #ccc;
+        padding: 0 20px;
+        margin-right: 5px;
+
+        h2:nth-child(1) {
+            margin: 0;
+        }
     }
-    
+
     .filtro {
+        width: 20%;
         display: flex;
         flex-direction: column;
-        padding: 25px;
 
         .filtra-news {
             margin-bottom: 5px;
-            font-size: 25px;
+            font-size: 15px;
         }
     }
 }
