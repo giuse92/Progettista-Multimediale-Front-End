@@ -31,9 +31,100 @@ nav .logo {
   display: flex;
   flex-direction: column;
 }
-#mostraNews .filtro .filtra-news {
-  margin-bottom: 5px;
+#mostraNews .filtro .filtra-news:nth-child(2) {
+  border: 0;
+  border-radius: 1px;
+  margin: 5px 0;
+  padding: 10px 0;
   font-size: 15px;
+  font-weight: 800;
+  color: #ccc;
+  background-color: red;
+}
+#mostraNews .filtro .filtra-news:nth-child(2):hover {
+  color: red;
+  background-color: #ccc;
+  box-shadow: 0 0 0 3px red;
+}
+#mostraNews .filtro .filtra-news:nth-child(2):focus {
+  background-color: yellow;
+  color: black;
+}
+#mostraNews .filtro .filtra-news:nth-child(3) {
+  border: 0;
+  border-radius: 1px;
+  margin: 5px 0;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: white;
+  background-color: black;
+}
+#mostraNews .filtro .filtra-news:nth-child(3):hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 0 3px black;
+}
+#mostraNews .filtro .filtra-news:nth-child(3):focus {
+  background-color: yellow;
+  color: black;
+}
+#mostraNews .filtro .filtra-news:nth-child(4) {
+  border: 0;
+  border-radius: 1px;
+  margin: 5px 0;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: blue;
+  background-color: #ccc;
+}
+#mostraNews .filtro .filtra-news:nth-child(4):hover {
+  color: #ccc;
+  background-color: blue;
+  box-shadow: 0 0 0 3px #ccc;
+}
+#mostraNews .filtro .filtra-news:nth-child(4):focus {
+  background-color: yellow;
+  color: black;
+}
+#mostraNews .filtro .filtra-news:nth-child(5) {
+  border: 0;
+  border-radius: 1px;
+  margin: 5px 0;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: red;
+  background-color: blue;
+}
+#mostraNews .filtro .filtra-news:nth-child(5):hover {
+  color: blue;
+  background-color: red;
+  box-shadow: 0 0 0 3px blue;
+}
+#mostraNews .filtro .filtra-news:nth-child(5):focus {
+  background-color: yellow;
+  color: black;
+}
+#mostraNews .filtro .filtra-news:nth-child(6) {
+  border: 0;
+  border-radius: 1px;
+  margin: 5px 0;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: azure;
+  background-color: red;
+}
+#mostraNews .filtro .filtra-news:nth-child(6):hover {
+  color: red;
+  background-color: azure;
+  box-shadow: 0 0 0 3px red;
+}
+#mostraNews .filtro .filtra-news:nth-child(6):focus {
+  background-color: yellow;
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */

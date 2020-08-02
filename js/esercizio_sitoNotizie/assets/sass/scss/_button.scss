@@ -1,0 +1,21 @@
+@mixin btn-filtro ($textColor, $bgColor) {
+    border: 0;
+    border-radius: 1px;
+    margin: 5px 0;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 800;
+    color: $textColor;
+    background-color: $bgColor;
+
+    &:hover {
+        color: $bgColor;
+        background-color: $textColor;
+        box-shadow: 0 0 0 3px $bgColor;
+    }
+
+    &:focus {
+        background-color: yellow;
+        color: black;
+    }
+}

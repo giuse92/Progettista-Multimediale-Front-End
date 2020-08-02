@@ -1,4 +1,4 @@
-
+@use 'button';
 //Stile menu navigazione
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
 
@@ -37,9 +37,24 @@ nav {
         display: flex;
         flex-direction: column;
 
-        .filtra-news {
-            margin-bottom: 5px;
-            font-size: 15px;
+        .filtra-news:nth-child(2) {
+            @include button.btn-filtro (#ccc, red)
+        }
+
+        .filtra-news:nth-child(3) {
+            @include button.btn-filtro (white, black)
+        }
+
+        .filtra-news:nth-child(4) {
+            @include button.btn-filtro (blue, #ccc)
+        }
+
+        .filtra-news:nth-child(5) {
+            @include button.btn-filtro (red, blue)
+        }
+
+        .filtra-news:nth-child(6) {
+            @include button.btn-filtro (azure, red)
         }
     }
 }
