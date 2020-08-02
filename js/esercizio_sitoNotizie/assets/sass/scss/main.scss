@@ -50,11 +50,11 @@ nav {
         }
 
         .filtra-news:nth-child(5) {
-            @include button.btn-filtro (red, blue)
+            @include button.btn-filtro ( #006600, #66ff66)
         }
 
         .filtra-news:nth-child(6) {
-            @include button.btn-filtro (azure, red)
+            @include button.btn-filtro ( #e60000, orange)
         }
     }
 }
