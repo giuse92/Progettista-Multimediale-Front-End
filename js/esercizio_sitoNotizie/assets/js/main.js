@@ -251,3 +251,4 @@ function showNotizie(arrName) {//cicli di array in altro array
 //Richiamo funzione con parametro array tutteLeNotizie
 showNotizie(tutteLeNotizie);
 
+//Animazione con temporizzatore per articoli

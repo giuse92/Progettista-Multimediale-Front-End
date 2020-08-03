@@ -28,20 +28,44 @@ nav .logo {
   background-color: black;
   color: white;
 }
+#mostraNews .articoli .cronaca-nera h2 {
+  border-bottom: 1px solid white;
+}
+#mostraNews .articoli .cronaca-nera em::before {
+  content: "Categoria: ";
+}
 #mostraNews .articoli .sport {
   padding: 0 10px;
   background-color: blue;
   color: #ccc;
+}
+#mostraNews .articoli .sport h2 {
+  border-bottom: 1px solid #ccc;
+}
+#mostraNews .articoli .sport em::before {
+  content: "Categoria: ";
 }
 #mostraNews .articoli .notizie-estero {
   padding: 0 10px;
   background-color: #66ff66;
   color: #006600;
 }
+#mostraNews .articoli .notizie-estero h2 {
+  border-bottom: 1px solid #006600;
+}
+#mostraNews .articoli .notizie-estero em::before {
+  content: "Categoria: ";
+}
 #mostraNews .articoli .gossip {
   padding: 0 10px;
   background-color: orange;
   color: #e60000;
+}
+#mostraNews .articoli .gossip h2 {
+  border-bottom: 1px solid #e60000;
+}
+#mostraNews .articoli .gossip em::before {
+  content: "Categoria: ";
 }
 #mostraNews .filtro {
   width: 20%;
