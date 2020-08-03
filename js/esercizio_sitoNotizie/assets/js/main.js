@@ -1,5 +1,6 @@
 //Dichiaro le variabili
 let tutteLeNotizie, cronacaNera, sport, notizieDallEstero, gossip;
+let divArticoloSport;
 
 //Array con oggetti articoli
 cronacaNera = [
@@ -245,10 +246,11 @@ function showNotizie(arrName) {//cicli di array in altro array
                 }
             }
         }
-    }
+    };
 };
 
 //Richiamo funzione con parametro array tutteLeNotizie
 showNotizie(tutteLeNotizie);
 
-//Animazione con temporizzatore per articoli
+//Animazione con temporizzatore per articoli sezione Sport
+divArticoloSport = document.body.querySelectorAll('.articoli div.sport');
