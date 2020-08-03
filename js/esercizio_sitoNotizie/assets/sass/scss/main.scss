@@ -1,4 +1,7 @@
+//Richiamo routine partial
 @use 'button';
+@use 'container';
+
 //Stile menu navigazione
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
 
@@ -27,8 +30,20 @@ nav {
         padding: 0 20px;
         margin-right: 5px;
 
-        h2:nth-child(1) {
-            margin: 0;
+        .cronaca-nera {
+            @include container.newsContainer(black, white);
+        }
+
+        .sport {
+            @include container.newsContainer(blue, #ccc);
+        }
+
+        .notizie-estero {
+            @include container.newsContainer(#66ff66, #006600);
+        }
+
+        .gossip {
+            @include container.newsContainer(orange, #e60000);
         }
     }
 

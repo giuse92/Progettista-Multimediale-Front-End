@@ -23,8 +23,25 @@ nav .logo {
   padding: 0 20px;
   margin-right: 5px;
 }
-#mostraNews .articoli h2:nth-child(1) {
-  margin: 0;
+#mostraNews .articoli .cronaca-nera {
+  padding: 0 10px;
+  background-color: black;
+  color: white;
+}
+#mostraNews .articoli .sport {
+  padding: 0 10px;
+  background-color: blue;
+  color: #ccc;
+}
+#mostraNews .articoli .notizie-estero {
+  padding: 0 10px;
+  background-color: #66ff66;
+  color: #006600;
+}
+#mostraNews .articoli .gossip {
+  padding: 0 10px;
+  background-color: orange;
+  color: #e60000;
 }
 #mostraNews .filtro {
   width: 20%;
