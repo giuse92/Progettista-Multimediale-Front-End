@@ -16,7 +16,8 @@ cronacaNera = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Cronaca nera"
+        categoria: "Cronaca nera",
+        classeCss: "cronaca-nera"
     },
     {
         titolo: "Titolo 2 cronaca nera",
@@ -31,7 +32,8 @@ cronacaNera = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Cronaca nera"
+        categoria: "Cronaca nera",
+        classeCss: "cronaca-nera"
     },
     {
         titolo: "Titolo 3 cronaca nera",
@@ -46,7 +48,8 @@ cronacaNera = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Cronaca nera"
+        categoria: "Cronaca nera",
+        classeCss: "cronaca-nera"
     }
 ];
 
@@ -64,7 +67,8 @@ sport = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Sport"
+        categoria: "Sport",
+        classeCss: "sport"
     },
     {
         titolo: "Titolo 2 sport",
@@ -79,7 +83,8 @@ sport = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Sport"
+        categoria: "Sport",
+        classeCss: "sport"
     },
     {
         titolo: "Titolo 3 sport",
@@ -94,7 +99,8 @@ sport = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Sport"
+        categoria: "Sport",
+        classeCss: "sport"
     }
 ];
 
@@ -112,7 +118,8 @@ notizieDallEstero = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Notizie dall'estero"
+        categoria: "Notizie dall'estero",
+        classeCss: "notizie-estero"
     },
     {
         titolo: "Titolo 2 notizie dall'estero",
@@ -127,7 +134,8 @@ notizieDallEstero = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Notizie dall'estero"
+        categoria: "Notizie dall'estero",
+        classeCss: "notizie-estero"
     },
     {
         titolo: "Titolo 3 notizie dall'estero",
@@ -142,7 +150,8 @@ notizieDallEstero = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Notizie dall'estero"
+        categoria: "Notizie dall'estero",
+        classeCss: "notizie-estero"
     }
 ];
 
@@ -160,7 +169,8 @@ gossip = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Gossip"
+        categoria: "Gossip",
+        classeCss: "gossip"
     },
     {
         titolo: "Titolo 2 notizie gossip",
@@ -175,7 +185,8 @@ gossip = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Gossip"
+        categoria: "Gossip",
+        classeCss: "gossip"
     },
     {
         titolo: "Titolo 3 notizie gossip",
@@ -190,7 +201,8 @@ gossip = [
         Duis facilisis aliquam varius. Duis in lacus sit amet urna tristique vestibulum ac ut felis. Praesent massa metus, tincidunt non velit at, lobortis consequat tortor. 
         Integer est metus, malesuada non nisi eget, mattis bibendum leo. Duis quam purus, gravida a ex a, feugiat vehicula neque. Sed molestie semper est, quis porta ex efficitur
         sit amet. Donec finibus lacinia tortor id pharetra. Nullam aliquam ac sapien vel bibendum. Morbi vestibulum vel enim a volutpat. Proin mattis sollicitudin arcu, quis s</p>`,
-        categoria: "Gossip"
+        categoria: "Gossip",
+        classeCss: "gossip"
     }
 ];
 
@@ -198,32 +210,38 @@ gossip = [
 tutteLeNotizie = [cronacaNera, sport, notizieDallEstero, gossip];
 
 //Funzione per filtrare le notizie per categorie e/o mostrarle tutte
-function showNotizie(arrName) {
+function showNotizie(arrName) {//cicli di array in altro array
     document.getElementsByClassName('articoli')[0].innerHTML = "";
     if (arrName === tutteLeNotizie) {
-        for (arrArticoli of arrName) {
-            for (objArticolo of arrArticoli) {
+        for (let arrArticoli of arrName) {
+            /* Il ciclo for classico mi permette di costruire un div contenitore con la relativa classe giusta per ogni oggetto, 
+            richiamando la proprietà classeCss */
+            for (let i = 0; i < arrArticoli.length; i++) {
+                let objArticolo = arrArticoli[i];
+                document.getElementsByClassName('articoli')[0].innerHTML += `<div class="${objArticolo.classeCss}"></div>`
                 for (prop in objArticolo) {
                     if (prop == 'titolo') {
-                        document.getElementsByClassName('articoli')[0].innerHTML += `<h2>${objArticolo[prop]}</h2>`;
+                        document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `<h2>${objArticolo[prop]}</h2>`;
                     } else if (prop == 'corpo') {
-                        document.getElementsByClassName('articoli')[0].innerHTML += `${objArticolo[prop]}`;
+                        document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `${objArticolo[prop]}`;
                     } else if (prop == 'categoria') {
-                        document.getElementsByClassName('articoli')[0].innerHTML += `<em>${objArticolo[prop]}</em>`;
+                        document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `<em>${objArticolo[prop]}</em>`;
                     }
                 }
             }
         }
     } else {
         document.getElementsByClassName('articoli')[0].innerHTML = "";
-        for (objArticolo of arrName) {
-            for (prop in objArticolo) {
+        for (let i = 0; i < arrName.length; i++) { //stesso ragionamento del commento di sopra
+            let objArticolo = arrName[i];
+            document.getElementsByClassName('articoli')[0].innerHTML += `<div class="${objArticolo.classeCss}"></div>`
+            for (let prop in objArticolo) {
                 if (prop == 'titolo') {
-                    document.getElementsByClassName('articoli')[0].innerHTML += `<h2>${objArticolo[prop]}</h2>`;
+                    document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `<h2>${objArticolo[prop]}</h2>`;
                 } else if (prop == 'corpo') {
-                    document.getElementsByClassName('articoli')[0].innerHTML += `${objArticolo[prop]}`;
+                    document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `${objArticolo[prop]}`;
                 } else if (prop == 'categoria') {
-                    document.getElementsByClassName('articoli')[0].innerHTML += `<em>${objArticolo[prop]}</em>`;
+                    document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `<em>${objArticolo[prop]}</em>`;
                 }
             }
         }

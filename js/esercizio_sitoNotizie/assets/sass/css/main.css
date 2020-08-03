@@ -38,12 +38,13 @@ nav .logo {
   padding: 10px 0;
   font-size: 15px;
   font-weight: bold;
-  color: #ccc;
+  color: white;
   background-color: red;
+  text-transform: uppercase;
 }
 #mostraNews .filtro .filtra-news:nth-child(2):hover {
   color: red;
-  background-color: #ccc;
+  background-color: white;
   box-shadow: 0 0 0 3px red;
 }
 #mostraNews .filtro .filtra-news:nth-child(2):focus {
@@ -60,6 +61,7 @@ nav .logo {
   font-weight: bold;
   color: white;
   background-color: black;
+  text-transform: uppercase;
 }
 #mostraNews .filtro .filtra-news:nth-child(3):hover {
   color: black;
@@ -80,6 +82,7 @@ nav .logo {
   font-weight: bold;
   color: blue;
   background-color: #ccc;
+  text-transform: uppercase;
 }
 #mostraNews .filtro .filtra-news:nth-child(4):hover {
   color: #ccc;
@@ -100,6 +103,7 @@ nav .logo {
   font-weight: bold;
   color: #006600;
   background-color: #66ff66;
+  text-transform: uppercase;
 }
 #mostraNews .filtro .filtra-news:nth-child(5):hover {
   color: #66ff66;
@@ -120,6 +124,7 @@ nav .logo {
   font-weight: bold;
   color: #e60000;
   background-color: orange;
+  text-transform: uppercase;
 }
 #mostraNews .filtro .filtra-news:nth-child(6):hover {
   color: orange;

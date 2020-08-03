@@ -38,7 +38,7 @@ nav {
         flex-direction: column;
 
         .filtra-news:nth-child(2) {
-            @include button.btn-filtro (#ccc, red)
+            @include button.btn-filtro (white, red)
         }
 
         .filtra-news:nth-child(3) {
@@ -54,7 +54,7 @@ nav {
         }
 
         .filtra-news:nth-child(6) {
-            @include button.btn-filtro ( #e60000, orange)
+            @include button.btn-filtro ( #e60000, rgb(255, 165, 0))
         }
     }
 }
