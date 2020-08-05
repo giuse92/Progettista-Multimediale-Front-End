@@ -2,7 +2,7 @@
 let tutteLeNotizie, cronacaNera, sport, notizieDallEstero, gossip;
 let divArticoloSport;
 
-//Array con oggetti articoli
+//Array con oggetti articoli, ogni array rappresenta una sezione
 cronacaNera = [
     {
         titolo: "Titolo 1 cronaca nera",
@@ -207,15 +207,15 @@ gossip = [
     }
 ];
 
-//Array che contiene tutte gli altri array, quindi tutti gli object articoli
+//Array che contiene tutti gli altri array, quindi tutti gli object articoli
 tutteLeNotizie = [cronacaNera, sport, notizieDallEstero, gossip];
 
 //Funzione per filtrare le notizie per categorie e/o mostrarle tutte
 function showNotizie(arrName) {//cicli di array in altro array
-    document.getElementsByClassName('articoli')[0].innerHTML = "";
+    document.getElementsByClassName('articoli')[0].innerHTML = ""; //se premo più volte consecutivamente lo stesso button, questa riga impedisce di clonare le notizie già esistenti
     if (arrName === tutteLeNotizie) {
         for (let arrArticoli of arrName) {
-            /* Il ciclo for classico mi permette di costruire un div contenitore con la relativa classe giusta per ogni oggetto, 
+            /* Il ciclo for classico mi permette di costruire un div contenitore con la relativa classe giusta per ogni oggetto tramite l'index i, 
             richiamando la proprietà classeCss */
             for (let i = 0; i < arrArticoli.length; i++) {
                 let objArticolo = arrArticoli[i];
@@ -233,24 +233,56 @@ function showNotizie(arrName) {//cicli di array in altro array
         }
     } else {
         document.getElementsByClassName('articoli')[0].innerHTML = "";
-        for (let i = 0; i < arrName.length; i++) { //stesso ragionamento del commento di sopra
-            let objArticolo = arrName[i];
-            document.getElementsByClassName('articoli')[0].innerHTML += `<div class="${objArticolo.classeCss}"></div>`
-            for (let prop in objArticolo) {
-                if (prop == 'titolo') {
-                    document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `<h2>${objArticolo[prop]}</h2>`;
-                } else if (prop == 'corpo') {
-                    document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `${objArticolo[prop]}`;
-                } else if (prop == 'categoria') {
-                    document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `<em>${objArticolo[prop]}</em>`;
+        //con if else applico l'animazione solo alla sezione sport
+        if (arrName === sport) {
+            for (let i = 0; i < arrName.length; i++) { //stesso ragionamento del commento di sopra
+                let objArticolo = arrName[i];
+                document.getElementsByClassName('articoli')[0].innerHTML += `<div class="${objArticolo.classeCss}" hidden></div>` //aggiunto attributo hidden in html
+                for (let prop in objArticolo) {
+                    if (prop == 'titolo') {
+                        document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `<h2>${objArticolo[prop]}</h2>`;
+                    } else if (prop == 'corpo') {
+                        document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `${objArticolo[prop]}`;
+                    } else if (prop == 'categoria') {
+                        document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `<em>${objArticolo[prop]}</em>`;
+                    }
+                }
+            };
+            //Animazione con temporizzatore per articoli sezione Sport
+            divArticoloSport = document.body.querySelectorAll('.articoli div.sport');
+            showDiv(divArticoloSport);            
+        } else {
+            for (let i = 0; i < arrName.length; i++) { //stesso ragionamento del commento di sopra
+                let objArticolo = arrName[i];
+                document.getElementsByClassName('articoli')[0].innerHTML += `<div class="${objArticolo.classeCss}"></div>`
+                for (let prop in objArticolo) {
+                    if (prop == 'titolo') {
+                        document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `<h2>${objArticolo[prop]}</h2>`;
+                    } else if (prop == 'corpo') {
+                        document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `${objArticolo[prop]}`;
+                    } else if (prop == 'categoria') {
+                        document.getElementsByClassName(`${objArticolo.classeCss}`)[i].innerHTML += `<em>${objArticolo[prop]}</em>`;
+                    }
                 }
             }
-        }
+        };
     };
 };
 
 //Richiamo funzione con parametro array tutteLeNotizie
 showNotizie(tutteLeNotizie);
 
-//Animazione con temporizzatore per articoli sezione Sport
-divArticoloSport = document.body.querySelectorAll('.articoli div.sport');
+//Animazione e temporizzazione
+function showDiv(getDiv) {
+    let start = 0;
+    let end = getDiv.length;
+    function mostraArticoli() {
+        if (start < end) {
+            getDiv[start].hidden = false;
+            start++;
+        } else {
+            clearInterval(idInterval);
+        }
+    };
+    let idInterval = setInterval(mostraArticoli, 1000);
+};
