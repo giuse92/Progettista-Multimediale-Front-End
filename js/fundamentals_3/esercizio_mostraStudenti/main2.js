@@ -4,12 +4,30 @@ let studentiIscritti = [{
     nome: "insNome",
     cognome: "insCognome",
     matricola: 1
+},
+{
+    nome: "insNome",
+    cognome: "insCognome",
+    matricola: 2
+},
+{
+    nome: "insNome",
+    cognome: "insCognome",
+    matricola: 3
+},
+{
+    nome: "insNome",
+    cognome: "insCognome",
+    matricola: 4
 }], studentiRitirati = [];
 
 for (objStudenteIscritto of studentiIscritti) {
+    let line = `<div class="studente-iscritto">`;
     for (propStudenteIscritto in objStudenteIscritto) {
-        divMostraStudenti.innerHTML += `<strong>${propStudenteIscritto}</strong>: ${objStudenteIscritto[propStudenteIscritto]}<br>`;
+        line += ` <strong>${propStudenteIscritto}</strong>: ${objStudenteIscritto[propStudenteIscritto]}`;
     }
+    line += "</div>"
+    divMostraStudenti.innerHTML += line;
 };
 
 function aggStudente(insNome, insCognome) {
@@ -22,8 +40,11 @@ function aggStudente(insNome, insCognome) {
         matricola: studentiIscritti.length + 1
     };
     for (objStudenteIscritto of studentiIscritti) {
+        let line = `<div class="studente-iscritto">`;
         for (propStudenteIscritto in objStudenteIscritto) {
-            divMostraStudenti.innerHTML += `<strong>${propStudenteIscritto}</strong>: ${objStudenteIscritto[propStudenteIscritto]}<br>`;
+            line += ` <strong>${propStudenteIscritto}</strong>: ${objStudenteIscritto[propStudenteIscritto]}`;
         }
+        line += "</div>";
+        divMostraStudenti.innerHTML += line;
     };
 };
