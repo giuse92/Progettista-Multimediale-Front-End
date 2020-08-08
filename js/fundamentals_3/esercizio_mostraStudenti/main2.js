@@ -1,34 +1,15 @@
 let divMostraStudenti = document.body.firstElementChild;
 let divStudentiRitirati = document.body.lastElementChild.previousElementSibling;
-let studentiIscritti = [{
-    nome: "insNome",
-    cognome: "insCognome",
-    matricola: 1
-},
-{
-    nome: "insNome",
-    cognome: "insCognome",
-    matricola: 2
-},
-{
-    nome: "insNome",
-    cognome: "insCognome",
-    matricola: 3
-},
-{
-    nome: "insNome",
-    cognome: "insCognome",
-    matricola: 4
-}], studentiRitirati = [];
+let studentiIscritti = [], studentiRitirati = [];
 
-for (objStudenteIscritto of studentiIscritti) {
+/*for (let objStudenteIscritto of studentiIscritti) {
     let line = `<div class="studente-iscritto">`;
     for (propStudenteIscritto in objStudenteIscritto) {
         line += ` <strong>${propStudenteIscritto}</strong>: ${objStudenteIscritto[propStudenteIscritto]}`;
     }
     line += "</div>"
     divMostraStudenti.innerHTML += line;
-};
+};*/
 
 function aggStudente(insNome, insCognome) {
     divMostraStudenti.innerHTML = "<h1>Studenti iscritti</h1>";
@@ -39,7 +20,7 @@ function aggStudente(insNome, insCognome) {
         cognome: insCognome,
         matricola: studentiIscritti.length + 1
     };
-    for (objStudenteIscritto of studentiIscritti) {
+    for (let objStudenteIscritto of studentiIscritti) {
         let line = `<div class="studente-iscritto">`;
         for (propStudenteIscritto in objStudenteIscritto) {
             line += ` <strong>${propStudenteIscritto}</strong>: ${objStudenteIscritto[propStudenteIscritto]}`;
@@ -48,3 +29,29 @@ function aggStudente(insNome, insCognome) {
         divMostraStudenti.innerHTML += line;
     };
 };
+
+function rimStudente(ricMatricola, objStudenteRitirato) {
+    if (studentiIscritti.length == 0) {
+        alert('Non ci sono studenti iscritti.')
+    } else {
+        ricMatricola = Number(window.prompt("Inserisci numero", "2"));
+        for (objStudenteIscritto of studentiIscritti) {
+            for (prop in objStudenteIscritto) {
+                if (ricMatricola == objStudenteIscritto.matricola) {
+                    objStudenteRitirato = studentiIscritti.slice(objStudenteIscritto.matricola - 1, objStudenteIscritto.matricola);
+
+                }
+            }
+        };
+        studentiRitirati = studentiRitirati.concat(objStudenteRitirato);
+        divStudentiRitirati.innerHTML = "<h1>Studenti ritirati</h1>";
+        for (let objStudenteRitirato of studentiRitirati) {
+            let line = `<div class="studente-ritirato">`;
+            for (propStudenteRitirato in objStudenteRitirato) {
+                line += ` <strong>${propStudenteRitirato}</strong>: ${objStudenteRitirato[propStudenteRitirato]}`;
+            }
+            line += "</div>";
+            divStudentiRitirati.innerHTML += line;
+        };
+    }
+}
