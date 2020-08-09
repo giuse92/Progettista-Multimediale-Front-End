@@ -44,10 +44,10 @@ function rimStudente(ricMatricola, objStudenteRitirato) {
                 }
             }
         };
+        studentiIscritti.splice(ricMatricola - 1, 1, null);
         studentiRitirati = studentiRitirati.concat(objStudenteRitirato);
         divStudentiRitirati.innerHTML = "<h1>Studenti ritirati</h1>";
         for (let objStudenteRitirato of studentiRitirati) {
-            
             let line = `<div class="studente-ritirato">`;
             for (propStudenteRitirato in objStudenteRitirato) {
                 line += ` <strong>${propStudenteRitirato}</strong>: ${objStudenteRitirato[propStudenteRitirato]}`;
