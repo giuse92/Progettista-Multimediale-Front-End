@@ -1,0 +1,12 @@
+#mostraStudenti {
+  display: flex;
+}
+#mostraStudenti .studente-iscritto {
+  padding: 15px;
+  background-color: #ccc;
+  color: #000;
+  border-radius: 5px;
+  border: 1px dashed #ccc;
+}
+
+/*# sourceMappingURL=main.css.map */

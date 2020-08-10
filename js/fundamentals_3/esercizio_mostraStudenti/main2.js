@@ -34,7 +34,7 @@ function rimStudente(ricMatricola, objStudenteRitirato) {
     if (studentiIscritti.length == 0) {
         alert('Non ci sono studenti iscritti.')
     } else {
-        ricMatricola = Number(window.prompt("Inserisci numero", "2"));
+        ricMatricola = Number(window.prompt("Inserisci numero"));
         for (objStudenteIscritto of studentiIscritti) {
             for (prop in objStudenteIscritto) {
                 if (ricMatricola == objStudenteIscritto.matricola) {
@@ -44,7 +44,7 @@ function rimStudente(ricMatricola, objStudenteRitirato) {
                 }
             }
         };
-        studentiIscritti.splice(ricMatricola - 1, 1, null);
+        studentiIscritti.splice(ricMatricola - 1, 1);
         studentiRitirati = studentiRitirati.concat(objStudenteRitirato);
         divStudentiRitirati.innerHTML = "<h1>Studenti ritirati</h1>";
         for (let objStudenteRitirato of studentiRitirati) {

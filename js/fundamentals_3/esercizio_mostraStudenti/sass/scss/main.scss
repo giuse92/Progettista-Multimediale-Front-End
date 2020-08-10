@@ -1,0 +1,8 @@
+@use 'container';
+
+#mostraStudenti {
+    display: flex;
+    .studente-iscritto {
+        @include container.studenti(#ccc, #000)
+    }
+}
