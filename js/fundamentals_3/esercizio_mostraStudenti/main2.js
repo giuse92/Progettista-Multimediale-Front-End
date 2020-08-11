@@ -41,7 +41,6 @@ function rimStudente(ricMatricola, objStudenteRitirato) {
                     objStudenteRitirato = studentiIscritti.slice(objStudenteIscritto.matricola - 1, objStudenteIscritto.matricola);
                     let classesStudenteIscritto = divMostraStudenti.querySelectorAll('.studente-iscritto');
                     classesStudenteIscritto[objStudenteIscritto.matricola - 1].innerHTML = "";
-                    classesStudenteIscritto[objStudenteIscritto.matricola - 1].className.replace('studente-iscritto', '');
                 }
             }
         };
