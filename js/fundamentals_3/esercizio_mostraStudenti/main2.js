@@ -5,7 +5,7 @@ let studentiIscritti = [], studentiRitirati = [];
 for (let objStudenteIscritto of studentiIscritti) {
     let line = `<div class="studente-iscritto">`;
     for (propStudenteIscritto in objStudenteIscritto) {
-        line += ` <strong>${propStudenteIscritto}</strong>: ${objStudenteIscritto[propStudenteIscritto]}`;
+        line += ` <strong>${propStudenteIscritto}</strong>: ${objStudenteIscritto[propStudenteIscritto]}<br>`;
     }
     line += "</div>"
     divMostraStudenti.innerHTML += line;
@@ -23,7 +23,7 @@ function aggStudente(insNome, insCognome) {
     for (let objStudenteIscritto of studentiIscritti) {
         let line = `<div class="studente-iscritto">`;
         for (propStudenteIscritto in objStudenteIscritto) {
-            line += ` <strong>${propStudenteIscritto}</strong>: ${objStudenteIscritto[propStudenteIscritto]}`;
+            line += ` <strong>${propStudenteIscritto}</strong>: ${objStudenteIscritto[propStudenteIscritto]}<br>`;
         }
         line += "</div>";
         divMostraStudenti.innerHTML += line;
@@ -50,7 +50,7 @@ function rimStudente(ricMatricola, objStudenteRitirato) {
         for (let objStudenteRitirato of studentiRitirati) {
             let line = `<div class="studente-ritirato">`;
             for (propStudenteRitirato in objStudenteRitirato) {
-                line += ` <strong>${propStudenteRitirato}</strong>: ${objStudenteRitirato[propStudenteRitirato]}`;
+                line += ` <strong>${propStudenteRitirato}</strong>: ${objStudenteRitirato[propStudenteRitirato]}<br>`;
             }
             line += "</div>";
             divStudentiRitirati.innerHTML += line;

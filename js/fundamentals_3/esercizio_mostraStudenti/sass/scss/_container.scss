@@ -1,7 +1,12 @@
 @mixin studenti ($bgColor, $textColor) {
+    display: inline-block;
+    margin: 0 5px 5px 0;
     padding: 15px;
     background-color: $bgColor;
     color: $textColor;
     border-radius: 5px;
-    border: 1px dashed #ccc;
+
+    &:hover {
+        box-shadow: 0 0 0 1px $textColor;
+    }
 }

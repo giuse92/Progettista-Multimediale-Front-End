@@ -1,8 +1,13 @@
 @use 'container';
 
 #mostraStudenti {
-    display: flex;
     .studente-iscritto {
-        @include container.studenti(#ccc, #000)
+        @include container.studenti(green, #000)
+    }
+}
+
+#studentiRitirati {
+    .studente-ritirato {
+        @include container.studenti(red, #000)
     }
 }
