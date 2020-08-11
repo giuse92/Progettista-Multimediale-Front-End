@@ -9,6 +9,9 @@
 #mostraStudenti .studente-iscritto:hover {
   box-shadow: 0 0 0 1px #000;
 }
+#mostraStudenti .studente-iscritto:empty {
+  display: none;
+}
 
 #studentiRitirati .studente-ritirato {
   display: inline-block;
@@ -20,6 +23,9 @@
 }
 #studentiRitirati .studente-ritirato:hover {
   box-shadow: 0 0 0 1px #000;
+}
+#studentiRitirati .studente-ritirato:empty {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
