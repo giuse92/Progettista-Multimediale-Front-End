@@ -31,7 +31,7 @@ function aggStudente(insNome, insCognome) {
 };
 
 function rimStudente(ricMatricola, objStudenteRitirato) {
-    if (studentiIscritti.length == 0) {
+    if (studentiIscritti.length == 0 || studentiIscritti.every(checkAllUndefined)) {
         alert('Non ci sono studenti iscritti.')
     } else {
         ricMatricola = Number(window.prompt("Inserisci numero"));
@@ -58,4 +58,8 @@ function rimStudente(ricMatricola, objStudenteRitirato) {
             }
         };
     }
+}
+
+function checkAllUndefined(element) {
+    return element == undefined;
 }
