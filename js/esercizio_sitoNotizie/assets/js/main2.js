@@ -11,6 +11,8 @@ document.body.innerHTML = `<!-- Menù navigazione -->
 
 let sectionMostraNews = document.getElementById('mostraNews');
 let divArticoli = sectionMostraNews.firstElementChild;
+
+//Array unico di articoli Object
 let tutteLeNotizie = [
     {
         categoria: "sport",
@@ -146,6 +148,7 @@ let tutteLeNotizie = [
     },
 ]
 
+//Ciclo for per mostrare tutte le notizie di default
 for (let i = 0; i < tutteLeNotizie.length; i++) {
     let objArticolo = tutteLeNotizie[i];
     let line = `<div class="`;
@@ -161,3 +164,50 @@ for (let i = 0; i < tutteLeNotizie.length; i++) {
     line += `</div>`;
     divArticoli.innerHTML += line;
 }
+
+function filtraNews(strIndicatore) {
+    if (strIndicatore == "tutteLeNotizie") {
+        divArticoli.innerHTML = "";
+        for (let i = 0; i < tutteLeNotizie.length; i++) {
+            let objArticolo = tutteLeNotizie[i];
+            let line = `<div class="`;
+            for (prop in objArticolo) {
+                if (prop == "categoria") {
+                    line += `${objArticolo[prop]}">`;
+                } else if (prop == "titolo") {
+                    line += `<h2>${objArticolo[prop]}</h2>`
+                } else if (prop == "paragrafi") {
+                    line += `${objArticolo[prop]}`
+                }
+            }
+            line += `</div>`;
+            divArticoli.innerHTML += line;
+        }
+    } else {
+        divArticoli.innerHTML = "";
+        for (objArticolo of tutteLeNotizie) {
+            let line = `<div class="`;
+            if (objArticolo.categoria == strIndicatore) {
+                for (propArticolo in objArticolo) {
+                    if (propArticolo == "categoria") {
+                        line += `${objArticolo[propArticolo]}">`;
+                    } else if (propArticolo == "titolo") {
+                        line += `<h2>${objArticolo[propArticolo]}</h2>`
+                    } else if (propArticolo == "paragrafi") {
+                        line += `${objArticolo[propArticolo]}`
+                    }
+                }
+            }
+            line += `</div>`;
+            divArticoli.innerHTML += line;
+        }
+    }
+}
+
+//Creo i button per filtrare le notizie
+let classFiltro = sectionMostraNews.getElementsByClassName('filtro')[0];
+classFiltro.innerHTML += '<button onclick="filtraNews(\'tutteLeNotizie\')" class="filtra-news">Tutte le notizie</button>';
+classFiltro.innerHTML += '<button onclick="filtraNews(\'cronaca-nera\')" class="filtra-news">Cronaca nera</button>';
+classFiltro.innerHTML += '<button onclick="filtraNews(\'sport\')" class="filtra-news">Sport</button>';
+classFiltro.innerHTML += '<button onclick="filtraNews(\'notizie-estero\')" class="filtra-news">Notizie dall\' estero</button>';
+classFiltro.innerHTML += '<button onclick="filtraNews(\'gossip\')" class="filtra-news">Gossip</button>';
