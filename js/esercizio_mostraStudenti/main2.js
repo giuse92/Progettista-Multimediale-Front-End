@@ -35,28 +35,33 @@ function rimStudente(ricMatricola, objStudenteRitirato) {
         alert('Non ci sono studenti iscritti.')
     } else {
         ricMatricola = Number(window.prompt("Inserisci numero"));
-        for (objStudenteIscritto of studentiIscritti) {
-            for (prop in objStudenteIscritto) {
-                if (ricMatricola == objStudenteIscritto.matricola) {
-                    objStudenteRitirato = studentiIscritti.slice(objStudenteIscritto.matricola - 1, objStudenteIscritto.matricola);
-                    let classesStudenteIscritto = divMostraStudenti.querySelectorAll('.studente-iscritto');
-                    classesStudenteIscritto[objStudenteIscritto.matricola - 1].innerHTML = "";
+        console.log(ricMatricola)
+        if (ricMatricola > 0) {
+            for (objStudenteIscritto of studentiIscritti) {
+                for (prop in objStudenteIscritto) {
+                    if (ricMatricola == objStudenteIscritto.matricola) {
+                        objStudenteRitirato = studentiIscritti.slice(objStudenteIscritto.matricola - 1, objStudenteIscritto.matricola);
+                        let classesStudenteIscritto = divMostraStudenti.querySelectorAll('.studente-iscritto');
+                        classesStudenteIscritto[objStudenteIscritto.matricola - 1].innerHTML = "";
+                    }
                 }
-            }
-        };
-        studentiIscritti.splice(ricMatricola - 1, 1, undefined);
-        studentiRitirati = studentiRitirati.concat(objStudenteRitirato);
-        divStudentiRitirati.innerHTML = "<h1>Studenti ritirati</h1>";
-        for (let objStudenteRitirato of studentiRitirati) {
-            if (objStudenteRitirato != undefined) {
-                let line = `<div class="studente-ritirato">`;
-                for (propStudenteRitirato in objStudenteRitirato) {
-                    line += ` <strong>${propStudenteRitirato}</strong>: ${objStudenteRitirato[propStudenteRitirato]}<br>`;
+            };
+            studentiIscritti.splice(ricMatricola - 1, 1, undefined);
+            studentiRitirati = studentiRitirati.concat(objStudenteRitirato);
+            divStudentiRitirati.innerHTML = "<h1>Studenti ritirati</h1>";
+            for (let objStudenteRitirato of studentiRitirati) {
+                if (objStudenteRitirato != undefined) {
+                    let line = `<div class="studente-ritirato">`;
+                    for (propStudenteRitirato in objStudenteRitirato) {
+                        line += ` <strong>${propStudenteRitirato}</strong>: ${objStudenteRitirato[propStudenteRitirato]}<br>`;
+                    }
+                    line += "</div>";
+                    divStudentiRitirati.innerHTML += line;
                 }
-                line += "</div>";
-                divStudentiRitirati.innerHTML += line;
-            }
-        };
+            };
+        } else {
+            alert('Inserire un numero (maggiore di 0)');
+        }
     }
 }
 
