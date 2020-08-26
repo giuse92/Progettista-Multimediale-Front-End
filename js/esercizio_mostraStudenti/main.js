@@ -85,14 +85,20 @@ let studentiRitirati = studenti.splice(2, 3)
 //Ciclo for of per array, ciclo for in per oggetti
 for (objStudente of studenti) {
     console.log(objStudente);
+    let line = `<div class="studente-iscritto">`;
     for (prop in objStudente) {
         //console.log(objStudente[prop])
-        divStudenti.innerHTML += `<strong>${prop}</strong>: ${objStudente[prop]} <br>`;
+        line += `<strong>${prop}</strong>: ${objStudente[prop]} <br>`;
     };
+    line += `</div>`;
+    divStudenti.innerHTML += line;
 };
 
 for (objStudenteRitirato of studentiRitirati) {
+    let line = `<div class="studente-ritirato">`;
     for (prop2 in objStudenteRitirato) {
-        divStudentiRitirati.innerHTML += `<strong>${prop2}</strong> : ${objStudenteRitirato[prop2]} <br>`;
+        line += `<strong>${prop2}</strong> : ${objStudenteRitirato[prop2]} <br>`;
     }
+    line += `</div>`;
+    divStudentiRitirati.innerHTML += line;
 }
