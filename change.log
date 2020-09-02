@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-09-02
+### Added 'JAVASCRIPT'
+    - Manipolare gli stili
+        sia a livelo di attributo class="" sia di style=""
+        elemento.className -> con className sto già gestendo una classe e mi ritorna il nome della classe dell'attributo html
+        elemento.item(0).className -> item() è simile alle [] per accedere alle collection array-like
+        elemento.classList -> un oggetto, una sorta di collection che contiene n classi associate ad un determinato elemento
+            -- add() aggiungo delle classi
+            -- contains() proprietà per classe associata
+            -- remove() rimuove le classi
+            -- toggle(), attiva (se la classe non c'è) o disattiva (se la classe c'è) una classe
+    - ! NOT logico
+
+
 ## [1.0.0] - 2020-09-01
 ### Added 'JAVASCRIPT'
     - Discussione esercizio vacanze estive
