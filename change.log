@@ -15,6 +15,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
             -- contains() proprietà per classe associata
             -- remove() rimuove le classi
             -- toggle(), attiva (se la classe non c'è) o disattiva (se la classe c'è) una classe
+        elemento.style -> manipoliamo l'attributo style (le proprietà oggetto per manipolare lo stile usano il camelCase)
+            -- width
+            -- height
+            -- display
+            -- backgroundColor
+            -- textCss = "" -> testo in stringa dell'attributo style che va a sostituire il testo dello style
+        elemento.setAttribute("style", "") -> questo è un'istruzione che viene usato anche per impstare attributi html
+        getComputedStyle(elemento) -> mi restituisce un oggetto con info delle regole di stile applicate all'oggetto html e tiene conto anche dei valori di default,
+        quindi tutto il codice computato sul tutto il CSS
     - ! NOT logico
 
 
