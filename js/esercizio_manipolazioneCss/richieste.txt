@@ -1,0 +1,4 @@
+Ciao ragazzi, come esercitazione sugli argomenti visti a lezione oggi, vi chiederei di sperimentare l’uso delle proprietà className, classList e style (oltre che style.cssText e variante con setAttribute(‘style’, ...).
+Potreste integrare, per esempio, esercitazioni già fatte in precedenza oppure creare semplici pagine html che vi permettano di avere elementi su cui operare con gli stili.
+Lasciate in sospeso il metodo getComputedStyle(), per il quale preferisco farvi vedere esercitazioni aggiuntive che vi sto preparando per integrare/dettagliare la spiegazione di oggi.
+Per ogni dubbio, chiedere pure.

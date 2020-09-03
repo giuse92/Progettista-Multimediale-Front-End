@@ -5,6 +5,38 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.0.0] - 2020-09-02
+### Added 'Sicurezza sul lavoro'
+    - Sicurezza: DLGS 81/2008 o Testo unico
+    - Protezione fisica (infortunio o malattia professionale) e psicologica
+    - Malattia professionale deriva dall'azienda
+    - Psicologica (Stress da lavoro correlato)
+    - Volontario, stagista, tirocinante (tirocinio non a seguito di un corso di formazione), contratto
+    - Criteri principali
+        1) Il lavoratore deve essere protetto da 'DPC (dispositivi di protezione collettiva)' e da
+        'DPI (dispositivi di protezione individuale)', ma il 'collettivo è più importante di quello individuale' (grembiule di cuoio macellaio);
+        fornito dal datore di lavoro
+        2) Lavorato informato, 'formato' e addestrato
+            Formazione: 'docente, registro, quiz con valutazione, attestato'
+            Formazione parte teorica e addestramento parte pratica
+            Formato in base al rischio (probabilità statistica e prognosi):
+                basso (grafici) 4 + 4, medio (agricoltori - professori) 4 + 8, alto (edili, chimici, metalmeccanici, nucleari) 4 + 12
+            Il 'datore di lavoro' è obbligato a redigere (o un consulente, ma la firma è del datore di lavoro) il 'documento di valutazione dei rischi (DVR)':
+            valuta il rischio di ogni mansione professionale
+            previene i rischi e proteggere
+            'Prevenire': 'coinvolgere tutti i soggetti'
+            'DL aiutato dal RSPP (responsabile del servizio prevenzione e protezione)'
+            RSPP può essere interno (corso) e di fiducia, fa rispettare le norme
+    - Protezione economica: I NA I L (Istituto Nazionale Infortuni sul Lavoro)
+        Lucro cessante (stipendio), prendo lo stipendio ma non lavoro a causa di un infortunio
+        Danno emergente, danno sottitinteso fisico o psicologico che deriva da infortunio o malattia professionale
+        Danno biologico, sofferenze fisiche o psicologiche derivanti da un danno permanente
+            '-- invalidità (Inail riconosce la franchigia)'
+                0% al 5% -> pagato 0
+                6% al 15% -> una tantum
+                16% al 100% -> pensione che varierà a seconda del danno e reddito (max 26k lordi annuali)
+
+
+## [1.0.0] - 2020-09-02
 ### Added 'JAVASCRIPT'
     - Manipolare gli stili
         sia a livelo di attributo class="" sia di style=""
