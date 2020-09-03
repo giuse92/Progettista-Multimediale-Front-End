@@ -8,7 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added 'Sicurezza sul lavoro'
     - Sicurezza: DLGS 81/2008 o Testo unico
     - Protezione fisica (infortunio o malattia professionale) e psicologica
-    - Malattia professionale deriva dall'azienda
+        "infortunio è una lesione (ferita visibile/riscontrabile anche con strumenti) violenta (immediata all'azione) in occasione di lavoro (azienda - trasferte - formazione - inf. in itinere)" 
+        che determina un'inabilità al lavoro temporanea o permanente o morte;
+        Malattia professionale (tabellate) deriva dal lavoro (ci mette del tempo)
+
     - Psicologica (Stress da lavoro correlato)
     - Volontario, stagista, tirocinante (tirocinio non a seguito di un corso di formazione), contratto
     - Criteri principali
@@ -22,14 +25,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
                 basso (grafici) 4 + 4, medio (agricoltori - professori) 4 + 8, alto (edili, chimici, metalmeccanici, nucleari) 4 + 12
             Il 'datore di lavoro' è obbligato a redigere (o un consulente, ma la firma è del datore di lavoro) il 'documento di valutazione dei rischi (DVR)':
             valuta il rischio di ogni mansione professionale
+            Il DL e RSPP ha responsibilità penali (prognosi > 40 gg), civili (ris. danni) e amministrative (multe)
             previene i rischi e proteggere
             'Prevenire': 'coinvolgere tutti i soggetti'
             'DL aiutato dal RSPP (responsabile del servizio prevenzione e protezione)'
             RSPP può essere interno (corso) e di fiducia, fa rispettare le norme
+            MEDICO COMPETENTE (preventive) - cartella sanitaria
+            'RLS (rappresentante dei lavoratori per la sicurezza)'
+                'accede agli ambienti di lavoro'
+                'sentito per la valutazione dei rischi'
+                'vigila sulla realizzazione delle misure di tutela'
+            'Addetto al primo soccorso, chiama 118, nominato da DL'
+            'Addetto al servizio anti-incendio, nominato da DL'
+            PREPOSTO  è il superiore gerarchico che fa rispettare le norme di sicurezza
+            'Il lavoratore osserva le disposizioni impartiti dal DL o dal preposto, utilizzo i dpi, non rimuovere i sistemi di sicurezza'
     - Protezione economica: I NA I L (Istituto Nazionale Infortuni sul Lavoro)
         Lucro cessante (stipendio), prendo lo stipendio ma non lavoro a causa di un infortunio
         Danno emergente, danno sottitinteso fisico o psicologico che deriva da infortunio o malattia professionale
-        Danno biologico, sofferenze fisiche o psicologiche derivanti da un danno permanente
+        Danno biologico, sofferenze fisiche o psicologiche derivanti da un danno permanente, 'paga danni fisici/psicologici ma non paga i danni materiali'
             '-- invalidità (Inail riconosce la franchigia)'
                 0% al 5% -> pagato 0
                 6% al 15% -> una tantum
