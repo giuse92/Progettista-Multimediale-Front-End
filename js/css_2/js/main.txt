@@ -1,0 +1,33 @@
+let div1=document.getElementById('div1');
+
+alert(div1);
+
+
+
+function changeStyle()
+{
+  //console.log(div1.style.width);
+
+  div1.style.width="300px";
+  div1.style.height="300px";
+  div1.style.backgroundColor="#F00";
+  //div1.style.display="initial";
+
+
+
+  div1.style.border="10px solid yellow";
+  /*div1.style.borderWidth="10px";
+  div1.style.borderStyle="solid";
+  div1.style.borderColor="yellow";*/
+  
+  //div1.style.cssText="width:400px;"; //ATTENZIONE!
+  div1.setAttribute("style", "width:400px;");
+}
+
+function hideShow()
+{
+  if(div1.style.display==="")
+    div1.style.display="none";
+  else
+    div1.style.display="";
+}

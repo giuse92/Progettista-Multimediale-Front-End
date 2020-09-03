@@ -1,0 +1,99 @@
+/*//1.
+let div1=document.getElementById('div1');
+
+alert(div1.className);*/
+
+
+//2.
+/*div1 come variabile globale chiamata id.
+
+alert(div1.className);*/
+
+
+/*//3.
+let div1=document.querySelectorAll('.divSize');
+
+alert(div1[0].className);
+alert(div1.item(0).className);*/
+
+/*//3b.
+let div1=document.querySelector('.divSize');
+
+alert(div1.className);*/
+
+//3c.
+//let divs=document.querySelectorAll('div.divSize');
+
+//console.log(divs);
+
+/*for(let div of divs)
+{
+  console.log(div.className);
+}*/
+
+/*for(let i=0;i<divs.length;i++)
+{
+  console.log(divs[i].className);
+}*/
+
+
+//4.
+let div1=document.querySelector('.divSize');
+
+alert(div1.className);
+
+
+
+function changeStyle()
+{
+  div1.className="divSizeLarge";
+}
+
+function addStyle()
+{
+  if(!div1.classList.contains('divRedAndYellow'))
+  {
+    div1.classList.add('divRedAndYellow');
+  }
+
+  /*if(div1.classList.contains('divRedAndYellow')==false)
+  {
+    div1.classList.add('divRedAndYellow');
+  }*/
+
+  /*if(div1.classList.contains('divRedAndYellow'))
+  {
+  }
+  else
+  {
+    div1.classList.add('divRedAndYellow');
+  }*/
+
+  //div1.classList.toggle('divRedAndYellow');
+
+  /*for(let currentClass of div1.classList)
+  {
+    console.log('currentClass '+currentClass);
+  }*/
+
+  /*for(let currentClass, i=0; i<div1.classList.length; i++)
+  {
+    //currentClass=div1.classList[i];
+    currentClass=div1.classList.item(i);
+
+    console.log('currentClass '+currentClass);
+  }*/
+}
+
+function removeStyle()
+{
+  if(div1.classList.contains('divRedAndYellow'))
+  {
+    div1.classList.remove('divRedAndYellow');
+
+    for(let currentClass of div1.classList)
+    {
+      console.log('currentClass '+currentClass);
+    }
+  }
+}

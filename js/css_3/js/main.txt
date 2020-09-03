@@ -1,0 +1,12 @@
+let div1=document.getElementById('div1');
+
+alert(div1);
+
+
+
+function changeStyle()
+{
+  div1.style.cssText="color:yellow; background-color:black; width:400px; height:800px; border:10px solid green;";
+
+  //div1.setAttribute("style", "color:yellow; background-color:black; width:400px; height:300px; border:10px solid green;");
+}
