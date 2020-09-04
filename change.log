@@ -4,7 +4,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2020-09-02
+## [1.0.0] - 2020-09-04
+### Added 'JAVASCRIPT'
+    - getComputedStyle -> oggetto con le informazioni cssDeclaration in lettura (a prescindere se siano stati definiti in style e in classi)
+        oggetto di SOLA LETTURA 
+        tiene conto della specificità e dell'ereditarietà del CSS
+    - Provare su vari browser (alcune proprietà non funzionano su diversi browser);
+    - Sintassi alternativa
+        esempio: divStyle["margin-left"]
+        esempio: divStyle.getPropertyValue('margin-left')
+    - Pseudo classi o pseudo elementi
+        pseudoDivStyle = getComputedStyle(div1, ':pseudo-classe o ::pseudo-elemento');
+    - parseInt() funzione che restituisce un numero intero da un valore (a prescindere dal tipo)
+    - Creare elementi DOM in run-time
+       let div1 = document.createElement('div') crea l'elemento con tag div, ma ancora non è nel body
+       document.body.append(div1) -> figlio di body in coda rispetto ai figli che sono già presenti
+       let p1 = document.createElement('p');
+       div1.append(p1) -> il p1 quindi <p> diventa figlio dell'elemento div1 <div> precedente
+       append(STRINGA) -> append di un nodo testuale
+       prepend() -> inserisce in testa l'elemento
+       before() -> sibling dell'elemento, inserito appena prima
+       after() -> sibling dell'elemento, inserito appena dopo
+       elemento.replaceWith(parametro) -> rimpiazzo l'elemento associato con l'elemento in parametro
+
+
+
+    
+
+## [1.0.0] - 2020-09-03
 ### Added 'Sicurezza sul lavoro'
     - Sicurezza: DLGS 81/2008 o Testo unico
     - Protezione fisica (infortunio o malattia professionale) e psicologica
