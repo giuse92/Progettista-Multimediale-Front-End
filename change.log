@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
        let p1 = document.createElement('p');
        div1.append(p1) -> il p1 quindi <p> diventa figlio dell'elemento div1 <div> precedente
        append(STRINGA) -> append di un nodo testuale
-       prepend() -> inserisce in testa l'elemento
+       prepend() -> inserisce in testa l'elemento child
        before() -> sibling dell'elemento, inserito appena prima
        after() -> sibling dell'elemento, inserito appena dopo
        elemento.replaceWith(parametro) -> rimpiazzo l'elemento associato con l'elemento in parametro
