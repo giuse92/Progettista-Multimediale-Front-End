@@ -193,7 +193,7 @@ let tutteLeNotizie = [
 ]
 
 //Ciclo for per mostrare tutte le notizie di default
-for (let i = 0; i < tutteLeNotizie.length; i++) {
+/*for (let i = 0; i < tutteLeNotizie.length; i++) {
     let objArticolo = tutteLeNotizie[i];
     let line = `<div class="`;
     for (prop in objArticolo) {
@@ -207,7 +207,25 @@ for (let i = 0; i < tutteLeNotizie.length; i++) {
     }
     line += `</div>`;
     divArticoli.innerHTML += line;
-}
+}*/
+
+//Ciclo for integrato con append, after e className per gestione html e css in run-time
+for (let i = 0; i < tutteLeNotizie.length; i++) {
+    let objArticolo = tutteLeNotizie[i];
+    let divSingoloArticolo = document.createElement('div');
+    divArticoli.append(divSingoloArticolo);
+    let titoloSingoloArticolo = document.createElement('h2');
+    for (prop in objArticolo) {
+        if (prop == "categoria") {
+            divSingoloArticolo.className = `${objArticolo[prop]}`;
+        } else if (prop == "titolo") {
+            titoloSingoloArticolo.innerHTML = `${objArticolo[prop]}`
+            divSingoloArticolo.append(titoloSingoloArticolo);
+        } else if (prop == "paragrafi") {
+            titoloSingoloArticolo.after(divSingoloArticolo.innerHTML += objArticolo[prop]);
+        }
+    }   
+};
 
 //Funzione applicata ai button per filtrare/mostra tutte le notizie
 function filtraNews(strIndicatore) {
