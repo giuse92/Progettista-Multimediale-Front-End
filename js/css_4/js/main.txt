@@ -1,0 +1,82 @@
+
+function getStyles()
+{
+  let div1=document.getElementById("div1");
+
+  /*console.log("div1.style.width: "+div1.style.width);
+  console.log("div1.style.height: "+div1.style.height); //Da style non leggi gli stili delle classi.
+  console.log("div1.style.marginTop: "+div1.style.marginTop); //Da style non leggi gli stili delle classi.*/
+  
+  /*let divStyle=getComputedStyle(div1);
+  //console.log(divStyle);
+
+  console.log("divStyle.width: "+divStyle.width);
+  console.log("divStyle.height: "+divStyle.height);
+
+  console.log("divStyle.border: "+divStyle.border); //NO per Firefox.
+  console.log("divStyle.borderTopWidth: "+divStyle.borderTopWidth);
+  console.log("divStyle.borderTopStyle: "+divStyle.borderTopStyle);
+  console.log("divStyle.borderTopColor: "+divStyle.borderTopColor);
+  
+  console.log("divStyle.borderColor: "+divStyle.borderColor); //NO per Firefox.
+
+  console.log("divStyle.padding: "+divStyle.padding); //NO per Firefox.
+  console.log("divStyle.paddingTop: "+divStyle.paddingTop);
+  console.log("divStyle.paddingRight: "+divStyle.paddingRight);
+  console.log("divStyle.paddingBottom: "+divStyle.paddingBottom);
+  console.log("divStyle.paddingLeft: "+divStyle.paddingLeft);
+
+  console.log("divStyle.margin: "+divStyle.margin); //NO per Firefox.
+  console.log("divStyle.marginTop: "+divStyle.marginTop);
+  console.log("divStyle.marginRight: "+divStyle.marginRight);
+  console.log("divStyle.marginBottom: "+divStyle.marginBottom);
+  console.log("divStyle.marginLeft: "+divStyle.marginLeft);
+
+  console.log("divStyle.marginLeft: "+divStyle["margin-left"]);  
+  console.log("divStyle.borderColor: "+divStyle["border-color"]);  
+  
+  console.log("divStyle.marginLeft: "+divStyle.getPropertyValue('margin-left'));
+  console.log("divStyle.borderColor: "+divStyle.getPropertyValue('border-color'));
+
+  let pseudoDivStyle=getComputedStyle(div1, ':first-letter');
+
+  console.log("pseudoDivStyle.fontSize: "+pseudoDivStyle.fontSize);*/
+}
+
+
+
+function increaseHeight()
+{
+   let div1=document.getElementById('div1');
+   let divStyle=getComputedStyle(div1);
+
+   console.log("divStyle.height: "+divStyle.height);
+
+   let heightInt=parseInt(divStyle.height);
+
+   console.log("heightInt: "+heightInt);
+
+   div1.style.height=(heightInt+10)+"px";
+   //div1.classList[0].height=(heightInt+10)+"px";
+}
+
+/*
+//1.
+style="width: 400px"
+
+//2.
+.divSize
+{
+    width:200px;
+    height:200px;
+    border:1px solid black;
+    padding:10px;
+    margin:10px;
+}
+
+.divRedAndYellow
+{
+    background-color: #F00;
+    border-color:yellow;
+}
+*/
