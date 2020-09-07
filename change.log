@@ -16,7 +16,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         beforebegin -> inserisci prima del tag di apertura, fratello
         afterend -> inserisci dopo il tag di chiusura, fratello
     - elemento.insertAdjacentElement("proprietà", variabile elemento)
-    
+    - Math.random() * numero -> numero casuale estratto da range tra 0 e numero
+        Il Math.random() restituisce un valore tra 0 e 1, 1 escluso -> [0,1) 
+    - Math.floor() -> toglie la parte decimale, porta il numero intero più vicino dal basso (contrario di Math.ceil())
+    - Math.round() -> arrotonda       
+
 
 ## [1.0.0] - 2020-09-04
 ### Added 'JAVASCRIPT'
