@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-09-07
+### Added 'JAVASCRIPT, JQUERY E AJAX'
+    - document.createTextNode('testo') -> come createElement ma crea un nodo testuale
+    - elemento.before("testo", document.createElement('a'), document.createElement('span'))
+        si possono creare diversi elementi siblings con la stessa istruzione (funziona anche con after etc)
+    - elemento.remove() -> rimuove l'elemento
+    - document.body.insertAdjacentHTML("proprietà", "<tag>testo</tag>") o insertAdjacentText (funziona anche in IE)
+        afterbegin -> inserisci come primo elemento figlio
+        beforeend -> inserisci come ultimo elemento figlio
+        beforebegin -> inserisci prima del tag di apertura, fratello
+        afterend -> inserisci dopo il tag di chiusura, fratello
+    - elemento.insertAdjacentElement("proprietà", variabile elemento)
+    
+
 ## [1.0.0] - 2020-09-04
 ### Added 'JAVASCRIPT'
     - getComputedStyle -> oggetto con le informazioni cssDeclaration in lettura (a prescindere se siano stati definiti in style e in classi)
@@ -25,11 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
        prepend() -> inserisce in testa l'elemento child
        before() -> sibling dell'elemento, inserito appena prima
        after() -> sibling dell'elemento, inserito appena dopo
-       elemento.replaceWith(parametro) -> rimpiazzo l'elemento associato con l'elemento in parametro
-
-
-
-    
+       elemento.replaceWith(parametro) -> rimpiazzo l'elemento associato con l'elemento in parametro    
 
 ## [1.0.0] - 2020-09-03
 ### Added 'Sicurezza sul lavoro'
