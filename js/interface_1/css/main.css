@@ -1,0 +1,37 @@
+.divSize
+{
+    width:200px;
+    height:200px;
+    border:1px solid black;
+    position:fixed;
+}
+
+.divColour0
+{
+    background-color: #FFF;
+}
+
+.divColour1
+{
+    background-color: #F00;
+}
+
+.divColour2
+{
+    background-color: #0F0;
+}
+
+.divColour3
+{
+    background-color: #00F;
+}
+
+.divColour4
+{
+    background-color: #FF0;
+}
+
+.divColour5
+{
+    background-color: #0FF;
+}

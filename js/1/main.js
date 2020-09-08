@@ -69,16 +69,42 @@ console.log(div2.firstChild.nodeType);
 console.log(div2.firstChild.nextSibling);
 console.log(div2.firstChild.nextSibling.nodeType);
 
-/*let tN1=document.createTextNode("SEMPRE NUOVISSIMO");
+let tN1=document.createTextNode("SEMPRE NUOVISSIMO");
 
 div2.append(tN1);
+//div2.append(document.createTextNode("SEMPRE NUOVISSIMO"));
+
+/*console.log(div2.lastChild);
+console.log(div2.lastChild.nodeType);
+
+console.log(div2.childNodes);
+console.log(div2.childNodes.length);*/
+
+/*div2.append("<B>FORTISSIMO</B>");
 
 console.log(div2.lastChild);
 console.log(div2.lastChild.nodeType);
 
 console.log(div2.childNodes);
-console.log(div2.childNodes.length);
+console.log(div2.childNodes.length);*/
+let a1=document.createElement('a');
+//let s1=document.createElement('span');
 
-//div2.append("<B>FORTISSIMO</B>");
-div2.before("<B>FORTISSIMO</B>", document.createElement('a'), document.createElement('span'));*/
 
+
+div2.append(a1);
+console.log(div2.lastChild);
+console.log(div2.lastChild.nodeType);
+//div2.before("<B>FORTISSIMO</B>", document.createElement('a'), document.createElement('span'));
+
+//a1.remove();
+div2.before(a1);
+
+
+
+
+function rimuoviNodo()
+{
+    div2.remove();
+    console.log(div2);
+}
