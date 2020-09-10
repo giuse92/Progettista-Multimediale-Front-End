@@ -1,7 +1,7 @@
 let cerchiSemaforo = document.querySelectorAll('div.cerchio');
 let cssClasses = ['rosso', 'giallo', 'verde'];
 
-function onOff(index1, index2) {
+/*function onOff(index1, index2) {
    cerchiSemaforo[index1].classList.toggle(cssClasses[index2]);
 };
 
@@ -12,6 +12,15 @@ for (let i = 0; i < cerchiSemaforo.length; i++) {
             cerchiSemaforo[i].addEventListener('mouseout', function() {onOff(i,x)});
         };
     };
+};*/
+
+function onOff(index1) {
+    cerchiSemaforo[index1].classList.toggle(cssClasses[index1]);
+};
+
+for (let i = 0; i < cerchiSemaforo.length; i++) {
+    cerchiSemaforo[i].addEventListener('mouseover', function () { onOff(i) });
+    cerchiSemaforo[i].addEventListener('mouseout', function () { onOff(i) });
 };
 
 let btnJs = document.getElementById('btn-js');
