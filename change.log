@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-09-11
+### Added 'Sicurezza sul lavoro'
+    - Covid 19
+        'Il Covid in azienda è un infortunio sul lavoro';
+
+        'Il datore di lavoro è responsabile se ha agito con dolo o colpa';
+
+        'La mascherina è un dpi ed è obbligatoria' (nel senso che te la devono fornirla) 4 ore;
+
+        "Se ho la febbre superiore ai 37,5 gradi non posso accedere in azienda e deve essere"
+        "informato il medico di base. L'azienda tiene"
+        "i dati conservati per almeno 14 gg";
+
+        "Il personale che rientra in azienda dopo il covid deve avere una certificazione medica"
+        "da cui risulti l'avvenuta negativizzazione del tampone";
+    - Videoterminale VDT 
+        Colui che lavora almeno 24 ore a settimana;
+
+        "Deve fare delle pause ogni 2 ore dal computer di 15 minuti" intesa come attività diverse dalla lettura del vdt;
+
+        "Illuminazione del video del computer deve garantire un contrasto appropriato tra schermo e ambiente";
+
+        "Quando cambio il toner della fotocopiatrice devo usare guanti e mascherina";
+
 ## [1.0.0] - 2020-09-10
 ### Added 'JAVASCRIPT'
     - Spiegazione esempio interface_1
