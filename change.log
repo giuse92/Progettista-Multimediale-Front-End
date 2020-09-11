@@ -51,7 +51,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
         "Gli armadi superiori ai 2 mt devono essere fissati al muro";
 
-        "Il lavoratore utilizza scale a norma";
+        "Il lavoratore utilizza scale a norma se l'altezza è inferiore ai 2 mt"
+        (se l'altezza è superiore a 2 mt occorre fare un corso);
+
+        Donna può sollevare 20 kg
+        Uomo può sollevare 25 kg
+        Il minorenne o > 55enne riduce di 5 kg
+        "Il danno alla schiena lo avrò sempre indipendentemente dal peso se piego la schiena";
+
+        "Mani bagnate conduttori di elettricità";
+
+        Astensione obbligatoia per 5 mesi
+        Rischio soggettivo della gravidanza (può aumentare astensione), donna sta a casa da subito
+        Rischio oggettivo legato all'azienda o alla mansione
+        "se una lavoratrice ha un lavoro full time, ha diritto a due ore di permesso giornaliero per allattamento";
 
 
 ## [1.0.0] - 2020-09-10
