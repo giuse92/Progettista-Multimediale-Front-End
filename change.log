@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
         "Il personale che rientra in azienda dopo il covid deve avere una certificazione medica"
         "da cui risulti l'avvenuta negativizzazione del tampone";
+
     - Videoterminale VDT 
         Colui che lavora almeno 24 ore a settimana;
 
@@ -27,6 +28,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         "Illuminazione del video del computer deve garantire un contrasto appropriato tra schermo e ambiente";
 
         "Quando cambio il toner della fotocopiatrice devo usare guanti e mascherina";
+
+    - Incendio / Terremoto / Piano d'emergenza (Addetto al primo soccorso - incendio)
+        Solido, liquido, gas;
+
+        Estintori polivalenti ABC "dura al massimo 15 secondi e spegne un fuoco alto al massimo 1 mt"
+        "e posso operare a distanza di 1 mt, si blocca oltre i 60 gradi"
+        "A - Solido, B - Liquido, C - Gas";
+
+        L'estintore lo usa chi ha fatto un corso ed è scelto dall'azienda;
+
+        Estintori ad "anidride carbonica CO2 (Elettriche)";
+
+        "Solo le aziende che hanno più di 10 dipendenti devono avere un piano d'emergenza"
+        ma tutte le aziende devono avere la "luce d'emergenza e la cartellonistica"
+        "(i cartelli con colore rosso mi indicano un divieto)";
+
+        "Uscite di emergenza non devono essere mai bloccate o ostacolate da mezzi e merci";
+
+        "In caso di terremoto, mi posiziono sotto un tavolo e aspetto che le scosse terminino",
+        "poi attuo il piano evacuazione";
+
+        "Gli armadi superiori ai 2 mt devono essere fissati al muro";
+
+        "Il lavoratore utilizza scale a norma";
+
 
 ## [1.0.0] - 2020-09-10
 ### Added 'JAVASCRIPT'
