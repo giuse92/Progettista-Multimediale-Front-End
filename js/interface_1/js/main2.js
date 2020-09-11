@@ -1,35 +1,33 @@
-let rowsNumber=3;
+let rowsNumber=2;
 let columnsNumber=1;
 let totalColours=6; //totalImages;
 //let gridDivs=null;
 
+         //buildDiv("div"+i+j, "Position at "+i+" and "+j);
 function buildDiv(uniqueId, textToWrite)
 {
-  //uniqueId="div10";
-  //textToWrite="Position at 1 and 0";
+  //uniqueId="div00";
+  //textToWrite="Position at 0 and 0";
   let s=document.querySelector('script');
+  //let s=document.body.querySelector('script');
   let div=document.createElement('div');
   //let textNode=document.createTextNode(textToWrite);
+
+  //let n=Math.random();
+  //console.log(n);
   
-  let n=Math.random();
-  console.log(n);
-  
-  let randomNumber=Math.floor(n*totalColours);
-  //let img=document.createElement('img');
+  let randomNumber=Math.floor(Math.random()*totalColours);
+  let img=document.createElement('img');
+
+  img.src="images/divColour"+randomNumber+".jpg";
 
   div.id=uniqueId;
+
   div.classList.add('divSize');
   div.classList.add('divColour'+randomNumber);
 
-  /*img.src='images/divColour'+randomNumber+".jpg";
-  //div.append(textNode);
-  //div.appendChild(textNode);
-  div.insertAdjacentText("afterbegin", textNode.nodeValue);
-  div.insertAdjacentElement("afterbegin", img);*/
-  //div.insertAdjacentText("afterbegin", textNode.nodeValue);
-  div.append(textToWrite);
-
-  
+  div.append(img);
+  //div.append(textToWrite);
   //document.body.append(div);
   //document.body.appendChild(div);
   //document.body.insertAdjacentElement("beforeend", div);
@@ -40,14 +38,19 @@ function buildDiv(uniqueId, textToWrite)
 
   return(div);
 }
-
+         //positionDiv(div, j, i);
 function positionDiv(currentDiv, currentX, currentY)
 {
   let currentStyle=getComputedStyle(currentDiv);
-  let currentWidth=parseInt(currentStyle.width);
+
+  console.log(currentStyle.width);
+  console.log(currentStyle.height);
+
+  let currentWidth=parseInt(currentStyle.width); //200
   let currentHeigth=parseInt(currentStyle.height);
 
-  //console.log(currentWidth);
+  console.log(currentWidth);
+  console.log(currentHeigth);
 
   currentDiv.style.left=currentX*currentWidth+"px";
   currentDiv.style.top=currentY*currentHeigth+"px";
@@ -67,6 +70,7 @@ function buildGrid()
       //div=buildDiv(`div_${i}_${j}`, `Position at ${i} and ${j}`);
       div=buildDiv("div"+i+j, "Position at "+i+" and "+j);
 
+      //alert(div.id);
       //function buildDiv(uniqueId, textToWrite)
       positionDiv(div, j, i);
     }
@@ -77,6 +81,7 @@ function manageEventListeners()
 {
   let gridDivs=document.querySelectorAll('.divSize');
 
+  
   for(let currentDiv, i=0;i<gridDivs.length;i++)
   {
     currentDiv=gridDivs[i];
@@ -93,7 +98,8 @@ function manageEventListeners()
 
     currentDiv.onclick=function(event)
     {
-      alert(this.id);
+      alert(this.firstChild.src);
+      //alert(this.querySelector('img').src);
     }
   }
 }
