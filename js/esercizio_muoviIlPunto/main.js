@@ -18,16 +18,16 @@ generaBtns(4);
 
 let btnsCreati = document.querySelectorAll('button');
 btnsCreati[0].innerHTML = "&larr;";
-btnsCreati[0].onclick = function() {muoviVerso('left')}
+btnsCreati[0].onmousedown = function() {muoviVerso('left')}
 
 btnsCreati[1].innerHTML = "&uarr;";
-btnsCreati[1].onclick = function() {muoviVerso('up')}
+btnsCreati[1].onmousedown = function() {muoviVerso('up')}
 
 btnsCreati[2].innerHTML = "&rarr;";
-btnsCreati[2].onclick = function() {muoviVerso('right')}
+btnsCreati[2].onmousedown = function() {muoviVerso('right')}
 
 btnsCreati[3].innerHTML = "&darr;";
-btnsCreati[3].onclick = function() {muoviVerso('down')}
+btnsCreati[3].onmousedown = function() {muoviVerso('down')}
 
 function muoviVerso(direzione) {
     let bullDivMuoviVerso = document.querySelector('#bull-html');

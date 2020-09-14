@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-09-14
+### Added 'PROJECT WORK'
+    - Vanno bene Js puro, React e Vue;
+    - Sarà un'applicazione single-page di recensioni di film (Master Detail App)
+        "SOLO UNA PAGINA HTML"
+    - Dinamicamente
+        Dati presi dinamicamente, da una sorgente esterna
+        Riquadri che contengono le recensioni di esperti e i dati dei film presi esternamente
+        Formattazione JSON (se argomento ancora non affrontato, utilizzare momentaneamente un array di oggetti)
+        Di dafault, un riquadro con la lista di tutti i film, cliccando su un film mi dà in output il dettaglio del film (più tasto BACK per tornare alla lista)
+        Responsive
+    - Browser 
+        Chrome, Firefox, Edge
+
+
 ## [1.0.0] - 2020-09-11
 ### Added 'Sicurezza sul lavoro'
     - Covid 19
