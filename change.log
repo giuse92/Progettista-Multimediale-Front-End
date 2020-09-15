@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-09-15
+### Added 'JAVASCRIPT'
+    - Spiegazione esempio interface_2
+        new Image() -> oggetto logico (classe) che mi restituisce un'immagine
+        this.onclick = null -> (esempio rimozione elemento dal DOM) annulla la funzione associata in radice dopo aver rimosso un elemento, così siamo sicuri che vengono anche rimossi gli eventi gestiti
+
 ## [1.0.0] - 2020-09-14
 ### Added 'PROJECT WORK'
     - Vanno bene Js puro, React e Vue;
@@ -128,7 +134,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
        prepend() -> inserisce in testa l'elemento child
        before() -> sibling dell'elemento, inserito appena prima
        after() -> sibling dell'elemento, inserito appena dopo
-       elemento.replaceWith(parametro) -> rimpiazzo l'elemento associato con l'elemento in parametro    
+       elemento.replaceWith(parametro) -> rimpiazzo l'elemento di riferimento (a sx) con l'elemento in parametro    
 
 ## [1.0.0] - 2020-09-03
 ### Added 'Sicurezza sul lavoro'
