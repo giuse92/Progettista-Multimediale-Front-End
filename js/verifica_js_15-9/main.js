@@ -48,7 +48,7 @@ btnRimuoviTesto.onclick = function(event) {removeText()};
 
 function removeText(getDiv) {
     getDiv = divLibro;
-    getDiv.innerHTML = "TESTO RIMOSSO";
-    getDiv.style.backgroundColor = "red";
-    getDiv.style.width = "fit-content";
+    getDiv.replaceWith('');
+    alert('CLICCA OK PER COMPLETARE LA RIMOZIONE DEL TESTO');
+    console.log('Testo rimosso')
 }
