@@ -3,7 +3,7 @@ let libroInfo = {
     autore: "Johan Cruyff",
     "a cura di": "Jaap de Groot",
     traduttore: "Francesco Panzeri",
-    recensione: "La vita di un personaggio indimenticabile nel mondo del calcio."
+    recensione: "L'Ajax ed il dream-team Orange '74, stanno al calcio come i Beatles alla musica pop. Hanno rappresentato davvero una rivoluzione, logicamente di tattica e modalità di gioco, ma anche nella cultura di massa e nelle vicende di quegli anni. Il calcio (e non solo), negli anni dal 1969 al 1974 si è tinto di arancione. Credo che nonostante i ritorni di fiamma (la finale del mondiale 78 e la vittoria dell'Europeo 88) , l'Olanda, dopo quel mitico 1974 non si sia più espressa a quei livelli."
 };
 
 let mainScript = document.querySelector('script');
@@ -35,7 +35,7 @@ for (info in libroInfo) {
     } else if (info == "recensione") {
         let recensioneLibro = document.createElement('p');
         recensioneLibro.classList.add('recensione');
-        recensioneLibro.innerHTML = `${info}: ${libroInfo[info]}`;
+        recensioneLibro.innerHTML = `${info}: "${libroInfo[info]}"`;
         divLibro.append(recensioneLibro);
     }
 }
