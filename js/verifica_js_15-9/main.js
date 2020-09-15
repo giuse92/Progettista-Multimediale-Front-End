@@ -11,7 +11,7 @@ let divLibro = document.createElement('div');
 divLibro.id = "libroContainer";
 mainScript.before(divLibro);
 
-for (info in libroInfo) {
+for (let info in libroInfo) {
     if (info == 'titolo') {
         let titoloLibro = document.createElement('h3');
         titoloLibro.className = "titolo";
@@ -49,6 +49,6 @@ btnRimuoviTesto.onclick = function(event) {removeText()};
 function removeText(getDiv) {
     getDiv = divLibro;
     getDiv.replaceWith('');
-    alert('CLICCA OK PER COMPLETARE LA RIMOZIONE DEL TESTO');
+    //oppure getDiv.outerHTML = '';
     console.log('Testo rimosso')
 }
