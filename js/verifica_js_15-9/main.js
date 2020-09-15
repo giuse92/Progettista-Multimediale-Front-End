@@ -17,8 +17,26 @@ for (info in libroInfo) {
         titoloLibro.className = "titolo";
         titoloLibro.innerHTML = `${libroInfo[info]}`;
         divLibro.append(titoloLibro);
-    } else {
-        divLibro.innerHTML += `${info}: ${libroInfo[info]}<br>`
+    } else if (info == 'autore') {// Stessa classe per autore, traduttore e a cura di
+        let autoreLibro = document.createElement('p');
+        autoreLibro.className = "autore";
+        autoreLibro.innerHTML = `${info}: ${libroInfo[info]}`;
+        divLibro.append(autoreLibro);
+    } else if (info == 'a cura di') {
+        let aCuraDiLibro = document.createElement('p');
+        aCuraDiLibro.className = "autore";
+        aCuraDiLibro.innerHTML = `${info}: ${libroInfo[info]}`;
+        divLibro.append(aCuraDiLibro);
+    } else if (info == 'traduttore') {
+        let traduttoreLibro = document.createElement('p');
+        traduttoreLibro.className = "autore";
+        traduttoreLibro.innerHTML = `${info}: ${libroInfo[info]}`;
+        divLibro.append(traduttoreLibro);
+    } else if (info == "recensione") {
+        let recensioneLibro = document.createElement('p');
+        recensioneLibro.classList.add('recensione');
+        recensioneLibro.innerHTML = `${info}: ${libroInfo[info]}`;
+        divLibro.append(recensioneLibro);
     }
 }
 
