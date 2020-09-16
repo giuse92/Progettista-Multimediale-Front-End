@@ -42,7 +42,7 @@ function muoviVerso(direzione) {
             break;
         case 'up':
             valueTopInt = parseInt(bullStyle.top);
-            bullDivMuoviVerso.style.cssText = `top:${valueTopInt-1}px; left:${bullStyle.left}`;
+            bullDivMuoviVerso.style.cssText = `left:${bullStyle.left}; top:${valueTopInt - 1}px;`;
             break;
         case 'right':
             valueLeftInt = parseInt(bullStyle.left);
@@ -50,7 +50,7 @@ function muoviVerso(direzione) {
             break;
         case 'down':
             valueTopInt = parseInt(bullStyle.top);
-            bullDivMuoviVerso.style.cssText = `top:${valueTopInt+1}px; left:${bullStyle.left}`;
+            bullDivMuoviVerso.style.cssText = `left:${bullStyle.left}; top:${valueTopInt + 1}px;`;
             break;
     };
 }
