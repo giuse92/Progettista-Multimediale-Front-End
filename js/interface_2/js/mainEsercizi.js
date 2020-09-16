@@ -100,7 +100,6 @@ function buildBigImage() {
 }
 
 function buildCloseButton() {
-  let isBtnClodeBuilt = 1;//Esercizio 1
 
   let s = document.querySelector('script');
 
@@ -125,6 +124,8 @@ function buildCloseButton() {
 
     document.body.removeChild(document.getElementById('divBigImage'));
     document.body.removeChild(this);
+
+    mEventListeners();//Esercizio 1
   }
 }
 
@@ -132,6 +133,15 @@ buildGrid();
 mEventListeners();
 
 //ESERCIZIO 1: che fare per gestire la contemporaneità delle immagini grandi?
+/*
+Riga 115: recupero i selettori div con classe .divSize;
+-------------------------------------------------------------------
+Riga 116: for-of della node-list, per ogni elemento imposto un valore nullo solo al click
+e mantengo i valori applicati agli eventi il mouseeneter e mouseleave;
+-------------------------------------------------------------------
+Riga 128: richiamo mEVentListener in modo da ripristinare la funzione buildBigImage
+associata al click di uno dei div con classe .divSize
+*/
 
 //ESERCIZIO 2: ad ogni click su un dato quadrante, caricare un'immagine diversa.
 //ESERCIZIO 3: rendere "dinamiche" le coordinate dell'immagine:
