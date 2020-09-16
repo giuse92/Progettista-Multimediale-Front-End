@@ -1,5 +1,5 @@
-let rowsNumber = 2;
-let columnsNumber = 2;
+let rowsNumber = 3;
+let columnsNumber = 3;
 let totalColours = 6;
 let gridDivs = null;
 
@@ -100,6 +100,8 @@ function buildBigImage() {
 }
 
 function buildCloseButton() {
+  let isBtnClodeBuilt = 1;//Esercizio 1
+
   let s = document.querySelector('script');
 
   let divCloseButton = document.createElement('div');
@@ -110,6 +112,11 @@ function buildCloseButton() {
 
   //document.body.appendChild(divCloseButton);
   s.insertAdjacentElement("beforebegin", divCloseButton);
+
+  let queriesDivSize = document.querySelectorAll('div.divSize');//Esercizio 1
+  for (let query of queriesDivSize) {//Esercizio 1
+    query.onclick = null;
+  };
 
   divCloseButton.onclick = function (event) {
     alert(this.id);
@@ -125,6 +132,7 @@ buildGrid();
 mEventListeners();
 
 //ESERCIZIO 1: che fare per gestire la contemporaneità delle immagini grandi?
+
 //ESERCIZIO 2: ad ogni click su un dato quadrante, caricare un'immagine diversa.
 //ESERCIZIO 3: rendere "dinamiche" le coordinate dell'immagine:
 //sia centrata rispetto alla griglia.
