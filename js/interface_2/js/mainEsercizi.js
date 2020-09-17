@@ -151,10 +151,15 @@ in modo da ripristinare la funzione buildBigImage associata al click di tutti gl
 /*
 Riga 94: creo la variabile per indicare la quantità delle immagini
 ------------------------------------------------------------------------
-Riga 95: nImg è il numero tirato a caso dal Math.random all'interno del Math.floor, il +1 determina il range tra 1 e 10 (il valore di randomImages),
-senza il +1 il range sarebbe stato tra 0 e 10;
+Riga 95: nImg è il numero tirato a caso dal Math.random all'interno del Math.floor, il + 1 determina il range tra 1 e 10 (il valore di randomImages),
+senza il + 1 il range sarebbe stato tra 0 e 9;
 Fonte: https://www.w3schools.com/js/tryit.asp?filename=tryjs_random_1_10
+-------------------------------------------------------------------------
+Riga 97: inserimento variabile nImg all'interno della `stringa` assegnata a bigImage.src
 */
 
 //ESERCIZIO 3: rendere "dinamiche" le coordinate dell'immagine:
 //sia centrata rispetto alla griglia.
+/*
+
+*/
