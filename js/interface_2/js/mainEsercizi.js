@@ -90,7 +90,11 @@ function buildBigImage() {
 
     buildCloseButton();
   }
-  bigImage.src = "images/big_image.jpg";
+
+  let randomImages = 10;//Esercizio 2
+  let nImg = Math.floor(Math.random() * randomImages) + 1;//Esercizio 2
+
+  bigImage.src = `images/big_image${nImg}.jpg`;//Esercizio 2
 
   divBigImage.appendChild(bigImage);
   //document.body.appendChild(divBigImage);
@@ -137,12 +141,20 @@ mEventListeners();
 Riga 115: recupero i selettori div con classe .divSize;
 -------------------------------------------------------------------
 Riga 116: for-of della node-list, per ogni elemento imposto un valore nullo solo al click
-e mantengo i valori applicati agli eventi il mouseeneter e mouseleave;
+e mantengo i valori applicati agli eventi mouseenter e mouseleave;
 -------------------------------------------------------------------
-Riga 128: richiamo mEVentListener in modo da ripristinare la funzione buildBigImage
-associata al click di uno dei div con classe .divSize
+Riga 128: richiamo mEVentListener all'interno della funzione associata al click di divCloseButton 
+in modo da ripristinare la funzione buildBigImage associata al click di tutti gli elementi con classe .divSize
 */
 
 //ESERCIZIO 2: ad ogni click su un dato quadrante, caricare un'immagine diversa.
+/*
+Riga 94: creo la variabile per indicare la quantità delle immagini
+------------------------------------------------------------------------
+Riga 95: nImg è il numero tirato a caso dal Math.random all'interno del Math.floor, il +1 determina il range tra 1 e 10 (il valore di randomImages),
+senza il +1 il range sarebbe stato tra 0 e 10;
+Fonte: https://www.w3schools.com/js/tryit.asp?filename=tryjs_random_1_10
+*/
+
 //ESERCIZIO 3: rendere "dinamiche" le coordinate dell'immagine:
 //sia centrata rispetto alla griglia.
