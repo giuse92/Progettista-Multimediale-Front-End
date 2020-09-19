@@ -1,5 +1,5 @@
-let rowsNumber = 1;
-let columnsNumber = 7;
+let rowsNumber = 4;
+let columnsNumber = 2;
 let totalColours = 6;
 let gridDivs = null;
 
@@ -173,5 +173,22 @@ Riga 97: inserimento variabile nImg all'interno della `stringa` assegnata a bigI
 //ESERCIZIO 3: rendere "dinamiche" le coordinate dell'immagine:
 //sia centrata rispetto alla griglia.
 /*
-
+Riga 85: a divSize associo il primo elemento div con .divSize perchè mi serve recuperare un solo elemento;
+----------------------------------------------------------------------------
+Riga 86: associo a styleDivSize l'oggetto con le info CSS;
+----------------------------------------------------------------------------
+Riga 87: a totalWidthGrid associo tutta la larghezza della griglia, data dalla larghezza del singolo .divSize * n. colonne;
+----------------------------------------------------------------------------
+Riga 88: a totalHeightGrid associo l'altezza totale della griglia, data dall'altezza del singolo .divSize * n. righe;
+-----------------------------------------------------------------------------
+Riga 89: ottengo la larghezza dell'immagine togliendo 100px alla larghezza della griglia, così ai lati risulta la medesima distanza di 50px;
+-----------------------------------------------------------------------------
+Riga 90: idem per l'altezza, ovviamente la distanza di 50px in questo caso è considerata sopra e sotto l'immagine;
+---------------------------------------------------------------------------------------------------------
+Riga 132: con bigImage recupero l'elemento immagine con id #bigImage;
+--------------------------------------------------------------------------------------------------
+Riga 133: a styleBigImage ovviamente sono associate le info CSS;
+--------------------------------------------------------------------------------------------------
+Riga 135: il valore della proprietà left del divCloseButton è uguale alla larghezza dell'immagine all'interno, 
+perchè devo considerare la posizione del divCloseButton che parte dal lato sx (left) della finestra, inoltre il divCloseButton è largo 50px
 */
