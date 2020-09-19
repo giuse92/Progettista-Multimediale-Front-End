@@ -1,5 +1,5 @@
-let rowsNumber = 3;
-let columnsNumber = 3;
+let rowsNumber = 1;
+let columnsNumber = 7;
 let totalColours = 6;
 let gridDivs = null;
 
@@ -81,6 +81,14 @@ function buildBigImage() {
 
   bigImage.id = "bigImage";
   bigImage.classList.add('divBigImage');
+
+  let divSize = document.querySelector('div.divSize');//Esercizio 3
+  let styleDivSize = getComputedStyle(divSize);//Esercizio 3
+  let totalWidthGrid = parseInt(styleDivSize.width) * columnsNumber;//Esercizio 3
+  let totalHeightGrid = parseInt(styleDivSize.height) * rowsNumber;//Esercizio 3
+  bigImage.style.width = totalWidthGrid - 100 + "px";//Esercizio 3
+  bigImage.style.height = totalHeightGrid - 100 + "px";//Esercizio 3
+
   bigImage.onload = function () {
     alert("bigImage.width: " + this.width);
     alert("bigImage.height: " + this.height);
@@ -120,6 +128,10 @@ function buildCloseButton() {
   for (let query of queriesDivSize) {//Esercizio 1
     query.onclick = null;
   };
+
+  let bigImage = document.querySelector('img#bigImage');//Esercizio 3
+  let styleBigImage = getComputedStyle(bigImage);//Esercizio 3
+  divCloseButton.style.left = styleBigImage.width;//Esercizio 3
 
   divCloseButton.onclick = function (event) {
     alert(this.id);
