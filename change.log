@@ -13,7 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         elemento.onclick = () => alert('qualcosa') (terzo modo per definire una funzione in JS, con o senza parentesi graffe);
         elemento.addEventListener('evento', funzione senza tonde, terzo parametro facoltativo), non sovrascrive (integrativa, non esclusiva)
             terzo parametro addEventListener: {once:true} -> attivo una volta, dopo la prima volta si disattiva da solo
+            "DOMContentLoaded", al caricamento dei contenuti del DOM, riferendosi ai nodi HTML (non caricamento di file esterno, es. img)
         elemento.removeEventListener('evento', funzione senza tonde)
+        event -> un oggetto con una serie di proprietà
+            event.type -> nome dell'evento in stringa (tipo di evento gestito)
+            event.clientX e event.clientY (coordinate X e Y del mouse)
+            event.currentTarget (corrisponde al this)
 
     - Debug Console di VSC
 
