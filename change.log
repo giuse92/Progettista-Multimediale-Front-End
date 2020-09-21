@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-09-21
+### Added 'JAVASCRIPT'
+    - Gestione eventi mouse
+        Sovrascrittura: non supporta più di un handler;
+        b1.onclick=funzione() [con le parentesi quadre] dà null, quindi richiamare senza parantesi - caso di funzione non parametrizzata;
+        setAttribute('onclick', "funzione()") versione giusta;
+        elemento.onclick = () => alert('qualcosa') (terzo modo per definire una funzione in JS, con o senza parentesi graffe);
+        elemento.addEventListener('evento', funzione senza tonde, terzo parametro facoltativo), non sovrascrive (integrativa, non esclusiva)
+            terzo parametro addEventListener: {once:true} -> attivo una volta, dopo la prima volta si disattiva da solo
+        elemento.removeEventListener('evento', funzione senza tonde)
+
+    - Debug Console di VSC
+
 ## [1.0.0] - 2020-09-15
 ### Added 'JAVASCRIPT'
     - Spiegazione esempio interface_2
