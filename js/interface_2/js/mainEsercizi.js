@@ -150,24 +150,24 @@ mEventListeners();
 
 //ESERCIZIO 1: che fare per gestire la contemporaneità delle immagini grandi?
 /*
-Riga 115: recupero i selettori div con classe .divSize;
+Riga 127: recupero i selettori div con classe .divSize;
 -------------------------------------------------------------------
-Riga 116: for-of della node-list, per ogni elemento imposto un valore nullo solo al click
+Riga 128: for-of della node-list, per ogni elemento imposto un valore nullo solo al click
 e mantengo i valori applicati agli eventi mouseenter e mouseleave;
 -------------------------------------------------------------------
-Riga 128: richiamo mEVentListener all'interno della funzione associata al click di divCloseButton 
+Riga 144: richiamo mEVentListener all'interno della funzione associata al click di divCloseButton 
 in modo da ripristinare la funzione buildBigImage associata al click di tutti gli elementi con classe .divSize
 */
 
 //ESERCIZIO 2: ad ogni click su un dato quadrante, caricare un'immagine diversa.
 /*
-Riga 94: creo la variabile per indicare la quantità delle immagini
+Riga 102: creo la variabile per indicare la quantità delle immagini
 ------------------------------------------------------------------------
-Riga 95: nImg è il numero tirato a caso dal Math.random all'interno del Math.floor, il + 1 determina il range tra 1 e 10 (il valore di randomImages),
+Riga 103: nImg è il numero tirato a caso dal Math.random all'interno del Math.floor, il + 1 determina il range tra 1 e 10 (il valore di randomImages),
 senza il + 1 il range sarebbe stato tra 0 e 9;
 Fonte: https://www.w3schools.com/js/tryit.asp?filename=tryjs_random_1_10
 -------------------------------------------------------------------------
-Riga 97: inserimento variabile nImg all'interno della `stringa` assegnata a bigImage.src
+Riga 105: inserimento variabile nImg all'interno della `stringa` assegnata a bigImage.src
 */
 
 //ESERCIZIO 3: rendere "dinamiche" le coordinate dell'immagine:
