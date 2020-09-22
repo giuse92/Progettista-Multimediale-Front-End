@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-09-22
+### Added 'JAVASCRIPT'
+    - let nome1 = "Luca" stringa letterale, let nome2 = new String("Luca") oggetto che contiene una stringa;
+    - attenzione all'uguaglianza tra i numeri es. 0.1+0.33;
+    - Number.MIN_VALUE numero più piccolo vicino allo 0;
+    - Classe è, in parole povere, un modello da cui trarre delle copie
+        class Messaggio {handleEvent(event){codice}}
+        es. copia -> let messaggino = new Messaggio();
+    - switch più performante per richieste numerose;
+    - Gestione eventi II
+        Bubble phase -> "bolla" che viene su, da dove avviene la gestione dell'evento
+            interrompere la bubble phase -> if (event.currentTarget.nodeName == "elemento") {event.stopPropagation()};
+        Capture phase -> fase di "caduta"
+        target -> il target è colui che genera l'evento;
+        currentTarget -> è colui che gestisce l'elemento; 
+        event.target.nodeName -> nome del target
+        event.eventPhase -> fase dell'evento 
+            fase 2: chi subisce l'evento è anche quello che lo gestisce
+            fase 3: in risalita, quindi Bubble
+
+
 ## [1.0.0] - 2020-09-21
 ### Added 'JAVASCRIPT'
     - Gestione eventi mouse
@@ -14,11 +35,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         elemento.addEventListener('evento', funzione senza tonde, terzo parametro facoltativo), non sovrascrive (integrativa, non esclusiva)
             terzo parametro addEventListener: {once:true} -> attivo una volta, dopo la prima volta si disattiva da solo
             "DOMContentLoaded", al caricamento dei contenuti del DOM, riferendosi ai nodi HTML (non caricamento di file esterno, es. img)
+                può essere gestito solo con l'addEventListener
         elemento.removeEventListener('evento', funzione senza tonde)
         event -> un oggetto con una serie di proprietà
             event.type -> nome dell'evento in stringa (tipo di evento gestito)
             event.clientX e event.clientY (coordinate X e Y del mouse)
             event.currentTarget (corrisponde al this)
+    - let customObject = {function nome(parametri) {codice}};
 
     - Debug Console di VSC
 
