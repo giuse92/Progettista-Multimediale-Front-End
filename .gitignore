@@ -52,4 +52,6 @@ Thumbs.db
 # Ignore all local history of files
 .history
 
+.vscode
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
