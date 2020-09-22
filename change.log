@@ -16,12 +16,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Gestione eventi II
         Bubble phase -> "bolla" che viene su, da dove avviene la gestione dell'evento
             interrompere la bubble phase -> if (event.currentTarget.nodeName == "elemento") {event.stopPropagation()};
-        Capture phase -> fase di "caduta"
+        Capture phase -> fase di "caduta" (non dovrebbe essere gestibile con gli onclick, ma tramite l'addEventListener)
+            elemento1.addEventListener('evento', funzione, true) {capture:true}
+            elemento2.addEventListener('evento', funzione, true) {capture:true}
+            elemento3.addEventListener('evento', funzione, true) {capture:true}
+            Se il terzo parametro dell'addEventListener è false impostiamo la Bubble phase
         target -> il target è colui che genera l'evento;
         currentTarget -> è colui che gestisce l'elemento; 
         event.target.nodeName -> nome del target
-        event.eventPhase -> fase dell'evento 
-            fase 2: chi subisce l'evento è anche quello che lo gestisce
+        event.eventPhase -> fase dell'evento
+            fase 1: parte dal documento e parsa gli elementi in caduta ('Capture phase') 
+            fase 2: chi subisce l'evento è anche quello che lo gestisce ('Target phase')
             fase 3: in risalita, quindi Bubble
 
 
