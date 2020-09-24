@@ -1,9 +1,41 @@
-.divSize
+.p1
 {
     width:200px;
     height:200px;
     border:1px solid black;
-    position:fixed;
+    /*position:fixed;*/
+}
+
+.p2
+{
+    width:200px;
+    height:220px;
+    border:1px solid red;
+    /*position:fixed;*/
+}
+
+.p3
+{
+    width:200px;
+    height:240px;
+    border:1px solid yellow;
+    /*position:fixed;*/
+}
+
+.p4
+{
+    width:200px;
+    height:260px;
+    border:1px solid green;
+    /*position:fixed;*/
+}
+
+.p5
+{
+    width:200px;
+    height:280px;
+    border:1px solid blue;
+    /*position:fixed;*/
 }
 
 .divSizeLarge

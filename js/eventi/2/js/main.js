@@ -1,12 +1,30 @@
 //1.
-function mostraPrimissimoMessaggio()
+function mostraPrimissimoMessaggio(event)
 {
-  alert('Primissimo Messaggio.');
+  console.log("EVENTO"+event);
+  console.log("------------------------------------------");
+  console.log("Tipo: "+event.type);
+  console.log("Mouse X: "+event.clientX+" e Mouse Y:"+event.clientY);
+  console.log("Current Target: "+event.currentTarget);
+  console.log("Current Target (id): "+event.currentTarget.id);
+  console.log("this: "+this);
+  console.log("this.id: "+this.id);
+
+  alert('Primissimo Messaggio con Event!');
 };
 
-function mostraPrimoMessaggio()
+function mostraPrimoMessaggio(event)
 {
-  alert('Primo Messaggio.');
+  console.log("EVENTO 2"+event);
+  console.log("------------------------------------------");
+  console.log("Tipo: "+event.type);
+  console.log("Mouse X: "+event.clientX+" e Mouse Y:"+event.clientY);
+  console.log("Current Target: "+event.currentTarget);
+  console.log("Current Target (id): "+event.currentTarget.id);
+  console.log("this: "+this);
+  console.log("this.id: "+this.id);
+
+  alert('Primo Messaggio con Event!');
 };
 
 function mostraSecondoMessaggio()
@@ -77,7 +95,10 @@ b2.onclick=function(event)
 
   console.log("3----------------------------------");
 
-  let n1=0.1+0.33;
+  let a=0.1+0.4;
+  console.log(a);
+
+  let n1=0.1+0.33; //0.43.
   console.log(n1);
   console.log(n1==0.43);
   console.log(0.1+0.33==0.43);
@@ -87,7 +108,7 @@ b2.onclick=function(event)
 };
 
 
-//4.
+/*//4.
 let b4=document.getElementById("but4");
 
 let customObject={
@@ -98,18 +119,18 @@ let customObject={
                   " e Mouse Y:"+event.clientY+
                   " Current Target: "+event.currentTarget.id);
 
-      /*let p1=document.getElementById("p1");
+      let p1=document.getElementById("p1");
 
       p1.style.left=event.clientX+"px";
-      p1.style.top=event.clientY+"px";*/
+      p1.style.top=event.clientY+"px";
     }
 };
 
-b4.addEventListener('click', customObject);
+b4.addEventListener('click', customObject);*/
 
 
 //4.
-let b5=document.getElementById("but5");
+/*let b5=document.getElementById("but5");
 
 let ciccio={
     handleEvent(event)
@@ -130,10 +151,10 @@ let ciccio={
 
 b5.addEventListener('click', ciccio);
 b5.addEventListener('mousedown', ciccio);
-b5.addEventListener('mouseup', ciccio);
+b5.addEventListener('mouseup', ciccio);*/
 
 
-/*//5.
+//5.
 let b5=document.getElementById("but5");
 
 class Messaggio {
@@ -157,4 +178,4 @@ class Messaggio {
 let messaggino=new Messaggio();
 b5.addEventListener('click', messaggino);
 b5.addEventListener('mousedown', messaggino);
-b5.addEventListener('mouseup', messaggino);*/
+b5.addEventListener('mouseup', messaggino);
