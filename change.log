@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-09-24
+### Added 'REACT'
+    - Componenti funzionali rendono più veloci il browser
+    - Creazione di interfacce utente interattive manipolando il DOM, gestendo il lato logico dei dati
+    - React può convivere con altre tecnologie
+    - extends: quello che andremo a creare con il costruttore class, si comporterà componente REACT -> 'extends React.Components'
+    - render()
+    - Funzione map()
+    - JSX - diversa sintassi da JS puro
+    - 'root' di base corrisponde al body, il crawler di Google vede l'albero del body con id 'root'
+    - create-react-app esempioUno --use-npm con Node (https://www.npmjs.com/)
+        dependencies -> pacchetti necessari per React
+    - npm
+        start -> faccio partire il server che mi dà localhost:port
+        run build
+        test
+
 ## [1.0.0] - 2020-09-22
 ### Added 'JAVASCRIPT'
     - let nome1 = "Luca" stringa letterale, let nome2 = new String("Luca") oggetto che contiene una stringa;
