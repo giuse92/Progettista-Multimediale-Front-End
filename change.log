@@ -15,11 +15,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - JSX - diversa sintassi da JS puro
     - 'root' di base corrisponde al body, il crawler di Google vede l'albero del body con id 'root'
     - create-react-app esempioUno --use-npm con Node (https://www.npmjs.com/)
-        dependencies -> pacchetti necessari per React
+        *dependencies -> pacchetti necessari per React
     - npm
         start -> faccio partire il server che mi dà localhost:port
         run build
         test
+        i (sta per install) -> va nel package.json, legge le dependencies e installa il pacchetto aggiornato o aggiunto
+    - package.json indica tutte le informazioni fondamentali del progetto
+        dependencies*
+            -> per esempio material-ui per l'estetica
+    - package-lock.json -> viene generato alla prima installazione del pacchetto, 'NON DEVE MAI ESSERE MODIFICATO A MANO'
+    - major, minor, bug fixing -> versionamento
+    
 
 ## [1.0.0] - 2020-09-22
 ### Added 'JAVASCRIPT'
