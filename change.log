@@ -11,8 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         nel caso di più istruzioni: () => {blocco codice e return non implicito}
     - Asincronia
         prescinde dal caricamento del DOM in pratica
-        callback è una funzione che viene richiamata dopo 
-                
+        callback è una funzione che viene richiamata dopo
+        onerror, se intercetta errore esegue un'altra callback (nel caso di onload ne esegue un'altra)
+            new Error(), oggetto di tipo errore
+        Piramide infernale per indicare lo sviluppo in orizzontale
 
 ## [1.0.0] - 2020-09-24
 ### Added 'REACT'
