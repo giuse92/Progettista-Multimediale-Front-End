@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-09-28
+### Added 'JAVASCRIPT'
+    - Arrow function es. (a,b) => a+b;
+        return è implicito senza {} e unica riga di codice
+        nel caso di più istruzioni: () => {blocco codice e return non implicito}
+    - Asincronia
+        prescinde dal caricamento del DOM in pratica
+        callback è una funzione che viene richiamata dopo 
+                
+
 ## [1.0.0] - 2020-09-24
 ### Added 'REACT'
     - Componenti funzionali rendono più veloci il browser
