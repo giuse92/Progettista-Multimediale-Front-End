@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-09-29
+### Added 'JAVASCRIPT'
+    - Promises
+        let variabile= new Promise(function(resolve,reject){'blocco codice'})
+            Funzione esecutrice, eseguita immediatamente
+            resolve e reject sono parametri-funzione
+        state -> inizia col valore di pending a fullfilled se tutto va bene
+            una volta raggiunto un certo stato, quest'ultimo non verrà più cambiato (fulfilled o rejected)
+        result -> vale undefined inizialmente
+        .then è una funzione che accetta a sua volta due funzioni
+        Verrà gestito solo un resolve/reject per volta
+
 ## [1.0.0] - 2020-09-28
 ### Added 'JAVASCRIPT'
     - Arrow function es. (a,b) => a+b;
