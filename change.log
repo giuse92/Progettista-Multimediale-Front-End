@@ -13,6 +13,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         sintassi render methos nel render method: ${isEven(n1) ? 'pari' : 'dispari'};
                                                                ?  TRUE : FALSE; (obbligatorio la valutazione di true e false)
     - operatore % restituisce il resto
+    - Componenti e props (props è l'oggetto immutabile), il componente deve restituire un solo elemento
+        const IlMioPrimoComponente = (props) => {
+               const isEven = (num) => num % 2 === 0;
+               return isEven(props.myNumber) ? <span>PARI</span> : <span>DISPARI</span>;
+               oppure per ottimizzare
+               return (
+               <>
+                <div>{props.children}</div>
+                <span>{props.myOperation(props.myNumber) ? 'PARI' : 'DISPARI'}</span>
+               </>
+               )
+        }
+        nel render method:
+            <div>
+            <IlMioPrimoComponente myNumber={n1} myOperation={isEven} />
+            </div>
+        Componenti figli:
+            <IlMioPrimoComponente> 
+            <h3>Sono il figlio del componente</h3> (questo h3 diventa la proprietà children di props);
+            </IlMioPrimoComponente>
+        Fragment: <></> o <Fragment></Fragment>, ciò che è scritto all'interno è concettualmente figlio di un parent;
+        Riusabilità
+        Posso annidare le componenti
+        
+    - PascalCase: LeRobeSiDefinisconoCosì, prima lettera maiuscola
+    - Distribuzione file in una folder components figlia della cartella src
+        src > components > IlMioPrimoComponente.jsx
+            import React from 'react'
+            codice 
+            export default IlMioPrimoComponente //default rende usabile la funzione in tutto il mio progetto
+        src > App.js 
+        import {} from './' -> ti mostra i file disponibili in un menù a tendina creando l'input giusto
+        poi import IlMioPrimoComponente from './components/IlMioPrimoComponente';
+
 
 
 ## [1.0.0] - 2020-09-29
