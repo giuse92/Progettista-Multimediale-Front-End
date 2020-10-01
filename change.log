@@ -6,9 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2020-10-01
 ### Added 'REACT'
-    - .map() -> viene applicata un'Array, accetta fino a 3 argomenti, callback per ogni elemento dell'array;
+    - .map() -> viene applicata un'Array, accetta fino a 3 argomenti (parametri), callback per ogni elemento dell'array;
         parametri element e index
     - Ogni elemento frutto di una map ha una propria key unica per dare un id a un elemento che ha renderizzato
+    - Quando il children non è un array, controllare con una condizione per eseguire il map();
+    - new Date()
+    - classe React, va inserito il render method per forza (vedi MyClock in react-test)
+        estendendo la classe React, il componente già assume props, context e state
+        aggiungere un costruttore per lo state
+        setState comporta un re-render del componente ed entriamo nel componentDidUpdated
 
 ## [1.0.0] - 2020-09-30
 ### Added 'REACT'
