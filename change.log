@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-10-05
+### Added 'JAVASCRIPT'
+    - rivedere promises_8_bis;
+
 ## [1.0.0] - 2020-10-01
 ### Added 'REACT'
     - .map() -> viene applicata un'Array, accetta fino a 3 argomenti (parametri), callback per ogni elemento dell'array;
