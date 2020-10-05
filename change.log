@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2020-10-05
 ### Added 'JAVASCRIPT'
     - rivedere promises_8_bis;
+    - JSON: https://www.json.org/json-it.html
+    - Mongodb: https://www.mongodb.com/it
+    - BSON
+    - fetch()
+        GET -> metodo che non richiede la specifica del body (inviamo solo degli header)
+        .then(//primo then) -> informazioni relative alla risposta del server che contengono degli header
+
 
 ## [1.0.0] - 2020-10-01
 ### Added 'REACT'
