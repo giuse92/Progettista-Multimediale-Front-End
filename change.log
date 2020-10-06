@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-10-06
+    - Cors: Cross Origin Resource Sharing (tool per manipolare cors: https://cors-anywhere.herokuapp.com/)
+        Access-Control-Allow-Origin
+        blob() -> struttura dati in byte
+            objectURL = URL.createObjectURL(blob //parametro funzione)
+            image.src=objectURL;
+            document.body.append(testImage);
+            
+
 ## [1.0.0] - 2020-10-05
 ### Added 'JAVASCRIPT'
     - rivedere promises_8_bis;
