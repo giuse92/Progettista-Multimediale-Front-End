@@ -7,10 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2020-10-06
     - Cors: Cross Origin Resource Sharing (tool per manipolare cors: https://cors-anywhere.herokuapp.com/)
         Access-Control-Allow-Origin
-        blob() -> struttura dati in byte
+        .blob() -> struttura dati in byte
             objectURL = URL.createObjectURL(blob //parametro funzione)
             image.src=objectURL;
             document.body.append(testImage);
+        Richiesta semplice:
+            GET
+                --> Origin: protocollo, dominio, porta
+            POST
+            HEAD
+        Richiesta non semplice:
+            preflight: operazione di richiesta autorizzazione
+            DELETE 
+            PATCH
+        .text() -> approfondire eventualmente
             
 
 ## [1.0.0] - 2020-10-05
