@@ -40,6 +40,10 @@ promise2.then(function(result)
 
 
 
+/*promise3.then(
+  (ok) => console.log(ok),
+  (ko) => console.log(ko)
+);*/
 
 //2.
 let promise1=new Promise(function(resolve, reject)
@@ -49,16 +53,34 @@ let promise1=new Promise(function(resolve, reject)
   //e chiama la funzione resolve per dire che è andato tutto bene oppure reject in caso di errore.
 
   let milliseconds=2000;
-  setTimeout(() => resolve("Ciao!"), milliseconds);
+  //setTimeout(() => resolve("Ciao!"), milliseconds);
+  setTimeout(() => reject("Errore!"), milliseconds);
 
-}).then(function(result)
+})
+.then(
+  (ok) => {
+    console.log(ok);
+
+    
+  },
+  (ko) => {
+    console.log(ko);
+
+    return(ko);
+  }
+
+  
+)
+.then(null, function(reject)
 {
 
-  console.log(result);
- 
-  return(result+" Come");
+  console.log(reject);
 
-}).then(function(result)
+  return(reject+" Come");
+
+})
+
+/*.then(function(result)
 {
 
   console.log(result);
@@ -77,6 +99,6 @@ let promise1=new Promise(function(resolve, reject)
 
   console.log(result);
 
-});
+});*/
 
 //thenable.
