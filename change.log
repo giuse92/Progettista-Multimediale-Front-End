@@ -14,6 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
             false && condizione === false
     - Gestione eventi
         Funzioni passate come variabili, quindi tra {};
+    - nel render, dopo il map, rendere il più specifico possibile la key;
+        attenzione al cambio d'ordine dell'array
+    - Form
+        Input non controllato e input controllato
+        [proprietà oggetto] -> si riferisce al valore della chiave in modo dinamico
+
 
 
 ## [1.0.0] - 2020-10-06
