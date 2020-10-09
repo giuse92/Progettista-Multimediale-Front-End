@@ -18,7 +18,37 @@
 
     <div id="app-3">
         <span v-if="vedi">Ti vedo sempre</span>
+        <span>{{testo}}</span>
     </div>
+
+    <div id="app-4">
+        <ul>
+            <li v-for="element in elements">
+                {{element.text}}
+            </li>
+        </ul>
+    </div>
+
+    <div id="app-4a">
+        <ul>
+            <li v-for="element in elements">
+                {{element}}
+            </li>
+        </ul>
+    </div>
+
+    <div id="app-5">
+        <p v-if="orario < 12 && orario > 5">Buon giorno!</p>
+        <p v-else-if="orario >= 12 && orario <= 18">Buon pomeriggio</p>
+        <p v-else>Buona sera</p>
+    </div>
+
+    <div id="app-6">
+        <p>{{message}}</p>
+        <button v-on:click="invertiMessage">Inverti message</button>
+    </div>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
     <script src="vue_ex_0a.js"></script>

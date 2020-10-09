@@ -13,7 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         'el' va a recuperare l'elemento
         oggetto 'data' dove identifico i valori
     - v- presuppone delle funzioni di vue.js in html
-        v-bind per gli attributi
+        v-bind per modificare l'attributo dell'elemento html
+        v-if v-else-if v-else condizione nell'elemento html
+        v-for ciclo
+        v-on:click attributo on-click
 
 ## [1.0.0] - 2020-10-06
 ### Added 'REACT'
