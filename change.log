@@ -5,6 +5,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.0.0] - 2020-10-06
+### Added 'VUE'
+    - Evoluzione di Angular
+    - Veloce, performante, leggibile, progressivo
+    - Modello mvvm
+    - Istanza con dipendenza e elemento nell'html
+        'el' va a recuperare l'elemento
+        oggetto 'data' dove identifico i valori
+    - v- presuppone delle funzioni di vue.js in html
+        v-bind per gli attributi
+
+## [1.0.0] - 2020-10-06
 ### Added 'REACT'
     - Trasformazione App da componente funzionale a classe
         true/false per giocare con montaggio e smontaggio componenti MyClock

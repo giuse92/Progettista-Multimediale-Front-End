@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJs</title>
+</head>
+<body>
+    <div id="app-1">{{content}}</div>
+
+    <!-- <div id="app-2">{{messaggio}}</div> -->
+
+    <div id="app-2">
+        <span v-bind:title="message">
+            testo testo testo
+        </span>
+    </div>
+
+    <div id="app-3">
+        <span v-if="vedi">Ti vedo sempre</span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+    <script src="vue_ex_0a.js"></script>
+</body>
+</html>
