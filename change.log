@@ -4,7 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2020-10-06
+## [1.0.0] - 2020-10-12
+### Added 'JAVASCRIPT'
+    - Script
+        defer -> Evita il blocco del parsing, la fase di caricamento è asincrona, ma la fase di esecuzione avviene subito prima del DOMContentLoaded (quando abbiamo tutti gli elementi del DOM),
+                garantisce la sequenzialità dei caricamenti
+        async -> Caricamento non blocca parsing, ma è indipendente: al caricamento della risorsa, esegue
+
+
+## [1.0.0] - 2020-10-09
 ### Added 'VUE'
     - Evoluzione di Angular
     - Veloce, performante, leggibile, progressivo
@@ -18,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         v-for ciclo
         v-on:click attributo on-click
 
-## [1.0.0] - 2020-10-06
+## [1.0.0] - 2020-10-07
 ### Added 'REACT'
     - Trasformazione App da componente funzionale a classe
         true/false per giocare con montaggio e smontaggio componenti MyClock
