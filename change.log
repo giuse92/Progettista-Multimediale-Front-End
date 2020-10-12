@@ -6,10 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2020-10-12
 ### Added 'JAVASCRIPT'
-    - Script
+    - Script (risorse esterne)
         defer -> Evita il blocco del parsing, la fase di caricamento è asincrona, ma la fase di esecuzione avviene subito prima del DOMContentLoaded (quando abbiamo tutti gli elementi del DOM),
                 garantisce la sequenzialità dei caricamenti
-        async -> Caricamento non blocca parsing, ma è indipendente: al caricamento della risorsa, esegue
+        async -> Caricamento non blocca parsing, ma è indipendente: al caricamento della risorsa, esegue (esecuzione è bloccante)
 
 
 ## [1.0.0] - 2020-10-09
