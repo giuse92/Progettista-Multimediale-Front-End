@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-10-07
+### Added 'REACT'
+    - API: dato da visualizzare, caricamento, errore
+    - Usare meno setState possibili
+    - try, catch, finally (finally non obbligatorio)
+        in try scriviamo le funzioni asincrone di cui abbiamo bisogno,
+        se c'è un errore in ciò che è eseguito nel try 
+        il resto del codice in try non viene eseguito e si passa direttamente al catch;
+        il finally viene sempre eseguito sempre, a prescindere dal catch
+    - await -> restituisce il valore in stato di resolve o reject
+    - findIndex -> trova l'indice del primo elemento che soddisfa la callback
+        se non lo trova restituisce -1
+    - if throw -> va a finire nel catch 
+    - Variabili mutabili e immutabili
+
+
+
 ## [1.0.0] - 2020-10-13
 ### Added 'JAVASCRIPT'
     - Verifica
