@@ -17,9 +17,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - findIndex -> trova l'indice del primo elemento che soddisfa la callback
         se non lo trova restituisce -1
     - if throw -> va a finire nel catch 
-    - Variabili mutabili e immutabili
-
-
+    - Variabili mutabili e immutabili (vedi link all'interno dell'esempio)
+    - Spread operator ...
+    - prevState (link nell'esempio)
+    - approfondisci metodo filter() per gli array
 
 ## [1.0.0] - 2020-10-13
 ### Added 'JAVASCRIPT'
