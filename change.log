@@ -13,7 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Destrutturazione delle props e togliamo un livello di annidamento props.key
         {key1, key2, key3} oppure 'const Componente = ({selectedTag, ...rest})'
     - {...props}
-
+    - Hooks
+        il metodo Hook inizia con use, ex: useState()
 
 ## [1.0.0] - 2020-10-07
 ### Added 'REACT'
