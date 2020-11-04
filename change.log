@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-11-04
+### Added 'REACT'
+    - SSOT: single source of truth
+    - SqLite per db relazionali
+    - Currying functions: const handleEvent = field => e => {e.preventDefault()}
+        https://stackoverflow.com/questions/32782922/what-do-multiple-arrow-functions-mean-in-javascript/54578014#54578014
+    - Destrutturazione delle props e togliamo un livello di annidamento props.key
+        {key1, key2, key3} oppure 'const Componente = ({selectedTag, ...rest})'
+    - {...props}
+
+
 ## [1.0.0] - 2020-10-07
 ### Added 'REACT'
     - API: dato da visualizzare, caricamento, errore
