@@ -8,6 +8,7 @@ let app1 = new Vue({
 let app2 = new Vue({
     el: "#condizione-if",
     data: {
+        txt: 'Testo colorato', 
         testoColorato: 'non blu'
     }
 })
