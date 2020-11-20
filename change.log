@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-11-20
+### Added 'VUE'
+    v-show;
+    :class, sintassi :attributo;
+    :style;
+    Filtri
+        --> chiave filters:{}
+        --> v-model per gli input;
+    Interpolazione
+        --> v-text
+        --> v-html
+    direttiva v-on:evento
+                @evento
+    Oggetto methods non serve l'associazione chiave:valore
+    computed
+        --> invio il prodotto già finito all'html
+    this
+
+
 ## [1.0.0] - 2020-11-11
 ### Added 'REACT'
     - propTypes per tipizzare gli stati 'typechecking with PropTypes'
