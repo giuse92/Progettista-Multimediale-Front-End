@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+
+  <meta charset='UTF-8'>
+  <title>VueJs</title>
+
+ <link rel="stylesheet" type="text/css" href="direttive.css"> 
+  
+
+</head>
+
+<body>
+ 
+<!--
+
+<div id="app13">
+    <div :style="styleObject">
+      <span>{{ randomNumber }}</span>
+    </div>
+    <button 
+      v-on:click="randomNumber = Math.round(Math.random() * 5)">
+      Random Number
+    </button>
+
+</div>
+
+--><!--
+<div id="app13">
+  <div :style="styleObject">
+    <span>{{ randomNumber }}</span>
+  </div>
+<button 
+  @click="randomNumber = Math.round(Math.random() * 5)">
+  Random Number
+</button>
+</div>
+-->
+
+<div id="app14">
+
+  <span>{{ randomNumber }}</span>
+
+<button 
+  @click="generateRandomNumber">
+  Random Number
+</button>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+<script src="direttiva-v-on.js"></script>
+
+</body>
+
+</html>

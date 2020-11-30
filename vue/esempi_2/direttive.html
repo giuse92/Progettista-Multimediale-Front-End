@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+
+  <meta charset='UTF-8'>
+  <title>VueJs</title>
+
+ <link rel="stylesheet" type="text/css" href="direttive.css"> 
+  
+
+</head>
+
+<body>
+ 
+<!-- DIRETTIVA  v-show  
+
+<div id="app3">
+    <h2 v-show="!a">Questo non si vede</h2>
+    <h2 v-show="a">Questo si vede</h2>
+</div>
+-->
+
+<!-- DIRETTIVA  v-class  
+<div id="app4">
+    <label for="r1">Cambia colore</label><input type="checkbox" v-model="verifica" id="r1">
+    <br><br>
+    <div :class="{'verifica': verifica}">
+      directiva v-bind:class
+    </div>
+</div>
+-->
+
+
+<!-- DIRETTIVA  v-attr
+<div id="app5">
+    <button v-for="item in itemlist" :disabled="item.qty < 1"> Click</button>
+</div>
+  -->
+
+<!--  
+<div id="app6">
+    <img src="image1.jpg" alt="Girl in a jacket" :width="w"  :height="h">
+</div>  
+-->
+
+<!-- DIRETTIVA  v-style -->
+<div id="app7">
+    <span :style="{ color: activeColor, fontSize: fontSize + 'px' }">testo</span>
+</div>
+
+
+<div id="app8">
+    <span :style="styleObject">testo</span>
+</div>
+
+
+<div id="app8a">
+    <p :style="[baseStyles, overridingStyles]">
+      Donec sed odio dui.
+    </p>
+  </div>
+
+<!-- --> 
+<!-- DIRETTIVA  v-model 
+<div id="app11">
+    <input type="text" v-model="value">
+    <br />
+    Il valore inserito è <b></b>{{value}}
+ </div>
+-->
+
+<!-- ALTRA DIRETTIVA  v-model 
+<div id="app12">
+<select v-model="selected">
+    <option v-for="option in options" v-bind:value="option.value">
+      {{ option.text }}
+</option>
+</select>
+
+  <span>Selected: {{ selected }}</span>
+</div>
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+<script src="direttive.js"></script>
+
+</body>
+
+</html>

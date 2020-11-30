@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang='en' class=''>
+<head>
+  <meta charset='UTF-8'>
+  <title>VueJs</title>
+</head>
+<body>
+  
+<div id="app-1">{{value}}</div>
+
+
+
+<div id="app-2">
+  <span v-bind:title="message">testo testo</span>
+</div>
+
+
+<div id="app-3">
+  <span v-if="vedi">Ti vedo sempreeee!</span>
+  <span>{{testo}}</span>
+</div>
+
+
+<div id="app-4">
+  <ul>
+    <li v-for="element in elements">{{ element.text }}</li>
+  </ul>
+</div>
+
+<div id="app-4a">
+  <ul>
+    <li v-for="element in elements">{{ element }}</li>
+  </ul>
+</div>
+
+<div id="app-5">
+  <p v-if="orario < 12 && orario > 5"></p>
+  <p v-else-if="orario >= 12 && orario <= 18">Buon Pomeriggio!</p>
+  <p v-else>Buona sera!</p>
+</div>
+
+<div id="app-6">
+  <p>{{ message }}</p>
+  <button v-on:click="invertiMessage">Inverti Message</button>
+</div>
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+<script src="vue_ex_0a.js"></script>
+
+</body>
+</html>
