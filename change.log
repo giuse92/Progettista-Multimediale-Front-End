@@ -9,8 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     npm install -g @vue/cli
     vue --version
     Set-ExecutionPolicy RemoteSigned (esegui cmd come amministratore in azienda)
-    vue create classe
-
+    Nel terminale:
+        vue create classe
+        manual select
+        router(*) e css pre-processors(*)
+        hystory mode router: yes
+        node-sass
+        ESLint + Prettier
+        Lint on save
+        package.json
+    per ogni componente vue ricordarsi dell'export.default
+    
 
 ## [1.0.0] - 2020-11-20
 ### Added 'VUE'
