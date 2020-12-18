@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-12-18
+### Added 'VUE'
+    - Routing
+        tag router-link, attributo to
+    - https://bootstrap-vue.org/docs sezione:Using module bundlers
+        Tabella.vue -> formatter: callback
+    . Axios: https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html
+        Scaricare libreria npm
+
 ## [1.0.0] - 2020-12-16
 ### Added 'REACT'
     - ripasso useEffect (senza array deps, con array deps, cleanup)
