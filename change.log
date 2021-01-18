@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2020-01-18
+### Added 'REACT'
+    - useContext(), accedere a valori a diversi livelli di annidamento
+        dichiarazione scheletro in file separato, oggeto in input (NomeComponenteContext = React.createContext)
+        utilizzo del context (chiave 1, chiave 2)
+        passaggio del context all'albero dell'applicazione (NomeComponenteContext.Provider e definire il value)
+        uso context consumer: const {chiave1} = useContext(NomeComponenteContext)
+    - Redux, libreria per gestione stati condivisi (Redux vs Recoil)
+    - React Router Dom: https://reactrouter.com/web/guides/quick-start
+        Router,
+        Switch, contiene i tag Route
+        <Route path="/path-componente"> <Componente /> </Route> (useRouteMatch)
+        <Link to="/" >Testo visualizzato</Link>
+    - Esempio Context e Router: https://pastebin.com/5jRP4Ei4
+
+
 ## [1.0.0] - 2020-12-18
 ### Added 'VUE'
     - Routing
